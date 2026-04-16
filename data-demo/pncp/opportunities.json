@@ -29,122 +29,102 @@
         "numeroLote": 1,
         "descricao": "Dipirona 500mg comprimido",
         "unidadeMedida": "comprimido",
-        "quantidade": 100,
-        "valorUnitarioEstimado": 17727.83,
-        "valorTotal": 1772783.0,
-        "codigoItemCatalogo": "BR338239"
+        "quantidade": 11158897,
+        "valorUnitarioEstimado": 0.16,
+        "valorTotal": 1785423.52,
+        "codigoItemCatalogo": "BRD82C0B"
       },
       {
         "numeroItem": 2,
         "numeroLote": 1,
         "descricao": "Losartana 50mg comprimido",
         "unidadeMedida": "comprimido",
-        "quantidade": 1000,
-        "valorUnitarioEstimado": 1810.86,
-        "valorTotal": 1810860.0,
-        "codigoItemCatalogo": "BR760549"
+        "quantidade": 12022757,
+        "valorUnitarioEstimado": 0.21,
+        "valorTotal": 2524778.97,
+        "codigoItemCatalogo": "BRF69D02"
       },
       {
         "numeroItem": 3,
         "numeroLote": 1,
         "descricao": "Metformina 850mg comprimido",
         "unidadeMedida": "comprimido",
-        "quantidade": 100,
-        "valorUnitarioEstimado": 10192.24,
-        "valorTotal": 1019224.0,
-        "codigoItemCatalogo": "BR426983"
+        "quantidade": 5359102,
+        "valorUnitarioEstimado": 0.21,
+        "valorTotal": 1125411.42,
+        "codigoItemCatalogo": "BR596728"
       },
       {
         "numeroItem": 4,
         "numeroLote": 1,
         "descricao": "Amoxicilina 500mg cápsula",
         "unidadeMedida": "cápsula",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 776.36,
-        "valorTotal": 3881800.0,
-        "codigoItemCatalogo": "BR110711"
+        "quantidade": 3350625,
+        "valorUnitarioEstimado": 0.91,
+        "valorTotal": 3049068.75,
+        "codigoItemCatalogo": "BR1C8AF9"
       }
     ]
   },
   {
-    "numeroControlePNCP": "18715615000160-1-001001/2026",
+    "numeroControlePNCP": "14390500000116-1-001001/2026",
     "numeroCompra": "002/2026",
-    "modalidadeId": 10,
+    "modalidadeId": 1,
     "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Aquisição de materiais de escritório diversos",
-    "informacaoComplementar": "Registro de preços para aquisição parcelada de materiais de expediente e consumíveis de escritório para unidades administrativas.",
-    "valorTotalEstimado": 5100242.06,
-    "dataPublicacaoPncp": "2026-03-31T20:00:00+00:00",
-    "dataAberturaProposta": "2026-04-01T20:00:00+00:00",
+    "objetoCompra": "Construção de unidade básica de saúde",
+    "informacaoComplementar": "Execução de obras civis para construção de UBS padrão do Ministério da Saúde, com 620m² de área construída, incluindo instalações, acabamentos e paisagismo.",
+    "valorTotalEstimado": 27126585.25,
+    "dataPublicacaoPncp": "2026-04-07T14:00:00+00:00",
+    "dataAberturaProposta": "2026-04-08T14:00:00+00:00",
     "dataEncerramentoProposta": "2026-04-23T20:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/18715615000160-1-001001/2026",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/14390500000116-1-001001/2026",
     "orgaoEntidade": {
-      "cnpj": "18715615000160",
-      "razaoSocial": "Governo do Estado de Minas Gerais",
-      "nomeFantasia": "GovMG",
-      "esferaId": "estadual",
+      "cnpj": "14390500000116",
+      "razaoSocial": "Prefeitura Municipal de Salvador",
+      "nomeFantasia": "PMS",
+      "esferaId": "municipal",
       "poderId": "executivo"
     },
     "unidadeOrgao": {
-      "ufSigla": "MG",
-      "municipioNome": "Belo Horizonte",
+      "ufSigla": "BA",
+      "municipioNome": "Salvador",
       "codigoIbge": null
     },
     "itens": [
       {
         "numeroItem": 1,
         "numeroLote": 1,
-        "descricao": "Papel A4 75g resma 500fl",
-        "unidadeMedida": "resma",
-        "quantidade": 100,
-        "valorUnitarioEstimado": 14452.12,
-        "valorTotal": 1445212.0,
-        "codigoItemCatalogo": "BR825984"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Toner laser preto",
+        "descricao": "Construção UBS padrão (serviço global)",
         "unidadeMedida": "unidade",
-        "quantidade": 200,
-        "valorUnitarioEstimado": 8902.99,
-        "valorTotal": 1780598.0,
-        "codigoItemCatalogo": "BR499205"
-      },
-      {
-        "numeroItem": 3,
-        "numeroLote": 1,
-        "descricao": "Caneta esferográfica azul",
-        "unidadeMedida": "unidade",
-        "quantidade": 50,
-        "valorUnitarioEstimado": 37488.63,
-        "valorTotal": 1874431.5,
-        "codigoItemCatalogo": "BR499634"
+        "quantidade": 17,
+        "valorUnitarioEstimado": 1578768.73,
+        "valorTotal": 26839068.41,
+        "codigoItemCatalogo": "BRD60930"
       }
     ]
   },
   {
-    "numeroControlePNCP": "33683111000107-1-001002/2026",
+    "numeroControlePNCP": "10832074000155-1-001002/2026",
     "numeroCompra": "003/2026",
-    "modalidadeId": 3,
+    "modalidadeId": 1,
     "situacaoCompraNome": "Divulgada",
     "objetoCompra": "Contratação de serviços de hemodiálise",
     "informacaoComplementar": "Contratação por credenciamento de clínicas para oferta de sessões de hemodiálise a pacientes do SUS, conforme tabela SUS/2025 e critérios técnicos do Ministério da Saúde.",
-    "valorTotalEstimado": 19464466.02,
-    "dataPublicacaoPncp": "2026-04-04T03:00:00+00:00",
-    "dataAberturaProposta": "2026-04-05T03:00:00+00:00",
-    "dataEncerramentoProposta": "2026-05-18T07:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/33683111000107-1-001002/2026",
+    "valorTotalEstimado": 11076649.37,
+    "dataPublicacaoPncp": "2026-03-27T06:00:00+00:00",
+    "dataAberturaProposta": "2026-03-28T06:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-04T13:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/10832074000155-1-001002/2026",
     "orgaoEntidade": {
-      "cnpj": "33683111000107",
-      "razaoSocial": "Instituto Federal de São Paulo",
-      "nomeFantasia": "IFSP",
-      "esferaId": "federal",
+      "cnpj": "10832074000155",
+      "razaoSocial": "Secretaria de Segurança Pública do Ceará",
+      "nomeFantasia": "SSP-CE",
+      "esferaId": "estadual",
       "poderId": "executivo"
     },
     "unidadeOrgao": {
-      "ufSigla": "SP",
-      "municipioNome": "São Paulo",
+      "ufSigla": "CE",
+      "municipioNome": "Fortaleza",
       "codigoIbge": null
     },
     "itens": [
@@ -153,20 +133,20 @@
         "numeroLote": 1,
         "descricao": "Sessão de hemodiálise",
         "unidadeMedida": "sessão",
-        "quantidade": 1000,
-        "valorUnitarioEstimado": 6103.28,
-        "valorTotal": 6103280.0,
-        "codigoItemCatalogo": "BR391649"
+        "quantidade": 23675,
+        "valorUnitarioEstimado": 229.39,
+        "valorTotal": 5430808.25,
+        "codigoItemCatalogo": "BRA97BF6"
       },
       {
         "numeroItem": 2,
         "numeroLote": 1,
         "descricao": "Sessão de hemodiálise de urgência",
         "unidadeMedida": "sessão",
-        "quantidade": 200,
-        "valorUnitarioEstimado": 66805.91,
-        "valorTotal": 13361182.0,
-        "codigoItemCatalogo": "BR159786"
+        "quantidade": 22706,
+        "valorUnitarioEstimado": 248.65,
+        "valorTotal": 5645846.9,
+        "codigoItemCatalogo": "BR270AB0"
       }
     ]
   },
@@ -175,9 +155,9 @@
     "numeroCompra": "004/2026",
     "modalidadeId": 11,
     "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Locação de veículos leves sem motorista",
-    "informacaoComplementar": "Locação continuada de veículos leves de passeio sem motorista para uso administrativo, com quilometragem livre, manutenção e seguro inclusos.",
-    "valorTotalEstimado": 10404479.82,
+    "objetoCompra": "Reforma de escola municipal",
+    "informacaoComplementar": "Serviços de reforma estrutural e adequação de acessibilidade em unidade escolar, incluindo troca de cobertura, pintura, elétrica e hidráulica.",
+    "valorTotalEstimado": 30596060.14,
     "dataPublicacaoPncp": "2026-04-13T17:00:00+00:00",
     "dataAberturaProposta": "2026-04-14T17:00:00+00:00",
     "dataEncerramentoProposta": "2026-05-03T21:00:00+00:00",
@@ -198,22 +178,12 @@
       {
         "numeroItem": 1,
         "numeroLote": 1,
-        "descricao": "Locação veículo passeio 1.0 (mês)",
+        "descricao": "Reforma estrutural escola (serviço global)",
         "unidadeMedida": "m",
-        "quantidade": 500,
-        "valorUnitarioEstimado": 6534.8,
-        "valorTotal": 3267400.0,
-        "codigoItemCatalogo": "BR527118"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Locação veículo SUV 1.5 (mês)",
-        "unidadeMedida": "m",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 1427.42,
-        "valorTotal": 7137100.0,
-        "codigoItemCatalogo": "BR962274"
+        "quantidade": 46,
+        "valorUnitarioEstimado": 668594.84,
+        "valorTotal": 30755362.64,
+        "codigoItemCatalogo": "BRFB4E5A"
       }
     ]
   },
@@ -247,20 +217,20 @@
         "numeroLote": 1,
         "descricao": "Locação veículo passeio 1.0 (mês)",
         "unidadeMedida": "m",
-        "quantidade": 500,
-        "valorUnitarioEstimado": 4364.37,
-        "valorTotal": 2182185.0,
-        "codigoItemCatalogo": "BR527118"
+        "quantidade": 1024,
+        "valorUnitarioEstimado": 2200.19,
+        "valorTotal": 2252994.56,
+        "codigoItemCatalogo": "BR408539"
       },
       {
         "numeroItem": 2,
         "numeroLote": 1,
         "descricao": "Locação veículo SUV 1.5 (mês)",
         "unidadeMedida": "m",
-        "quantidade": 200,
-        "valorUnitarioEstimado": 32904.4,
-        "valorTotal": 6580880.0,
-        "codigoItemCatalogo": "BR962274"
+        "quantidade": 1537,
+        "valorUnitarioEstimado": 4234.42,
+        "valorTotal": 6508303.54,
+        "codigoItemCatalogo": "BR6D538D"
       }
     ]
   },
@@ -294,50 +264,50 @@
         "numeroLote": 1,
         "descricao": "Papel A4 75g resma 500fl",
         "unidadeMedida": "resma",
-        "quantidade": 1000,
-        "valorUnitarioEstimado": 398.56,
-        "valorTotal": 398560.0,
-        "codigoItemCatalogo": "BR825984"
+        "quantidade": 15236,
+        "valorUnitarioEstimado": 28.68,
+        "valorTotal": 436968.48,
+        "codigoItemCatalogo": "BRD696BA"
       },
       {
         "numeroItem": 2,
         "numeroLote": 1,
         "descricao": "Toner laser preto",
         "unidadeMedida": "unidade",
-        "quantidade": 200,
-        "valorUnitarioEstimado": 1023.94,
-        "valorTotal": 204788.0,
-        "codigoItemCatalogo": "BR499205"
+        "quantidade": 598,
+        "valorUnitarioEstimado": 304.83,
+        "valorTotal": 182288.34,
+        "codigoItemCatalogo": "BREBE832"
       },
       {
         "numeroItem": 3,
         "numeroLote": 1,
         "descricao": "Caneta esferográfica azul",
         "unidadeMedida": "unidade",
-        "quantidade": 100,
-        "valorUnitarioEstimado": 2376.04,
-        "valorTotal": 237604.0,
-        "codigoItemCatalogo": "BR499634"
+        "quantidade": 123158,
+        "valorUnitarioEstimado": 1.8,
+        "valorTotal": 221684.4,
+        "codigoItemCatalogo": "BRD99034"
       }
     ]
   },
   {
-    "numeroControlePNCP": "42498700000143-1-001006/2026",
+    "numeroControlePNCP": "42498600000171-1-001006/2026",
     "numeroCompra": "007/2026",
-    "modalidadeId": 9,
+    "modalidadeId": 1,
     "situacaoCompraNome": "Divulgada",
     "objetoCompra": "Consultoria para modernização administrativa",
     "informacaoComplementar": "Contratação de consultoria especializada para elaboração de diagnóstico organizacional e plano de modernização dos processos administrativos.",
-    "valorTotalEstimado": 8976815.05,
-    "dataPublicacaoPncp": "2026-04-11T06:00:00+00:00",
-    "dataAberturaProposta": "2026-04-12T06:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-25T09:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/42498700000143-1-001006/2026",
+    "valorTotalEstimado": 10778983.46,
+    "dataPublicacaoPncp": "2026-04-11T07:00:00+00:00",
+    "dataAberturaProposta": "2026-04-12T07:00:00+00:00",
+    "dataEncerramentoProposta": "2026-05-22T15:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/42498600000171-1-001006/2026",
     "orgaoEntidade": {
-      "cnpj": "42498700000143",
-      "razaoSocial": "Prefeitura Municipal de Curitiba",
-      "nomeFantasia": "PMC",
-      "esferaId": "municipal",
+      "cnpj": "42498600000171",
+      "razaoSocial": "Governo do Estado do Paraná",
+      "nomeFantasia": "GovPR",
+      "esferaId": "estadual",
       "poderId": "executivo"
     },
     "unidadeOrgao": {
@@ -351,458 +321,82 @@
         "numeroLote": 1,
         "descricao": "Serviço de consultoria (hora técnica sênior)",
         "unidadeMedida": "hora",
-        "quantidade": 500,
-        "valorUnitarioEstimado": 17953.63,
-        "valorTotal": 8976815.0,
-        "codigoItemCatalogo": "BR191639"
+        "quantidade": 26629,
+        "valorUnitarioEstimado": 404.79,
+        "valorTotal": 10779152.91,
+        "codigoItemCatalogo": "BRCBB3ED"
       }
     ]
   },
   {
-    "numeroControlePNCP": "18715615000160-1-001007/2026",
+    "numeroControlePNCP": "13927801000149-1-001007/2026",
     "numeroCompra": "008/2026",
-    "modalidadeId": 10,
+    "modalidadeId": 1,
     "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Contratação de vigilância patrimonial armada",
-    "informacaoComplementar": "Contratação de serviços continuados de vigilância patrimonial armada 24x7, com escala 12x36, em 14 postos distribuídos.",
-    "valorTotalEstimado": 1876453.77,
-    "dataPublicacaoPncp": "2026-04-10T22:00:00+00:00",
-    "dataAberturaProposta": "2026-04-11T22:00:00+00:00",
-    "dataEncerramentoProposta": "2026-05-17T23:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/18715615000160-1-001007/2026",
+    "objetoCompra": "Recapeamento asfáltico de vias urbanas",
+    "informacaoComplementar": "Contratação de empresa especializada para execução de serviços de recapeamento asfáltico, fresagem e sinalização viária em vias principais do município, incluindo drenagem superficial.",
+    "valorTotalEstimado": 47833799.75,
+    "dataPublicacaoPncp": "2026-03-31T12:00:00+00:00",
+    "dataAberturaProposta": "2026-04-01T12:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-09T13:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/13927801000149-1-001007/2026",
     "orgaoEntidade": {
-      "cnpj": "18715615000160",
-      "razaoSocial": "Governo do Estado de Minas Gerais",
-      "nomeFantasia": "GovMG",
-      "esferaId": "estadual",
+      "cnpj": "13927801000149",
+      "razaoSocial": "Prefeitura Municipal de Campinas",
+      "nomeFantasia": "PMC-SP",
+      "esferaId": "municipal",
       "poderId": "executivo"
     },
     "unidadeOrgao": {
-      "ufSigla": "MG",
-      "municipioNome": "Belo Horizonte",
+      "ufSigla": "SP",
+      "municipioNome": "Campinas",
       "codigoIbge": null
     },
     "itens": [
       {
         "numeroItem": 1,
         "numeroLote": 1,
-        "descricao": "Posto vigilância armada 12x36 diurno",
-        "unidadeMedida": "m",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 93.07,
-        "valorTotal": 465350.0,
-        "codigoItemCatalogo": "BR788832"
+        "descricao": "Recapeamento CBUQ 4cm m²",
+        "unidadeMedida": "m²",
+        "quantidade": 198395,
+        "valorUnitarioEstimado": 80.69,
+        "valorTotal": 16008492.55,
+        "codigoItemCatalogo": "BRBF0AEB"
       },
       {
         "numeroItem": 2,
         "numeroLote": 1,
-        "descricao": "Posto vigilância armada 12x36 noturno",
+        "descricao": "Fresagem m²",
+        "unidadeMedida": "m²",
+        "quantidade": 1059342,
+        "valorUnitarioEstimado": 10.93,
+        "valorTotal": 11578608.06,
+        "codigoItemCatalogo": "BR45A0E9"
+      },
+      {
+        "numeroItem": 3,
+        "numeroLote": 1,
+        "descricao": "Pintura de faixa m",
         "unidadeMedida": "m",
-        "quantidade": 500,
-        "valorUnitarioEstimado": 2822.21,
-        "valorTotal": 1411105.0,
-        "codigoItemCatalogo": "BR962211"
+        "quantidade": 2091603,
+        "valorUnitarioEstimado": 9.68,
+        "valorTotal": 20246717.04,
+        "codigoItemCatalogo": "BR6360E2"
       }
     ]
   },
   {
-    "numeroControlePNCP": "46395000000139-1-001008/2026",
+    "numeroControlePNCP": "33683111000107-1-001008/2026",
     "numeroCompra": "009/2026",
-    "modalidadeId": 11,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Contratação de serviços de hemodiálise",
-    "informacaoComplementar": "Contratação por credenciamento de clínicas para oferta de sessões de hemodiálise a pacientes do SUS, conforme tabela SUS/2025 e critérios técnicos do Ministério da Saúde.",
-    "valorTotalEstimado": 14436778.64,
-    "dataPublicacaoPncp": "2026-03-27T00:00:00+00:00",
-    "dataAberturaProposta": "2026-03-28T00:00:00+00:00",
-    "dataEncerramentoProposta": "2026-05-05T04:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/46395000000139-1-001008/2026",
-    "orgaoEntidade": {
-      "cnpj": "46395000000139",
-      "razaoSocial": "Prefeitura Municipal de São Paulo",
-      "nomeFantasia": "PMSP",
-      "esferaId": "municipal",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "SP",
-      "municipioNome": "São Paulo",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Sessão de hemodiálise",
-        "unidadeMedida": "sessão",
-        "quantidade": 1000,
-        "valorUnitarioEstimado": 5839.87,
-        "valorTotal": 5839870.0,
-        "codigoItemCatalogo": "BR391649"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Sessão de hemodiálise de urgência",
-        "unidadeMedida": "sessão",
-        "quantidade": 12,
-        "valorUnitarioEstimado": 716409.37,
-        "valorTotal": 8596912.44,
-        "codigoItemCatalogo": "BR159786"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "33683111000107-1-001009/2026",
-    "numeroCompra": "010/2026",
-    "modalidadeId": 1,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Contratação de monitoramento eletrônico urbano",
-    "informacaoComplementar": "Implantação e operação de sistema de monitoramento por câmeras CFTV com analítico de vídeo e integração com o centro de operações integradas.",
-    "valorTotalEstimado": 8650183.99,
-    "dataPublicacaoPncp": "2026-04-06T01:00:00+00:00",
-    "dataAberturaProposta": "2026-04-07T01:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-22T08:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/33683111000107-1-001009/2026",
-    "orgaoEntidade": {
-      "cnpj": "33683111000107",
-      "razaoSocial": "Instituto Federal de São Paulo",
-      "nomeFantasia": "IFSP",
-      "esferaId": "federal",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "SP",
-      "municipioNome": "São Paulo",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Câmera CFTV PTZ",
-        "unidadeMedida": "m",
-        "quantidade": 12,
-        "valorUnitarioEstimado": 354345.0,
-        "valorTotal": 4252140.0,
-        "codigoItemCatalogo": "BR647627"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Câmera fixa 4MP",
-        "unidadeMedida": "m",
-        "quantidade": 50,
-        "valorUnitarioEstimado": 22306.49,
-        "valorTotal": 1115324.5,
-        "codigoItemCatalogo": "BR407838"
-      },
-      {
-        "numeroItem": 3,
-        "numeroLote": 1,
-        "descricao": "Licença analítico de vídeo",
-        "unidadeMedida": "unidade",
-        "quantidade": 12,
-        "valorUnitarioEstimado": 273559.96,
-        "valorTotal": 3282719.52,
-        "codigoItemCatalogo": "BR447074"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "07526557000100-1-001010/2026",
-    "numeroCompra": "011/2026",
-    "modalidadeId": 4,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Aquisição de coletes balísticos nível IIIA",
-    "informacaoComplementar": "Aquisição de coletes balísticos nível IIIA com plano reforçado para operações especiais, atendendo aos padrões do Exército Brasileiro.",
-    "valorTotalEstimado": 5888838.21,
-    "dataPublicacaoPncp": "2026-04-04T09:00:00+00:00",
-    "dataAberturaProposta": "2026-04-05T09:00:00+00:00",
-    "dataEncerramentoProposta": "2026-05-14T17:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/07526557000100-1-001010/2026",
-    "orgaoEntidade": {
-      "cnpj": "07526557000100",
-      "razaoSocial": "Universidade Federal de Minas Gerais",
-      "nomeFantasia": "UFMG",
-      "esferaId": "federal",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "MG",
-      "municipioNome": "Belo Horizonte",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Colete balístico nível IIIA",
-        "unidadeMedida": "unidade",
-        "quantidade": 50,
-        "valorUnitarioEstimado": 117776.76,
-        "valorTotal": 5888838.0,
-        "codigoItemCatalogo": "BR846040"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "18715615000160-1-001011/2026",
-    "numeroCompra": "012/2026",
-    "modalidadeId": 1,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Aquisição de combustíveis para frota",
-    "informacaoComplementar": "Registro de preços para fornecimento parcelado de gasolina comum e óleo diesel S10 para abastecimento da frota oficial.",
-    "valorTotalEstimado": 877089.6,
-    "dataPublicacaoPncp": "2026-04-14T07:00:00+00:00",
-    "dataAberturaProposta": "2026-04-15T07:00:00+00:00",
-    "dataEncerramentoProposta": "2026-05-26T08:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/18715615000160-1-001011/2026",
-    "orgaoEntidade": {
-      "cnpj": "18715615000160",
-      "razaoSocial": "Governo do Estado de Minas Gerais",
-      "nomeFantasia": "GovMG",
-      "esferaId": "estadual",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "MG",
-      "municipioNome": "Belo Horizonte",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Gasolina comum (litro)",
-        "unidadeMedida": "m",
-        "quantidade": 12,
-        "valorUnitarioEstimado": 31296.07,
-        "valorTotal": 375552.84,
-        "codigoItemCatalogo": "BR275821"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Óleo diesel S10 (litro)",
-        "unidadeMedida": "litro",
-        "quantidade": 100,
-        "valorUnitarioEstimado": 5015.37,
-        "valorTotal": 501537.0,
-        "codigoItemCatalogo": "BR666754"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "27080619000160-1-001012/2026",
-    "numeroCompra": "013/2026",
-    "modalidadeId": 3,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Aquisição de livros didáticos complementares",
-    "informacaoComplementar": "Registro de preços para aquisição de livros didáticos e material pedagógico complementar destinado ao fortalecimento das ações de alfabetização.",
-    "valorTotalEstimado": 2580988.56,
-    "dataPublicacaoPncp": "2026-03-29T09:00:00+00:00",
-    "dataAberturaProposta": "2026-03-30T09:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-20T17:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/27080619000160-1-001012/2026",
-    "orgaoEntidade": {
-      "cnpj": "27080619000160",
-      "razaoSocial": "Prefeitura Municipal de Porto Alegre",
-      "nomeFantasia": "PMPA",
-      "esferaId": "municipal",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "RS",
-      "municipioNome": "Porto Alegre",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Livro didático ciências 5º ano",
-        "unidadeMedida": "unidade",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 186.75,
-        "valorTotal": 933750.0,
-        "codigoItemCatalogo": "BR183451"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Livro didático matemática 5º ano",
-        "unidadeMedida": "m",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 329.44,
-        "valorTotal": 1647200.0,
-        "codigoItemCatalogo": "BR855811"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "27080571000170-1-001013/2026",
-    "numeroCompra": "014/2026",
-    "modalidadeId": 3,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Reforma de escola municipal",
-    "informacaoComplementar": "Serviços de reforma estrutural e adequação de acessibilidade em unidade escolar, incluindo troca de cobertura, pintura, elétrica e hidráulica.",
-    "valorTotalEstimado": 5402863.94,
-    "dataPublicacaoPncp": "2026-04-02T17:00:00+00:00",
-    "dataAberturaProposta": "2026-04-03T17:00:00+00:00",
-    "dataEncerramentoProposta": "2026-05-02T00:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/27080571000170-1-001013/2026",
-    "orgaoEntidade": {
-      "cnpj": "27080571000170",
-      "razaoSocial": "Secretaria de Estado da Saúde do Rio Grande do Sul",
-      "nomeFantasia": "SES-RS",
-      "esferaId": "estadual",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "RS",
-      "municipioNome": "Porto Alegre",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Reforma estrutural escola (serviço global)",
-        "unidadeMedida": "m",
-        "quantidade": 50,
-        "valorUnitarioEstimado": 108057.28,
-        "valorTotal": 5402864.0,
-        "codigoItemCatalogo": "BR244447"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "14390500000116-1-001014/2026",
-    "numeroCompra": "015/2026",
-    "modalidadeId": 1,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Aquisição de materiais de escritório diversos",
-    "informacaoComplementar": "Registro de preços para aquisição parcelada de materiais de expediente e consumíveis de escritório para unidades administrativas.",
-    "valorTotalEstimado": 10322643.03,
-    "dataPublicacaoPncp": "2026-04-08T14:00:00+00:00",
-    "dataAberturaProposta": "2026-04-09T14:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-18T14:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/14390500000116-1-001014/2026",
-    "orgaoEntidade": {
-      "cnpj": "14390500000116",
-      "razaoSocial": "Prefeitura Municipal de Salvador",
-      "nomeFantasia": "PMS",
-      "esferaId": "municipal",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "BA",
-      "municipioNome": "Salvador",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Papel A4 75g resma 500fl",
-        "unidadeMedida": "resma",
-        "quantidade": 100,
-        "valorUnitarioEstimado": 22839.59,
-        "valorTotal": 2283959.0,
-        "codigoItemCatalogo": "BR825984"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Toner laser preto",
-        "unidadeMedida": "unidade",
-        "quantidade": 500,
-        "valorUnitarioEstimado": 4558.63,
-        "valorTotal": 2279315.0,
-        "codigoItemCatalogo": "BR499205"
-      },
-      {
-        "numeroItem": 3,
-        "numeroLote": 1,
-        "descricao": "Caneta esferográfica azul",
-        "unidadeMedida": "unidade",
-        "quantidade": 100,
-        "valorUnitarioEstimado": 57593.7,
-        "valorTotal": 5759370.0,
-        "codigoItemCatalogo": "BR499634"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "14390500000116-1-001015/2026",
-    "numeroCompra": "016/2026",
-    "modalidadeId": 3,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Aquisição de materiais de escritório diversos",
-    "informacaoComplementar": "Registro de preços para aquisição parcelada de materiais de expediente e consumíveis de escritório para unidades administrativas.",
-    "valorTotalEstimado": 1208323.23,
-    "dataPublicacaoPncp": "2026-03-27T23:00:00+00:00",
-    "dataAberturaProposta": "2026-03-28T23:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-18T06:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/14390500000116-1-001015/2026",
-    "orgaoEntidade": {
-      "cnpj": "14390500000116",
-      "razaoSocial": "Prefeitura Municipal de Salvador",
-      "nomeFantasia": "PMS",
-      "esferaId": "municipal",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "BA",
-      "municipioNome": "Salvador",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Papel A4 75g resma 500fl",
-        "unidadeMedida": "resma",
-        "quantidade": 500,
-        "valorUnitarioEstimado": 795.84,
-        "valorTotal": 397920.0,
-        "codigoItemCatalogo": "BR825984"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Toner laser preto",
-        "unidadeMedida": "unidade",
-        "quantidade": 12,
-        "valorUnitarioEstimado": 21835.7,
-        "valorTotal": 262028.4,
-        "codigoItemCatalogo": "BR499205"
-      },
-      {
-        "numeroItem": 3,
-        "numeroLote": 1,
-        "descricao": "Caneta esferográfica azul",
-        "unidadeMedida": "unidade",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 109.68,
-        "valorTotal": 548400.0,
-        "codigoItemCatalogo": "BR499634"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "33683111000107-1-001016/2026",
-    "numeroCompra": "017/2026",
     "modalidadeId": 1,
     "situacaoCompraNome": "Divulgada",
     "objetoCompra": "Aquisição de notebooks para servidores públicos",
     "informacaoComplementar": "Registro de preços para aquisição de 800 notebooks corporativos, 16GB RAM, SSD 512GB, processador Intel Core i7 ou equivalente, garantia on-site 36 meses.",
-    "valorTotalEstimado": 6386036.43,
-    "dataPublicacaoPncp": "2026-04-14T02:00:00+00:00",
-    "dataAberturaProposta": "2026-04-15T02:00:00+00:00",
-    "dataEncerramentoProposta": "2026-05-11T03:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/33683111000107-1-001016/2026",
+    "valorTotalEstimado": 14311857.32,
+    "dataPublicacaoPncp": "2026-03-24T21:00:00+00:00",
+    "dataAberturaProposta": "2026-03-25T21:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-17T02:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/33683111000107-1-001008/2026",
     "orgaoEntidade": {
       "cnpj": "33683111000107",
       "razaoSocial": "Instituto Federal de São Paulo",
@@ -821,176 +415,25 @@
         "numeroLote": 1,
         "descricao": "Notebook corporativo i7 16GB 512GB",
         "unidadeMedida": "unidade",
-        "quantidade": 200,
-        "valorUnitarioEstimado": 31930.18,
-        "valorTotal": 6386036.0,
-        "codigoItemCatalogo": "BR958056"
+        "quantidade": 1616,
+        "valorUnitarioEstimado": 8855.4,
+        "valorTotal": 14310326.4,
+        "codigoItemCatalogo": "BRDCC626"
       }
     ]
   },
   {
-    "numeroControlePNCP": "00394452000103-1-001017/2026",
-    "numeroCompra": "018/2026",
+    "numeroControlePNCP": "13927801000149-1-001009/2026",
+    "numeroCompra": "010/2026",
     "modalidadeId": 9,
     "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Consultoria para modernização administrativa",
-    "informacaoComplementar": "Contratação de consultoria especializada para elaboração de diagnóstico organizacional e plano de modernização dos processos administrativos.",
-    "valorTotalEstimado": 226356.39,
-    "dataPublicacaoPncp": "2026-03-31T21:00:00+00:00",
-    "dataAberturaProposta": "2026-04-01T21:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-12T21:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/00394452000103-1-001017/2026",
-    "orgaoEntidade": {
-      "cnpj": "00394452000103",
-      "razaoSocial": "Ministério da Educação",
-      "nomeFantasia": "MEC",
-      "esferaId": "federal",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "DF",
-      "municipioNome": "Brasília",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Serviço de consultoria (hora técnica sênior)",
-        "unidadeMedida": "hora",
-        "quantidade": 50,
-        "valorUnitarioEstimado": 4527.13,
-        "valorTotal": 226356.5,
-        "codigoItemCatalogo": "BR191639"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "18715383000140-1-001018/2026",
-    "numeroCompra": "019/2026",
-    "modalidadeId": 4,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Recapeamento asfáltico de vias urbanas",
-    "informacaoComplementar": "Contratação de empresa especializada para execução de serviços de recapeamento asfáltico, fresagem e sinalização viária em vias principais do município, incluindo drenagem superficial.",
-    "valorTotalEstimado": 31416614.08,
-    "dataPublicacaoPncp": "2026-03-30T23:00:00+00:00",
-    "dataAberturaProposta": "2026-03-31T23:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-19T05:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/18715383000140-1-001018/2026",
-    "orgaoEntidade": {
-      "cnpj": "18715383000140",
-      "razaoSocial": "Prefeitura Municipal de Belo Horizonte",
-      "nomeFantasia": "PBH",
-      "esferaId": "municipal",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "MG",
-      "municipioNome": "Belo Horizonte",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Recapeamento CBUQ 4cm m²",
-        "unidadeMedida": "m²",
-        "quantidade": 12,
-        "valorUnitarioEstimado": 1251311.75,
-        "valorTotal": 15015741.0,
-        "codigoItemCatalogo": "BR751275"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Fresagem m²",
-        "unidadeMedida": "m²",
-        "quantidade": 500,
-        "valorUnitarioEstimado": 11037.87,
-        "valorTotal": 5518935.0,
-        "codigoItemCatalogo": "BR933197"
-      },
-      {
-        "numeroItem": 3,
-        "numeroLote": 1,
-        "descricao": "Pintura de faixa m",
-        "unidadeMedida": "m",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 2176.39,
-        "valorTotal": 10881950.0,
-        "codigoItemCatalogo": "BR353365"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "07526557000100-1-001019/2026",
-    "numeroCompra": "020/2026",
-    "modalidadeId": 9,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Aquisição de materiais de escritório diversos",
-    "informacaoComplementar": "Registro de preços para aquisição parcelada de materiais de expediente e consumíveis de escritório para unidades administrativas.",
-    "valorTotalEstimado": 8988307.95,
-    "dataPublicacaoPncp": "2026-04-09T05:00:00+00:00",
-    "dataAberturaProposta": "2026-04-10T05:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-28T05:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/07526557000100-1-001019/2026",
-    "orgaoEntidade": {
-      "cnpj": "07526557000100",
-      "razaoSocial": "Universidade Federal de Minas Gerais",
-      "nomeFantasia": "UFMG",
-      "esferaId": "federal",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "MG",
-      "municipioNome": "Belo Horizonte",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Papel A4 75g resma 500fl",
-        "unidadeMedida": "resma",
-        "quantidade": 1000,
-        "valorUnitarioEstimado": 1951.81,
-        "valorTotal": 1951810.0,
-        "codigoItemCatalogo": "BR825984"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Toner laser preto",
-        "unidadeMedida": "unidade",
-        "quantidade": 12,
-        "valorUnitarioEstimado": 201148.08,
-        "valorTotal": 2413776.96,
-        "codigoItemCatalogo": "BR499205"
-      },
-      {
-        "numeroItem": 3,
-        "numeroLote": 1,
-        "descricao": "Caneta esferográfica azul",
-        "unidadeMedida": "unidade",
-        "quantidade": 1000,
-        "valorUnitarioEstimado": 4622.72,
-        "valorTotal": 4622720.0,
-        "codigoItemCatalogo": "BR499634"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "13927801000149-1-001020/2026",
-    "numeroCompra": "021/2026",
-    "modalidadeId": 9,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Aquisição de gêneros alimentícios para merenda escolar",
-    "informacaoComplementar": "Aquisição de itens da agricultura familiar e gêneros alimentícios não perecíveis destinados à alimentação escolar das escolas municipais, conforme Lei 11.947/2009.",
-    "valorTotalEstimado": 1482645.04,
-    "dataPublicacaoPncp": "2026-04-13T09:00:00+00:00",
-    "dataAberturaProposta": "2026-04-14T09:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-23T10:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/13927801000149-1-001020/2026",
+    "objetoCompra": "Aquisição de coletes balísticos nível IIIA",
+    "informacaoComplementar": "Aquisição de coletes balísticos nível IIIA com plano reforçado para operações especiais, atendendo aos padrões do Exército Brasileiro.",
+    "valorTotalEstimado": 9162004.06,
+    "dataPublicacaoPncp": "2026-04-11T18:00:00+00:00",
+    "dataAberturaProposta": "2026-04-12T18:00:00+00:00",
+    "dataEncerramentoProposta": "2026-05-07T02:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/13927801000149-1-001009/2026",
     "orgaoEntidade": {
       "cnpj": "13927801000149",
       "razaoSocial": "Prefeitura Municipal de Campinas",
@@ -1007,191 +450,37 @@
       {
         "numeroItem": 1,
         "numeroLote": 1,
-        "descricao": "Arroz parboilizado 5kg",
-        "unidadeMedida": "quilograma",
-        "quantidade": 100,
-        "valorUnitarioEstimado": 6925.23,
-        "valorTotal": 692523.0,
-        "codigoItemCatalogo": "BR606301"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Feijão carioca 1kg",
-        "unidadeMedida": "quilograma",
-        "quantidade": 50,
-        "valorUnitarioEstimado": 5904.99,
-        "valorTotal": 295249.5,
-        "codigoItemCatalogo": "BR534006"
-      },
-      {
-        "numeroItem": 3,
-        "numeroLote": 1,
-        "descricao": "Leite UHT integral 1L",
+        "descricao": "Colete balístico nível IIIA",
         "unidadeMedida": "unidade",
-        "quantidade": 500,
-        "valorUnitarioEstimado": 381.86,
-        "valorTotal": 190930.0,
-        "codigoItemCatalogo": "BR134732"
-      },
-      {
-        "numeroItem": 4,
-        "numeroLote": 1,
-        "descricao": "Óleo de soja 900ml",
-        "unidadeMedida": "unidade",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 60.79,
-        "valorTotal": 303950.0,
-        "codigoItemCatalogo": "BR878282"
+        "quantidade": 3764,
+        "valorUnitarioEstimado": 2434.02,
+        "valorTotal": 9161651.28,
+        "codigoItemCatalogo": "BR43F314"
       }
     ]
   },
   {
-    "numeroControlePNCP": "42498600000171-1-001021/2026",
-    "numeroCompra": "022/2026",
-    "modalidadeId": 1,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Aquisição de materiais de escritório diversos",
-    "informacaoComplementar": "Registro de preços para aquisição parcelada de materiais de expediente e consumíveis de escritório para unidades administrativas.",
-    "valorTotalEstimado": 7763734.43,
-    "dataPublicacaoPncp": "2026-04-08T17:00:00+00:00",
-    "dataAberturaProposta": "2026-04-09T17:00:00+00:00",
-    "dataEncerramentoProposta": "2026-05-04T20:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/42498600000171-1-001021/2026",
-    "orgaoEntidade": {
-      "cnpj": "42498600000171",
-      "razaoSocial": "Governo do Estado do Paraná",
-      "nomeFantasia": "GovPR",
-      "esferaId": "estadual",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "PR",
-      "municipioNome": "Curitiba",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Papel A4 75g resma 500fl",
-        "unidadeMedida": "resma",
-        "quantidade": 12,
-        "valorUnitarioEstimado": 218139.83,
-        "valorTotal": 2617677.96,
-        "codigoItemCatalogo": "BR825984"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Toner laser preto",
-        "unidadeMedida": "unidade",
-        "quantidade": 50,
-        "valorUnitarioEstimado": 49476.28,
-        "valorTotal": 2473814.0,
-        "codigoItemCatalogo": "BR499205"
-      },
-      {
-        "numeroItem": 3,
-        "numeroLote": 1,
-        "descricao": "Caneta esferográfica azul",
-        "unidadeMedida": "unidade",
-        "quantidade": 500,
-        "valorUnitarioEstimado": 5344.49,
-        "valorTotal": 2672245.0,
-        "codigoItemCatalogo": "BR499634"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "13381447000130-1-001022/2026",
-    "numeroCompra": "023/2026",
+    "numeroControlePNCP": "33649282000108-1-001010/2026",
+    "numeroCompra": "011/2026",
     "modalidadeId": 4,
     "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Aquisição de medicamentos da farmácia básica",
-    "informacaoComplementar": "Aquisição emergencial de medicamentos constantes da RENAME destinados ao abastecimento das unidades básicas de saúde municipais, com entrega fracionada em 12 parcelas mensais.",
-    "valorTotalEstimado": 7440979.61,
-    "dataPublicacaoPncp": "2026-04-08T22:00:00+00:00",
-    "dataAberturaProposta": "2026-04-09T22:00:00+00:00",
-    "dataEncerramentoProposta": "2026-05-01T00:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/13381447000130-1-001022/2026",
-    "orgaoEntidade": {
-      "cnpj": "13381447000130",
-      "razaoSocial": "Prefeitura Municipal de Fortaleza",
-      "nomeFantasia": "PMF",
-      "esferaId": "municipal",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "CE",
-      "municipioNome": "Fortaleza",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Dipirona 500mg comprimido",
-        "unidadeMedida": "comprimido",
-        "quantidade": 12,
-        "valorUnitarioEstimado": 153361.1,
-        "valorTotal": 1840333.2,
-        "codigoItemCatalogo": "BR338239"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Losartana 50mg comprimido",
-        "unidadeMedida": "comprimido",
-        "quantidade": 200,
-        "valorUnitarioEstimado": 10164.2,
-        "valorTotal": 2032840.0,
-        "codigoItemCatalogo": "BR760549"
-      },
-      {
-        "numeroItem": 3,
-        "numeroLote": 1,
-        "descricao": "Metformina 850mg comprimido",
-        "unidadeMedida": "comprimido",
-        "quantidade": 12,
-        "valorUnitarioEstimado": 114022.11,
-        "valorTotal": 1368265.32,
-        "codigoItemCatalogo": "BR426983"
-      },
-      {
-        "numeroItem": 4,
-        "numeroLote": 1,
-        "descricao": "Amoxicilina 500mg cápsula",
-        "unidadeMedida": "cápsula",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 439.91,
-        "valorTotal": 2199550.0,
-        "codigoItemCatalogo": "BR110711"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "13381447000130-1-001023/2026",
-    "numeroCompra": "024/2026",
-    "modalidadeId": 1,
-    "situacaoCompraNome": "Divulgada",
     "objetoCompra": "Aquisição de materiais de escritório diversos",
     "informacaoComplementar": "Registro de preços para aquisição parcelada de materiais de expediente e consumíveis de escritório para unidades administrativas.",
-    "valorTotalEstimado": 8921879.37,
-    "dataPublicacaoPncp": "2026-04-05T17:00:00+00:00",
-    "dataAberturaProposta": "2026-04-06T17:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-17T19:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/13381447000130-1-001023/2026",
+    "valorTotalEstimado": 9988403.08,
+    "dataPublicacaoPncp": "2026-04-04T23:00:00+00:00",
+    "dataAberturaProposta": "2026-04-05T23:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-12T00:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/33649282000108-1-001010/2026",
     "orgaoEntidade": {
-      "cnpj": "13381447000130",
-      "razaoSocial": "Prefeitura Municipal de Fortaleza",
-      "nomeFantasia": "PMF",
+      "cnpj": "33649282000108",
+      "razaoSocial": "Prefeitura Municipal do Rio de Janeiro",
+      "nomeFantasia": "PMR",
       "esferaId": "municipal",
       "poderId": "executivo"
     },
     "unidadeOrgao": {
-      "ufSigla": "CE",
-      "municipioNome": "Fortaleza",
+      "ufSigla": "RJ",
+      "municipioNome": "Rio de Janeiro",
       "codigoIbge": null
     },
     "itens": [
@@ -1200,55 +489,92 @@
         "numeroLote": 1,
         "descricao": "Papel A4 75g resma 500fl",
         "unidadeMedida": "resma",
-        "quantidade": 200,
-        "valorUnitarioEstimado": 11002.21,
-        "valorTotal": 2200442.0,
-        "codigoItemCatalogo": "BR825984"
+        "quantidade": 130532,
+        "valorUnitarioEstimado": 23.54,
+        "valorTotal": 3072723.28,
+        "codigoItemCatalogo": "BRD696BA"
       },
       {
         "numeroItem": 2,
         "numeroLote": 1,
         "descricao": "Toner laser preto",
         "unidadeMedida": "unidade",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 512.78,
-        "valorTotal": 2563900.0,
-        "codigoItemCatalogo": "BR499205"
+        "quantidade": 8888,
+        "valorUnitarioEstimado": 394.71,
+        "valorTotal": 3508182.48,
+        "codigoItemCatalogo": "BREBE832"
       },
       {
         "numeroItem": 3,
         "numeroLote": 1,
         "descricao": "Caneta esferográfica azul",
         "unidadeMedida": "unidade",
-        "quantidade": 200,
-        "valorUnitarioEstimado": 20787.76,
-        "valorTotal": 4157552.0,
-        "codigoItemCatalogo": "BR499634"
+        "quantidade": 2227012,
+        "valorUnitarioEstimado": 1.53,
+        "valorTotal": 3407328.36,
+        "codigoItemCatalogo": "BRD99034"
       }
     ]
   },
   {
-    "numeroControlePNCP": "42498600000171-1-001024/2026",
-    "numeroCompra": "025/2026",
+    "numeroControlePNCP": "13381447000130-1-001011/2026",
+    "numeroCompra": "012/2026",
+    "modalidadeId": 4,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Consultoria para modernização administrativa",
+    "informacaoComplementar": "Contratação de consultoria especializada para elaboração de diagnóstico organizacional e plano de modernização dos processos administrativos.",
+    "valorTotalEstimado": 6355701.76,
+    "dataPublicacaoPncp": "2026-03-22T10:00:00+00:00",
+    "dataAberturaProposta": "2026-03-23T10:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-05T17:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/13381447000130-1-001011/2026",
+    "orgaoEntidade": {
+      "cnpj": "13381447000130",
+      "razaoSocial": "Prefeitura Municipal de Fortaleza",
+      "nomeFantasia": "PMF",
+      "esferaId": "municipal",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "CE",
+      "municipioNome": "Fortaleza",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Serviço de consultoria (hora técnica sênior)",
+        "unidadeMedida": "hora",
+        "quantidade": 14573,
+        "valorUnitarioEstimado": 436.12,
+        "valorTotal": 6355576.76,
+        "codigoItemCatalogo": "BRCBB3ED"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "46392130000380-1-001012/2026",
+    "numeroCompra": "013/2026",
     "modalidadeId": 1,
     "situacaoCompraNome": "Divulgada",
     "objetoCompra": "Reforma de escola municipal",
     "informacaoComplementar": "Serviços de reforma estrutural e adequação de acessibilidade em unidade escolar, incluindo troca de cobertura, pintura, elétrica e hidráulica.",
-    "valorTotalEstimado": 582591.42,
-    "dataPublicacaoPncp": "2026-03-29T23:00:00+00:00",
-    "dataAberturaProposta": "2026-03-30T23:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-20T23:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/42498600000171-1-001024/2026",
+    "valorTotalEstimado": 18208377.76,
+    "dataPublicacaoPncp": "2026-03-24T05:00:00+00:00",
+    "dataAberturaProposta": "2026-03-25T05:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-24T10:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/46392130000380-1-001012/2026",
     "orgaoEntidade": {
-      "cnpj": "42498600000171",
-      "razaoSocial": "Governo do Estado do Paraná",
-      "nomeFantasia": "GovPR",
+      "cnpj": "46392130000380",
+      "razaoSocial": "Secretaria de Estado da Saúde de São Paulo",
+      "nomeFantasia": "SES-SP",
       "esferaId": "estadual",
       "poderId": "executivo"
     },
     "unidadeOrgao": {
-      "ufSigla": "PR",
-      "municipioNome": "Curitiba",
+      "ufSigla": "SP",
+      "municipioNome": "São Paulo",
       "codigoIbge": null
     },
     "itens": [
@@ -1257,82 +583,35 @@
         "numeroLote": 1,
         "descricao": "Reforma estrutural escola (serviço global)",
         "unidadeMedida": "m",
-        "quantidade": 12,
-        "valorUnitarioEstimado": 48549.29,
-        "valorTotal": 582591.48,
-        "codigoItemCatalogo": "BR244447"
+        "quantidade": 28,
+        "valorUnitarioEstimado": 640363.35,
+        "valorTotal": 17930173.8,
+        "codigoItemCatalogo": "BRFB4E5A"
       }
     ]
   },
   {
-    "numeroControlePNCP": "42498600000171-1-001025/2026",
-    "numeroCompra": "026/2026",
-    "modalidadeId": 9,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Aquisição de livros didáticos complementares",
-    "informacaoComplementar": "Registro de preços para aquisição de livros didáticos e material pedagógico complementar destinado ao fortalecimento das ações de alfabetização.",
-    "valorTotalEstimado": 1386892.87,
-    "dataPublicacaoPncp": "2026-04-09T15:00:00+00:00",
-    "dataAberturaProposta": "2026-04-10T15:00:00+00:00",
-    "dataEncerramentoProposta": "2026-05-13T23:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/42498600000171-1-001025/2026",
-    "orgaoEntidade": {
-      "cnpj": "42498600000171",
-      "razaoSocial": "Governo do Estado do Paraná",
-      "nomeFantasia": "GovPR",
-      "esferaId": "estadual",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "PR",
-      "municipioNome": "Curitiba",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Livro didático ciências 5º ano",
-        "unidadeMedida": "unidade",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 134.12,
-        "valorTotal": 670600.0,
-        "codigoItemCatalogo": "BR183451"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Livro didático matemática 5º ano",
-        "unidadeMedida": "m",
-        "quantidade": 100,
-        "valorUnitarioEstimado": 7163.09,
-        "valorTotal": 716309.0,
-        "codigoItemCatalogo": "BR855811"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "10832074000155-1-001026/2026",
-    "numeroCompra": "027/2026",
+    "numeroControlePNCP": "14390500000116-1-001013/2026",
+    "numeroCompra": "014/2026",
     "modalidadeId": 1,
     "situacaoCompraNome": "Divulgada",
     "objetoCompra": "Aquisição de materiais de escritório diversos",
     "informacaoComplementar": "Registro de preços para aquisição parcelada de materiais de expediente e consumíveis de escritório para unidades administrativas.",
-    "valorTotalEstimado": 10792828.79,
-    "dataPublicacaoPncp": "2026-03-27T21:00:00+00:00",
-    "dataAberturaProposta": "2026-03-28T21:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-12T03:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/10832074000155-1-001026/2026",
+    "valorTotalEstimado": 10322643.03,
+    "dataPublicacaoPncp": "2026-04-08T14:00:00+00:00",
+    "dataAberturaProposta": "2026-04-09T14:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-18T14:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/14390500000116-1-001013/2026",
     "orgaoEntidade": {
-      "cnpj": "10832074000155",
-      "razaoSocial": "Secretaria de Segurança Pública do Ceará",
-      "nomeFantasia": "SSP-CE",
-      "esferaId": "estadual",
+      "cnpj": "14390500000116",
+      "razaoSocial": "Prefeitura Municipal de Salvador",
+      "nomeFantasia": "PMS",
+      "esferaId": "municipal",
       "poderId": "executivo"
     },
     "unidadeOrgao": {
-      "ufSigla": "CE",
-      "municipioNome": "Fortaleza",
+      "ufSigla": "BA",
+      "municipioNome": "Salvador",
       "codigoIbge": null
     },
     "itens": [
@@ -1341,45 +620,82 @@
         "numeroLote": 1,
         "descricao": "Papel A4 75g resma 500fl",
         "unidadeMedida": "resma",
-        "quantidade": 12,
-        "valorUnitarioEstimado": 394690.77,
-        "valorTotal": 4736289.24,
-        "codigoItemCatalogo": "BR825984"
+        "quantidade": 91504,
+        "valorUnitarioEstimado": 25.36,
+        "valorTotal": 2320541.44,
+        "codigoItemCatalogo": "BRD696BA"
       },
       {
         "numeroItem": 2,
         "numeroLote": 1,
         "descricao": "Toner laser preto",
         "unidadeMedida": "unidade",
-        "quantidade": 200,
-        "valorUnitarioEstimado": 6418.98,
-        "valorTotal": 1283796.0,
-        "codigoItemCatalogo": "BR499205"
+        "quantidade": 11390,
+        "valorUnitarioEstimado": 305.02,
+        "valorTotal": 3474177.8,
+        "codigoItemCatalogo": "BREBE832"
       },
       {
         "numeroItem": 3,
         "numeroLote": 1,
         "descricao": "Caneta esferográfica azul",
         "unidadeMedida": "unidade",
-        "quantidade": 100,
-        "valorUnitarioEstimado": 47727.44,
-        "valorTotal": 4772744.0,
-        "codigoItemCatalogo": "BR499634"
+        "quantidade": 2902601,
+        "valorUnitarioEstimado": 1.56,
+        "valorTotal": 4528057.56,
+        "codigoItemCatalogo": "BRD99034"
       }
     ]
   },
   {
-    "numeroControlePNCP": "33683111000107-1-001027/2026",
-    "numeroCompra": "028/2026",
-    "modalidadeId": 4,
+    "numeroControlePNCP": "27080619000160-1-001014/2026",
+    "numeroCompra": "015/2026",
+    "modalidadeId": 1,
     "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Reforma de escola municipal",
-    "informacaoComplementar": "Serviços de reforma estrutural e adequação de acessibilidade em unidade escolar, incluindo troca de cobertura, pintura, elétrica e hidráulica.",
-    "valorTotalEstimado": 64050996.28,
-    "dataPublicacaoPncp": "2026-04-03T21:00:00+00:00",
-    "dataAberturaProposta": "2026-04-04T21:00:00+00:00",
-    "dataEncerramentoProposta": "2026-05-05T23:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/33683111000107-1-001027/2026",
+    "objetoCompra": "Consultoria para modernização administrativa",
+    "informacaoComplementar": "Contratação de consultoria especializada para elaboração de diagnóstico organizacional e plano de modernização dos processos administrativos.",
+    "valorTotalEstimado": 5111764.55,
+    "dataPublicacaoPncp": "2026-03-21T01:00:00+00:00",
+    "dataAberturaProposta": "2026-03-22T01:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-08T02:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/27080619000160-1-001014/2026",
+    "orgaoEntidade": {
+      "cnpj": "27080619000160",
+      "razaoSocial": "Prefeitura Municipal de Porto Alegre",
+      "nomeFantasia": "PMPA",
+      "esferaId": "municipal",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "RS",
+      "municipioNome": "Porto Alegre",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Serviço de consultoria (hora técnica sênior)",
+        "unidadeMedida": "hora",
+        "quantidade": 12317,
+        "valorUnitarioEstimado": 415.01,
+        "valorTotal": 5111678.17,
+        "codigoItemCatalogo": "BRCBB3ED"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "33683111000107-1-001015/2026",
+    "numeroCompra": "016/2026",
+    "modalidadeId": 1,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Aquisição de notebooks para servidores públicos",
+    "informacaoComplementar": "Registro de preços para aquisição de 800 notebooks corporativos, 16GB RAM, SSD 512GB, processador Intel Core i7 ou equivalente, garantia on-site 36 meses.",
+    "valorTotalEstimado": 6386036.43,
+    "dataPublicacaoPncp": "2026-04-14T02:00:00+00:00",
+    "dataAberturaProposta": "2026-04-15T02:00:00+00:00",
+    "dataEncerramentoProposta": "2026-05-11T03:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/33683111000107-1-001015/2026",
     "orgaoEntidade": {
       "cnpj": "33683111000107",
       "razaoSocial": "Instituto Federal de São Paulo",
@@ -1396,74 +712,27 @@
       {
         "numeroItem": 1,
         "numeroLote": 1,
-        "descricao": "Reforma estrutural escola (serviço global)",
-        "unidadeMedida": "m",
-        "quantidade": 100,
-        "valorUnitarioEstimado": 640509.96,
-        "valorTotal": 64050996.0,
-        "codigoItemCatalogo": "BR244447"
+        "descricao": "Notebook corporativo i7 16GB 512GB",
+        "unidadeMedida": "unidade",
+        "quantidade": 890,
+        "valorUnitarioEstimado": 7178.15,
+        "valorTotal": 6388553.5,
+        "codigoItemCatalogo": "BRDCC626"
       }
     ]
   },
   {
-    "numeroControlePNCP": "00489828000136-1-001028/2026",
-    "numeroCompra": "029/2026",
-    "modalidadeId": 1,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Contratação de serviços de limpeza e conservação",
-    "informacaoComplementar": "Contratação continuada de mão de obra terceirizada para serviços de limpeza, higienização e conservação nas unidades administrativas, com fornecimento de todos os insumos.",
-    "valorTotalEstimado": 1341742.74,
-    "dataPublicacaoPncp": "2026-03-23T04:00:00+00:00",
-    "dataAberturaProposta": "2026-03-24T04:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-24T07:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/00489828000136-1-001028/2026",
-    "orgaoEntidade": {
-      "cnpj": "00489828000136",
-      "razaoSocial": "Empresa Brasileira de Pesquisa Agropecuária",
-      "nomeFantasia": "EMBRAPA",
-      "esferaId": "federal",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "DF",
-      "municipioNome": "Brasília",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Servente de limpeza (posto mensal)",
-        "unidadeMedida": "m",
-        "quantidade": 12,
-        "valorUnitarioEstimado": 51617.96,
-        "valorTotal": 619415.52,
-        "codigoItemCatalogo": "BR616884"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Encarregado de limpeza (posto mensal)",
-        "unidadeMedida": "m",
-        "quantidade": 500,
-        "valorUnitarioEstimado": 1444.65,
-        "valorTotal": 722325.0,
-        "codigoItemCatalogo": "BR815128"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "42498700000143-1-001029/2026",
-    "numeroCompra": "030/2026",
-    "modalidadeId": 1,
+    "numeroControlePNCP": "42498700000143-1-001016/2026",
+    "numeroCompra": "017/2026",
+    "modalidadeId": 9,
     "situacaoCompraNome": "Divulgada",
     "objetoCompra": "Recapeamento asfáltico de vias urbanas",
     "informacaoComplementar": "Contratação de empresa especializada para execução de serviços de recapeamento asfáltico, fresagem e sinalização viária em vias principais do município, incluindo drenagem superficial.",
-    "valorTotalEstimado": 69188929.48,
-    "dataPublicacaoPncp": "2026-04-04T05:00:00+00:00",
-    "dataAberturaProposta": "2026-04-05T05:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-24T08:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/42498700000143-1-001029/2026",
+    "valorTotalEstimado": 7733043.26,
+    "dataPublicacaoPncp": "2026-03-20T21:00:00+00:00",
+    "dataAberturaProposta": "2026-03-21T21:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-01T21:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/42498700000143-1-001016/2026",
     "orgaoEntidade": {
       "cnpj": "42498700000143",
       "razaoSocial": "Prefeitura Municipal de Curitiba",
@@ -1482,186 +751,45 @@
         "numeroLote": 1,
         "descricao": "Recapeamento CBUQ 4cm m²",
         "unidadeMedida": "m²",
-        "quantidade": 200,
-        "valorUnitarioEstimado": 169535.96,
-        "valorTotal": 33907192.0,
-        "codigoItemCatalogo": "BR751275"
+        "quantidade": 50796,
+        "valorUnitarioEstimado": 70.6,
+        "valorTotal": 3586197.6,
+        "codigoItemCatalogo": "BRBF0AEB"
       },
       {
         "numeroItem": 2,
         "numeroLote": 1,
         "descricao": "Fresagem m²",
         "unidadeMedida": "m²",
-        "quantidade": 1000,
-        "valorUnitarioEstimado": 10773.06,
-        "valorTotal": 10773060.0,
-        "codigoItemCatalogo": "BR933197"
+        "quantidade": 119064,
+        "valorUnitarioEstimado": 11.92,
+        "valorTotal": 1419242.88,
+        "codigoItemCatalogo": "BR45A0E9"
       },
       {
         "numeroItem": 3,
         "numeroLote": 1,
         "descricao": "Pintura de faixa m",
         "unidadeMedida": "m",
-        "quantidade": 500,
-        "valorUnitarioEstimado": 49017.35,
-        "valorTotal": 24508675.0,
-        "codigoItemCatalogo": "BR353365"
+        "quantidade": 253732,
+        "valorUnitarioEstimado": 10.75,
+        "valorTotal": 2727619.0,
+        "codigoItemCatalogo": "BR6360E2"
       }
     ]
   },
   {
-    "numeroControlePNCP": "13756663000171-1-001030/2026",
-    "numeroCompra": "031/2026",
+    "numeroControlePNCP": "46395000000139-1-001017/2026",
+    "numeroCompra": "018/2026",
     "modalidadeId": 1,
     "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Aquisição de materiais de escritório diversos",
-    "informacaoComplementar": "Registro de preços para aquisição parcelada de materiais de expediente e consumíveis de escritório para unidades administrativas.",
-    "valorTotalEstimado": 4180960.98,
-    "dataPublicacaoPncp": "2026-04-12T06:00:00+00:00",
-    "dataAberturaProposta": "2026-04-13T06:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-29T10:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/13756663000171-1-001030/2026",
-    "orgaoEntidade": {
-      "cnpj": "13756663000171",
-      "razaoSocial": "Ministério da Gestão e da Inovação em Serviços Públicos",
-      "nomeFantasia": "MGI",
-      "esferaId": "federal",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "DF",
-      "municipioNome": "Brasília",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Papel A4 75g resma 500fl",
-        "unidadeMedida": "resma",
-        "quantidade": 500,
-        "valorUnitarioEstimado": 3645.2,
-        "valorTotal": 1822600.0,
-        "codigoItemCatalogo": "BR825984"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Toner laser preto",
-        "unidadeMedida": "unidade",
-        "quantidade": 1000,
-        "valorUnitarioEstimado": 900.57,
-        "valorTotal": 900570.0,
-        "codigoItemCatalogo": "BR499205"
-      },
-      {
-        "numeroItem": 3,
-        "numeroLote": 1,
-        "descricao": "Caneta esferográfica azul",
-        "unidadeMedida": "unidade",
-        "quantidade": 50,
-        "valorUnitarioEstimado": 29155.82,
-        "valorTotal": 1457791.0,
-        "codigoItemCatalogo": "BR499634"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "42498600000171-1-001031/2026",
-    "numeroCompra": "032/2026",
-    "modalidadeId": 1,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Contratação de serviços de limpeza e conservação",
-    "informacaoComplementar": "Contratação continuada de mão de obra terceirizada para serviços de limpeza, higienização e conservação nas unidades administrativas, com fornecimento de todos os insumos.",
-    "valorTotalEstimado": 8257942.91,
-    "dataPublicacaoPncp": "2026-04-13T16:00:00+00:00",
-    "dataAberturaProposta": "2026-04-14T16:00:00+00:00",
-    "dataEncerramentoProposta": "2026-05-16T16:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/42498600000171-1-001031/2026",
-    "orgaoEntidade": {
-      "cnpj": "42498600000171",
-      "razaoSocial": "Governo do Estado do Paraná",
-      "nomeFantasia": "GovPR",
-      "esferaId": "estadual",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "PR",
-      "municipioNome": "Curitiba",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Servente de limpeza (posto mensal)",
-        "unidadeMedida": "m",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 796.2,
-        "valorTotal": 3981000.0,
-        "codigoItemCatalogo": "BR616884"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Encarregado de limpeza (posto mensal)",
-        "unidadeMedida": "m",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 855.39,
-        "valorTotal": 4276950.0,
-        "codigoItemCatalogo": "BR815128"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "18715383000140-1-001032/2026",
-    "numeroCompra": "033/2026",
-    "modalidadeId": 9,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Construção de unidade básica de saúde",
-    "informacaoComplementar": "Execução de obras civis para construção de UBS padrão do Ministério da Saúde, com 620m² de área construída, incluindo instalações, acabamentos e paisagismo.",
-    "valorTotalEstimado": 40717663.57,
-    "dataPublicacaoPncp": "2026-04-12T17:00:00+00:00",
-    "dataAberturaProposta": "2026-04-13T17:00:00+00:00",
-    "dataEncerramentoProposta": "2026-05-09T22:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/18715383000140-1-001032/2026",
-    "orgaoEntidade": {
-      "cnpj": "18715383000140",
-      "razaoSocial": "Prefeitura Municipal de Belo Horizonte",
-      "nomeFantasia": "PBH",
-      "esferaId": "municipal",
-      "poderId": "executivo"
-    },
-    "unidadeOrgao": {
-      "ufSigla": "MG",
-      "municipioNome": "Belo Horizonte",
-      "codigoIbge": null
-    },
-    "itens": [
-      {
-        "numeroItem": 1,
-        "numeroLote": 1,
-        "descricao": "Construção UBS padrão (serviço global)",
-        "unidadeMedida": "unidade",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 8143.53,
-        "valorTotal": 40717650.0,
-        "codigoItemCatalogo": "BR495266"
-      }
-    ]
-  },
-  {
-    "numeroControlePNCP": "46395000000139-1-001033/2026",
-    "numeroCompra": "034/2026",
-    "modalidadeId": 1,
-    "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Contratação de vigilância patrimonial armada",
-    "informacaoComplementar": "Contratação de serviços continuados de vigilância patrimonial armada 24x7, com escala 12x36, em 14 postos distribuídos.",
-    "valorTotalEstimado": 4580786.06,
-    "dataPublicacaoPncp": "2026-03-24T05:00:00+00:00",
-    "dataAberturaProposta": "2026-03-25T05:00:00+00:00",
-    "dataEncerramentoProposta": "2026-05-04T07:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/46395000000139-1-001033/2026",
+    "objetoCompra": "Aquisição de licenças de software para gestão administrativa",
+    "informacaoComplementar": "Contratação de empresa especializada no fornecimento de licenças de uso de software ERP para modernização dos processos administrativos do órgão, incluindo módulos de finanças, recursos humanos, compras e patrimônio, com suporte técnico 24x7 e migração de dados legados.",
+    "valorTotalEstimado": 11772086.77,
+    "dataPublicacaoPncp": "2026-04-15T02:00:00+00:00",
+    "dataAberturaProposta": "2026-04-16T02:00:00+00:00",
+    "dataEncerramentoProposta": "2026-05-07T09:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/46395000000139-1-001017/2026",
     "orgaoEntidade": {
       "cnpj": "46395000000139",
       "razaoSocial": "Prefeitura Municipal de São Paulo",
@@ -1678,94 +806,178 @@
       {
         "numeroItem": 1,
         "numeroLote": 1,
-        "descricao": "Posto vigilância armada 12x36 diurno",
-        "unidadeMedida": "m",
-        "quantidade": 100,
-        "valorUnitarioEstimado": 19442.71,
-        "valorTotal": 1944271.0,
-        "codigoItemCatalogo": "BR788832"
+        "descricao": "Licença ERP módulo financeiro",
+        "unidadeMedida": "unidade",
+        "quantidade": 60,
+        "valorUnitarioEstimado": 84592.15,
+        "valorTotal": 5075529.0,
+        "codigoItemCatalogo": "BRBC6310"
       },
       {
         "numeroItem": 2,
         "numeroLote": 1,
-        "descricao": "Posto vigilância armada 12x36 noturno",
+        "descricao": "Licença ERP módulo RH",
+        "unidadeMedida": "unidade",
+        "quantidade": 26,
+        "valorUnitarioEstimado": 67377.92,
+        "valorTotal": 1751825.92,
+        "codigoItemCatalogo": "BR60D3DB"
+      },
+      {
+        "numeroItem": 3,
+        "numeroLote": 1,
+        "descricao": "Suporte técnico 24x7 anual",
+        "unidadeMedida": "unidade",
+        "quantidade": 6,
+        "valorUnitarioEstimado": 195275.77,
+        "valorTotal": 1171654.62,
+        "codigoItemCatalogo": "BR6B453F"
+      },
+      {
+        "numeroItem": 4,
+        "numeroLote": 1,
+        "descricao": "Treinamento de usuários",
         "unidadeMedida": "m",
-        "quantidade": 1000,
-        "valorUnitarioEstimado": 2636.52,
-        "valorTotal": 2636520.0,
-        "codigoItemCatalogo": "BR962211"
+        "quantidade": 1010,
+        "valorUnitarioEstimado": 3788.75,
+        "valorTotal": 3826637.5,
+        "codigoItemCatalogo": "BR0793FC"
       }
     ]
   },
   {
-    "numeroControlePNCP": "13381447000130-1-001034/2026",
-    "numeroCompra": "035/2026",
+    "numeroControlePNCP": "00394411000109-1-001018/2026",
+    "numeroCompra": "019/2026",
     "modalidadeId": 1,
     "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Contratação de monitoramento eletrônico urbano",
-    "informacaoComplementar": "Implantação e operação de sistema de monitoramento por câmeras CFTV com analítico de vídeo e integração com o centro de operações integradas.",
-    "valorTotalEstimado": 7299605.77,
-    "dataPublicacaoPncp": "2026-03-20T14:00:00+00:00",
-    "dataAberturaProposta": "2026-03-21T14:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-14T18:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/13381447000130-1-001034/2026",
+    "objetoCompra": "Locação de veículos leves sem motorista",
+    "informacaoComplementar": "Locação continuada de veículos leves de passeio sem motorista para uso administrativo, com quilometragem livre, manutenção e seguro inclusos.",
+    "valorTotalEstimado": 1007332.01,
+    "dataPublicacaoPncp": "2026-03-27T23:00:00+00:00",
+    "dataAberturaProposta": "2026-03-28T23:00:00+00:00",
+    "dataEncerramentoProposta": "2026-05-05T07:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/00394411000109-1-001018/2026",
     "orgaoEntidade": {
-      "cnpj": "13381447000130",
-      "razaoSocial": "Prefeitura Municipal de Fortaleza",
-      "nomeFantasia": "PMF",
-      "esferaId": "municipal",
+      "cnpj": "00394411000109",
+      "razaoSocial": "Ministério da Saúde",
+      "nomeFantasia": "MS",
+      "esferaId": "federal",
       "poderId": "executivo"
     },
     "unidadeOrgao": {
-      "ufSigla": "CE",
-      "municipioNome": "Fortaleza",
+      "ufSigla": "DF",
+      "municipioNome": "Brasília",
       "codigoIbge": null
     },
     "itens": [
       {
         "numeroItem": 1,
         "numeroLote": 1,
-        "descricao": "Câmera CFTV PTZ",
+        "descricao": "Locação veículo passeio 1.0 (mês)",
         "unidadeMedida": "m",
-        "quantidade": 500,
-        "valorUnitarioEstimado": 4331.22,
-        "valorTotal": 2165610.0,
-        "codigoItemCatalogo": "BR647627"
+        "quantidade": 112,
+        "valorUnitarioEstimado": 2378.69,
+        "valorTotal": 266413.28,
+        "codigoItemCatalogo": "BR408539"
       },
       {
         "numeroItem": 2,
         "numeroLote": 1,
-        "descricao": "Câmera fixa 4MP",
+        "descricao": "Locação veículo SUV 1.5 (mês)",
         "unidadeMedida": "m",
-        "quantidade": 100,
-        "valorUnitarioEstimado": 17078.13,
-        "valorTotal": 1707813.0,
-        "codigoItemCatalogo": "BR407838"
-      },
-      {
-        "numeroItem": 3,
-        "numeroLote": 1,
-        "descricao": "Licença analítico de vídeo",
-        "unidadeMedida": "unidade",
-        "quantidade": 1000,
-        "valorUnitarioEstimado": 3426.18,
-        "valorTotal": 3426180.0,
-        "codigoItemCatalogo": "BR447074"
+        "quantidade": 193,
+        "valorUnitarioEstimado": 3827.08,
+        "valorTotal": 738626.44,
+        "codigoItemCatalogo": "BR6D538D"
       }
     ]
   },
   {
-    "numeroControlePNCP": "00394452000103-1-001035/2026",
-    "numeroCompra": "036/2026",
+    "numeroControlePNCP": "33683111000107-1-001019/2026",
+    "numeroCompra": "020/2026",
+    "modalidadeId": 9,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Construção de unidade básica de saúde",
+    "informacaoComplementar": "Execução de obras civis para construção de UBS padrão do Ministério da Saúde, com 620m² de área construída, incluindo instalações, acabamentos e paisagismo.",
+    "valorTotalEstimado": 41965782.43,
+    "dataPublicacaoPncp": "2026-03-17T20:00:00+00:00",
+    "dataAberturaProposta": "2026-03-18T20:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-07T20:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/33683111000107-1-001019/2026",
+    "orgaoEntidade": {
+      "cnpj": "33683111000107",
+      "razaoSocial": "Instituto Federal de São Paulo",
+      "nomeFantasia": "IFSP",
+      "esferaId": "federal",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "SP",
+      "municipioNome": "São Paulo",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Construção UBS padrão (serviço global)",
+        "unidadeMedida": "unidade",
+        "quantidade": 20,
+        "valorUnitarioEstimado": 2139514.37,
+        "valorTotal": 42790287.4,
+        "codigoItemCatalogo": "BRD60930"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "14390766000140-1-001020/2026",
+    "numeroCompra": "021/2026",
+    "modalidadeId": 9,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Reforma de escola municipal",
+    "informacaoComplementar": "Serviços de reforma estrutural e adequação de acessibilidade em unidade escolar, incluindo troca de cobertura, pintura, elétrica e hidráulica.",
+    "valorTotalEstimado": 60223600.05,
+    "dataPublicacaoPncp": "2026-04-08T06:00:00+00:00",
+    "dataAberturaProposta": "2026-04-09T06:00:00+00:00",
+    "dataEncerramentoProposta": "2026-05-09T08:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/14390766000140-1-001020/2026",
+    "orgaoEntidade": {
+      "cnpj": "14390766000140",
+      "razaoSocial": "Secretaria de Educação do Estado da Bahia",
+      "nomeFantasia": "SEC-BA",
+      "esferaId": "estadual",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "BA",
+      "municipioNome": "Salvador",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Reforma estrutural escola (serviço global)",
+        "unidadeMedida": "m",
+        "quantidade": 105,
+        "valorUnitarioEstimado": 575358.55,
+        "valorTotal": 60412647.75,
+        "codigoItemCatalogo": "BRFB4E5A"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "00394452000103-1-001021/2026",
+    "numeroCompra": "022/2026",
     "modalidadeId": 1,
     "situacaoCompraNome": "Divulgada",
     "objetoCompra": "Consultoria para modernização administrativa",
     "informacaoComplementar": "Contratação de consultoria especializada para elaboração de diagnóstico organizacional e plano de modernização dos processos administrativos.",
-    "valorTotalEstimado": 2856679.75,
-    "dataPublicacaoPncp": "2026-04-05T22:00:00+00:00",
-    "dataAberturaProposta": "2026-04-06T22:00:00+00:00",
-    "dataEncerramentoProposta": "2026-05-21T03:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/00394452000103-1-001035/2026",
+    "valorTotalEstimado": 872056.2,
+    "dataPublicacaoPncp": "2026-03-29T08:00:00+00:00",
+    "dataAberturaProposta": "2026-03-30T08:00:00+00:00",
+    "dataEncerramentoProposta": "2026-05-06T12:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/00394452000103-1-001021/2026",
     "orgaoEntidade": {
       "cnpj": "00394452000103",
       "razaoSocial": "Ministério da Educação",
@@ -1784,86 +996,113 @@
         "numeroLote": 1,
         "descricao": "Serviço de consultoria (hora técnica sênior)",
         "unidadeMedida": "hora",
-        "quantidade": 200,
-        "valorUnitarioEstimado": 14283.4,
-        "valorTotal": 2856680.0,
-        "codigoItemCatalogo": "BR191639"
+        "quantidade": 2287,
+        "valorUnitarioEstimado": 381.34,
+        "valorTotal": 872124.58,
+        "codigoItemCatalogo": "BRCBB3ED"
       }
     ]
   },
   {
-    "numeroControlePNCP": "07526557000100-1-001036/2026",
-    "numeroCompra": "037/2026",
-    "modalidadeId": 9,
+    "numeroControlePNCP": "42498700000143-1-001022/2026",
+    "numeroCompra": "023/2026",
+    "modalidadeId": 1,
     "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Recapeamento asfáltico de vias urbanas",
-    "informacaoComplementar": "Contratação de empresa especializada para execução de serviços de recapeamento asfáltico, fresagem e sinalização viária em vias principais do município, incluindo drenagem superficial.",
-    "valorTotalEstimado": 70925111.65,
-    "dataPublicacaoPncp": "2026-04-15T13:00:00+00:00",
-    "dataAberturaProposta": "2026-04-16T13:00:00+00:00",
-    "dataEncerramentoProposta": "2026-05-06T20:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/07526557000100-1-001036/2026",
+    "objetoCompra": "Aquisição de coletes balísticos nível IIIA",
+    "informacaoComplementar": "Aquisição de coletes balísticos nível IIIA com plano reforçado para operações especiais, atendendo aos padrões do Exército Brasileiro.",
+    "valorTotalEstimado": 3627576.09,
+    "dataPublicacaoPncp": "2026-03-19T21:00:00+00:00",
+    "dataAberturaProposta": "2026-03-20T21:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-14T05:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/42498700000143-1-001022/2026",
     "orgaoEntidade": {
-      "cnpj": "07526557000100",
-      "razaoSocial": "Universidade Federal de Minas Gerais",
-      "nomeFantasia": "UFMG",
-      "esferaId": "federal",
+      "cnpj": "42498700000143",
+      "razaoSocial": "Prefeitura Municipal de Curitiba",
+      "nomeFantasia": "PMC",
+      "esferaId": "municipal",
       "poderId": "executivo"
     },
     "unidadeOrgao": {
-      "ufSigla": "MG",
-      "municipioNome": "Belo Horizonte",
+      "ufSigla": "PR",
+      "municipioNome": "Curitiba",
       "codigoIbge": null
     },
     "itens": [
       {
         "numeroItem": 1,
         "numeroLote": 1,
-        "descricao": "Recapeamento CBUQ 4cm m²",
-        "unidadeMedida": "m²",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 5286.78,
-        "valorTotal": 26433900.0,
-        "codigoItemCatalogo": "BR751275"
-      },
-      {
-        "numeroItem": 2,
-        "numeroLote": 1,
-        "descricao": "Fresagem m²",
-        "unidadeMedida": "m²",
-        "quantidade": 500,
-        "valorUnitarioEstimado": 36385.49,
-        "valorTotal": 18192745.0,
-        "codigoItemCatalogo": "BR933197"
-      },
-      {
-        "numeroItem": 3,
-        "numeroLote": 1,
-        "descricao": "Pintura de faixa m",
-        "unidadeMedida": "m",
-        "quantidade": 500,
-        "valorUnitarioEstimado": 52596.98,
-        "valorTotal": 26298490.0,
-        "codigoItemCatalogo": "BR353365"
+        "descricao": "Colete balístico nível IIIA",
+        "unidadeMedida": "unidade",
+        "quantidade": 1428,
+        "valorUnitarioEstimado": 2541.17,
+        "valorTotal": 3628790.76,
+        "codigoItemCatalogo": "BR43F314"
       }
     ]
   },
   {
-    "numeroControlePNCP": "13756663000171-1-001037/2026",
-    "numeroCompra": "038/2026",
+    "numeroControlePNCP": "33683111000107-1-001023/2026",
+    "numeroCompra": "024/2026",
     "modalidadeId": 1,
     "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Recapeamento asfáltico de vias urbanas",
-    "informacaoComplementar": "Contratação de empresa especializada para execução de serviços de recapeamento asfáltico, fresagem e sinalização viária em vias principais do município, incluindo drenagem superficial.",
-    "valorTotalEstimado": 4302405.3,
+    "objetoCompra": "Fornecimento de uniformes escolares",
+    "informacaoComplementar": "Contratação de empresa para confecção e fornecimento de kits de uniformes escolares para alunos da rede pública, em conformidade com modelo padronizado.",
+    "valorTotalEstimado": 8625465.64,
     "dataPublicacaoPncp": "2026-03-18T11:00:00+00:00",
     "dataAberturaProposta": "2026-03-19T11:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-20T14:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/13756663000171-1-001037/2026",
+    "dataEncerramentoProposta": "2026-04-28T13:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/33683111000107-1-001023/2026",
     "orgaoEntidade": {
-      "cnpj": "13756663000171",
-      "razaoSocial": "Ministério da Gestão e da Inovação em Serviços Públicos",
-      "nomeFantasia": "MGI",
+      "cnpj": "33683111000107",
+      "razaoSocial": "Instituto Federal de São Paulo",
+      "nomeFantasia": "IFSP",
+      "esferaId": "federal",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "SP",
+      "municipioNome": "São Paulo",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Kit uniforme escolar fundamental",
+        "unidadeMedida": "m",
+        "quantidade": 12064,
+        "valorUnitarioEstimado": 193.94,
+        "valorTotal": 2339692.16,
+        "codigoItemCatalogo": "BR576C13"
+      },
+      {
+        "numeroItem": 2,
+        "numeroLote": 1,
+        "descricao": "Kit uniforme escolar médio",
+        "unidadeMedida": "m",
+        "quantidade": 32711,
+        "valorUnitarioEstimado": 192.16,
+        "valorTotal": 6285745.76,
+        "codigoItemCatalogo": "BR93FF1D"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "00394411000109-1-001024/2026",
+    "numeroCompra": "025/2026",
+    "modalidadeId": 1,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Consultoria para modernização administrativa",
+    "informacaoComplementar": "Contratação de consultoria especializada para elaboração de diagnóstico organizacional e plano de modernização dos processos administrativos.",
+    "valorTotalEstimado": 1613294.95,
+    "dataPublicacaoPncp": "2026-04-12T18:00:00+00:00",
+    "dataAberturaProposta": "2026-04-13T18:00:00+00:00",
+    "dataEncerramentoProposta": "2026-05-15T22:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/00394411000109-1-001024/2026",
+    "orgaoEntidade": {
+      "cnpj": "00394411000109",
+      "razaoSocial": "Ministério da Saúde",
+      "nomeFantasia": "MS",
       "esferaId": "federal",
       "poderId": "executivo"
     },
@@ -1876,32 +1115,603 @@
       {
         "numeroItem": 1,
         "numeroLote": 1,
-        "descricao": "Recapeamento CBUQ 4cm m²",
-        "unidadeMedida": "m²",
-        "quantidade": 12,
-        "valorUnitarioEstimado": 98510.55,
-        "valorTotal": 1182126.6,
-        "codigoItemCatalogo": "BR751275"
+        "descricao": "Serviço de consultoria (hora técnica sênior)",
+        "unidadeMedida": "hora",
+        "quantidade": 3275,
+        "valorUnitarioEstimado": 492.55,
+        "valorTotal": 1613101.25,
+        "codigoItemCatalogo": "BRCBB3ED"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "42498700000143-1-001025/2026",
+    "numeroCompra": "026/2026",
+    "modalidadeId": 1,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Aquisição de livros didáticos complementares",
+    "informacaoComplementar": "Registro de preços para aquisição de livros didáticos e material pedagógico complementar destinado ao fortalecimento das ações de alfabetização.",
+    "valorTotalEstimado": 10603121.4,
+    "dataPublicacaoPncp": "2026-03-28T16:00:00+00:00",
+    "dataAberturaProposta": "2026-03-29T16:00:00+00:00",
+    "dataEncerramentoProposta": "2026-05-01T00:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/42498700000143-1-001025/2026",
+    "orgaoEntidade": {
+      "cnpj": "42498700000143",
+      "razaoSocial": "Prefeitura Municipal de Curitiba",
+      "nomeFantasia": "PMC",
+      "esferaId": "municipal",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "PR",
+      "municipioNome": "Curitiba",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Livro didático ciências 5º ano",
+        "unidadeMedida": "unidade",
+        "quantidade": 82869,
+        "valorUnitarioEstimado": 66.07,
+        "valorTotal": 5475154.83,
+        "codigoItemCatalogo": "BR584291"
       },
       {
         "numeroItem": 2,
         "numeroLote": 1,
-        "descricao": "Fresagem m²",
-        "unidadeMedida": "m²",
-        "quantidade": 100,
-        "valorUnitarioEstimado": 7376.58,
-        "valorTotal": 737658.0,
-        "codigoItemCatalogo": "BR933197"
+        "descricao": "Livro didático matemática 5º ano",
+        "unidadeMedida": "m",
+        "quantidade": 67305,
+        "valorUnitarioEstimado": 76.19,
+        "valorTotal": 5127967.95,
+        "codigoItemCatalogo": "BRECED6D"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "18715383000140-1-001026/2026",
+    "numeroCompra": "027/2026",
+    "modalidadeId": 3,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Aquisição de materiais de escritório diversos",
+    "informacaoComplementar": "Registro de preços para aquisição parcelada de materiais de expediente e consumíveis de escritório para unidades administrativas.",
+    "valorTotalEstimado": 10335395.85,
+    "dataPublicacaoPncp": "2026-04-11T13:00:00+00:00",
+    "dataAberturaProposta": "2026-04-12T13:00:00+00:00",
+    "dataEncerramentoProposta": "2026-05-06T18:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/18715383000140-1-001026/2026",
+    "orgaoEntidade": {
+      "cnpj": "18715383000140",
+      "razaoSocial": "Prefeitura Municipal de Belo Horizonte",
+      "nomeFantasia": "PBH",
+      "esferaId": "municipal",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "MG",
+      "municipioNome": "Belo Horizonte",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Papel A4 75g resma 500fl",
+        "unidadeMedida": "resma",
+        "quantidade": 212075,
+        "valorUnitarioEstimado": 25.08,
+        "valorTotal": 5318841.0,
+        "codigoItemCatalogo": "BRD696BA"
+      },
+      {
+        "numeroItem": 2,
+        "numeroLote": 1,
+        "descricao": "Toner laser preto",
+        "unidadeMedida": "unidade",
+        "quantidade": 4947,
+        "valorUnitarioEstimado": 291.38,
+        "valorTotal": 1441456.86,
+        "codigoItemCatalogo": "BREBE832"
       },
       {
         "numeroItem": 3,
         "numeroLote": 1,
-        "descricao": "Pintura de faixa m",
+        "descricao": "Caneta esferográfica azul",
+        "unidadeMedida": "unidade",
+        "quantidade": 1805617,
+        "valorUnitarioEstimado": 1.98,
+        "valorTotal": 3575121.66,
+        "codigoItemCatalogo": "BRD99034"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "18715615000160-1-001027/2026",
+    "numeroCompra": "028/2026",
+    "modalidadeId": 1,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Contratação de serviços de limpeza e conservação",
+    "informacaoComplementar": "Contratação continuada de mão de obra terceirizada para serviços de limpeza, higienização e conservação nas unidades administrativas, com fornecimento de todos os insumos.",
+    "valorTotalEstimado": 4019616.34,
+    "dataPublicacaoPncp": "2026-03-19T09:00:00+00:00",
+    "dataAberturaProposta": "2026-03-20T09:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-05T15:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/18715615000160-1-001027/2026",
+    "orgaoEntidade": {
+      "cnpj": "18715615000160",
+      "razaoSocial": "Governo do Estado de Minas Gerais",
+      "nomeFantasia": "GovMG",
+      "esferaId": "estadual",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "MG",
+      "municipioNome": "Belo Horizonte",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Servente de limpeza (posto mensal)",
         "unidadeMedida": "m",
-        "quantidade": 12,
-        "valorUnitarioEstimado": 198551.76,
-        "valorTotal": 2382621.12,
-        "codigoItemCatalogo": "BR353365"
+        "quantidade": 397,
+        "valorUnitarioEstimado": 5322.26,
+        "valorTotal": 2112937.22,
+        "codigoItemCatalogo": "BRDFEDB0"
+      },
+      {
+        "numeroItem": 2,
+        "numeroLote": 1,
+        "descricao": "Encarregado de limpeza (posto mensal)",
+        "unidadeMedida": "m",
+        "quantidade": 244,
+        "valorUnitarioEstimado": 7804.34,
+        "valorTotal": 1904258.96,
+        "codigoItemCatalogo": "BR04A9EC"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "00489828000136-1-001028/2026",
+    "numeroCompra": "029/2026",
+    "modalidadeId": 3,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Construção de unidade básica de saúde",
+    "informacaoComplementar": "Execução de obras civis para construção de UBS padrão do Ministério da Saúde, com 620m² de área construída, incluindo instalações, acabamentos e paisagismo.",
+    "valorTotalEstimado": 65381952.47,
+    "dataPublicacaoPncp": "2026-03-20T16:00:00+00:00",
+    "dataAberturaProposta": "2026-03-21T16:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-01T22:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/00489828000136-1-001028/2026",
+    "orgaoEntidade": {
+      "cnpj": "00489828000136",
+      "razaoSocial": "Empresa Brasileira de Pesquisa Agropecuária",
+      "nomeFantasia": "EMBRAPA",
+      "esferaId": "federal",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "DF",
+      "municipioNome": "Brasília",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Construção UBS padrão (serviço global)",
+        "unidadeMedida": "unidade",
+        "quantidade": 36,
+        "valorUnitarioEstimado": 1823561.95,
+        "valorTotal": 65648230.2,
+        "codigoItemCatalogo": "BRD60930"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "18715615000160-1-001029/2026",
+    "numeroCompra": "030/2026",
+    "modalidadeId": 1,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Aquisição de coletes balísticos nível IIIA",
+    "informacaoComplementar": "Aquisição de coletes balísticos nível IIIA com plano reforçado para operações especiais, atendendo aos padrões do Exército Brasileiro.",
+    "valorTotalEstimado": 11604324.79,
+    "dataPublicacaoPncp": "2026-04-14T17:00:00+00:00",
+    "dataAberturaProposta": "2026-04-15T17:00:00+00:00",
+    "dataEncerramentoProposta": "2026-05-02T23:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/18715615000160-1-001029/2026",
+    "orgaoEntidade": {
+      "cnpj": "18715615000160",
+      "razaoSocial": "Governo do Estado de Minas Gerais",
+      "nomeFantasia": "GovMG",
+      "esferaId": "estadual",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "MG",
+      "municipioNome": "Belo Horizonte",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Colete balístico nível IIIA",
+        "unidadeMedida": "unidade",
+        "quantidade": 5253,
+        "valorUnitarioEstimado": 2209.16,
+        "valorTotal": 11604717.48,
+        "codigoItemCatalogo": "BR43F314"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "13381447000130-1-001030/2026",
+    "numeroCompra": "031/2026",
+    "modalidadeId": 1,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Aquisição de materiais de escritório diversos",
+    "informacaoComplementar": "Registro de preços para aquisição parcelada de materiais de expediente e consumíveis de escritório para unidades administrativas.",
+    "valorTotalEstimado": 3222323.03,
+    "dataPublicacaoPncp": "2026-04-05T14:00:00+00:00",
+    "dataAberturaProposta": "2026-04-06T14:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-18T18:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/13381447000130-1-001030/2026",
+    "orgaoEntidade": {
+      "cnpj": "13381447000130",
+      "razaoSocial": "Prefeitura Municipal de Fortaleza",
+      "nomeFantasia": "PMF",
+      "esferaId": "municipal",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "CE",
+      "municipioNome": "Fortaleza",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Papel A4 75g resma 500fl",
+        "unidadeMedida": "resma",
+        "quantidade": 28044,
+        "valorUnitarioEstimado": 27.34,
+        "valorTotal": 766722.96,
+        "codigoItemCatalogo": "BRD696BA"
+      },
+      {
+        "numeroItem": 2,
+        "numeroLote": 1,
+        "descricao": "Toner laser preto",
+        "unidadeMedida": "unidade",
+        "quantidade": 3522,
+        "valorUnitarioEstimado": 317.19,
+        "valorTotal": 1117143.18,
+        "codigoItemCatalogo": "BREBE832"
+      },
+      {
+        "numeroItem": 3,
+        "numeroLote": 1,
+        "descricao": "Caneta esferográfica azul",
+        "unidadeMedida": "unidade",
+        "quantidade": 715682,
+        "valorUnitarioEstimado": 1.87,
+        "valorTotal": 1338325.34,
+        "codigoItemCatalogo": "BRD99034"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "46395000000139-1-001031/2026",
+    "numeroCompra": "032/2026",
+    "modalidadeId": 1,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Aquisição de materiais de escritório diversos",
+    "informacaoComplementar": "Registro de preços para aquisição parcelada de materiais de expediente e consumíveis de escritório para unidades administrativas.",
+    "valorTotalEstimado": 6263048.17,
+    "dataPublicacaoPncp": "2026-03-17T20:00:00+00:00",
+    "dataAberturaProposta": "2026-03-18T20:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-05T00:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/46395000000139-1-001031/2026",
+    "orgaoEntidade": {
+      "cnpj": "46395000000139",
+      "razaoSocial": "Prefeitura Municipal de São Paulo",
+      "nomeFantasia": "PMSP",
+      "esferaId": "municipal",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "SP",
+      "municipioNome": "São Paulo",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Papel A4 75g resma 500fl",
+        "unidadeMedida": "resma",
+        "quantidade": 101089,
+        "valorUnitarioEstimado": 29.88,
+        "valorTotal": 3020539.32,
+        "codigoItemCatalogo": "BRD696BA"
+      },
+      {
+        "numeroItem": 2,
+        "numeroLote": 1,
+        "descricao": "Toner laser preto",
+        "unidadeMedida": "unidade",
+        "quantidade": 4649,
+        "valorUnitarioEstimado": 369.01,
+        "valorTotal": 1715527.49,
+        "codigoItemCatalogo": "BREBE832"
+      },
+      {
+        "numeroItem": 3,
+        "numeroLote": 1,
+        "descricao": "Caneta esferográfica azul",
+        "unidadeMedida": "unidade",
+        "quantidade": 954328,
+        "valorUnitarioEstimado": 1.6,
+        "valorTotal": 1526924.8,
+        "codigoItemCatalogo": "BRD99034"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "14390766000140-1-001032/2026",
+    "numeroCompra": "033/2026",
+    "modalidadeId": 1,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Contratação de serviços de limpeza e conservação",
+    "informacaoComplementar": "Contratação continuada de mão de obra terceirizada para serviços de limpeza, higienização e conservação nas unidades administrativas, com fornecimento de todos os insumos.",
+    "valorTotalEstimado": 3947885.71,
+    "dataPublicacaoPncp": "2026-03-27T04:00:00+00:00",
+    "dataAberturaProposta": "2026-03-28T04:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-09T08:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/14390766000140-1-001032/2026",
+    "orgaoEntidade": {
+      "cnpj": "14390766000140",
+      "razaoSocial": "Secretaria de Educação do Estado da Bahia",
+      "nomeFantasia": "SEC-BA",
+      "esferaId": "estadual",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "BA",
+      "municipioNome": "Salvador",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Servente de limpeza (posto mensal)",
+        "unidadeMedida": "m",
+        "quantidade": 358,
+        "valorUnitarioEstimado": 4894.02,
+        "valorTotal": 1752059.16,
+        "codigoItemCatalogo": "BRDFEDB0"
+      },
+      {
+        "numeroItem": 2,
+        "numeroLote": 1,
+        "descricao": "Encarregado de limpeza (posto mensal)",
+        "unidadeMedida": "m",
+        "quantidade": 358,
+        "valorUnitarioEstimado": 6134.53,
+        "valorTotal": 2196161.74,
+        "codigoItemCatalogo": "BR04A9EC"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "33649282000108-1-001033/2026",
+    "numeroCompra": "034/2026",
+    "modalidadeId": 3,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Contratação de serviços de limpeza e conservação",
+    "informacaoComplementar": "Contratação continuada de mão de obra terceirizada para serviços de limpeza, higienização e conservação nas unidades administrativas, com fornecimento de todos os insumos.",
+    "valorTotalEstimado": 2561683.08,
+    "dataPublicacaoPncp": "2026-03-28T05:00:00+00:00",
+    "dataAberturaProposta": "2026-03-29T05:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-28T13:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/33649282000108-1-001033/2026",
+    "orgaoEntidade": {
+      "cnpj": "33649282000108",
+      "razaoSocial": "Prefeitura Municipal do Rio de Janeiro",
+      "nomeFantasia": "PMR",
+      "esferaId": "municipal",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "RJ",
+      "municipioNome": "Rio de Janeiro",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Servente de limpeza (posto mensal)",
+        "unidadeMedida": "m",
+        "quantidade": 244,
+        "valorUnitarioEstimado": 4984.31,
+        "valorTotal": 1216171.64,
+        "codigoItemCatalogo": "BRDFEDB0"
+      },
+      {
+        "numeroItem": 2,
+        "numeroLote": 1,
+        "descricao": "Encarregado de limpeza (posto mensal)",
+        "unidadeMedida": "m",
+        "quantidade": 208,
+        "valorUnitarioEstimado": 6458.47,
+        "valorTotal": 1343361.76,
+        "codigoItemCatalogo": "BR04A9EC"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "46392130000380-1-001034/2026",
+    "numeroCompra": "035/2026",
+    "modalidadeId": 1,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Consultoria para modernização administrativa",
+    "informacaoComplementar": "Contratação de consultoria especializada para elaboração de diagnóstico organizacional e plano de modernização dos processos administrativos.",
+    "valorTotalEstimado": 7450166.62,
+    "dataPublicacaoPncp": "2026-03-29T23:00:00+00:00",
+    "dataAberturaProposta": "2026-03-30T23:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-15T00:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/46392130000380-1-001034/2026",
+    "orgaoEntidade": {
+      "cnpj": "46392130000380",
+      "razaoSocial": "Secretaria de Estado da Saúde de São Paulo",
+      "nomeFantasia": "SES-SP",
+      "esferaId": "estadual",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "SP",
+      "municipioNome": "São Paulo",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Serviço de consultoria (hora técnica sênior)",
+        "unidadeMedida": "hora",
+        "quantidade": 20780,
+        "valorUnitarioEstimado": 358.52,
+        "valorTotal": 7450045.6,
+        "codigoItemCatalogo": "BRCBB3ED"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "27080571000170-1-001035/2026",
+    "numeroCompra": "036/2026",
+    "modalidadeId": 1,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Reforma de escola municipal",
+    "informacaoComplementar": "Serviços de reforma estrutural e adequação de acessibilidade em unidade escolar, incluindo troca de cobertura, pintura, elétrica e hidráulica.",
+    "valorTotalEstimado": 61548600.32,
+    "dataPublicacaoPncp": "2026-04-08T08:00:00+00:00",
+    "dataAberturaProposta": "2026-04-09T08:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-23T08:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/27080571000170-1-001035/2026",
+    "orgaoEntidade": {
+      "cnpj": "27080571000170",
+      "razaoSocial": "Secretaria de Estado da Saúde do Rio Grande do Sul",
+      "nomeFantasia": "SES-RS",
+      "esferaId": "estadual",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "RS",
+      "municipioNome": "Porto Alegre",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Reforma estrutural escola (serviço global)",
+        "unidadeMedida": "m",
+        "quantidade": 92,
+        "valorUnitarioEstimado": 669085.88,
+        "valorTotal": 61555900.96,
+        "codigoItemCatalogo": "BRFB4E5A"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "46395000000139-1-001036/2026",
+    "numeroCompra": "037/2026",
+    "modalidadeId": 9,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Reforma de escola municipal",
+    "informacaoComplementar": "Serviços de reforma estrutural e adequação de acessibilidade em unidade escolar, incluindo troca de cobertura, pintura, elétrica e hidráulica.",
+    "valorTotalEstimado": 61672681.23,
+    "dataPublicacaoPncp": "2026-03-31T02:00:00+00:00",
+    "dataAberturaProposta": "2026-04-01T02:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-21T04:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/46395000000139-1-001036/2026",
+    "orgaoEntidade": {
+      "cnpj": "46395000000139",
+      "razaoSocial": "Prefeitura Municipal de São Paulo",
+      "nomeFantasia": "PMSP",
+      "esferaId": "municipal",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "SP",
+      "municipioNome": "São Paulo",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Reforma estrutural escola (serviço global)",
+        "unidadeMedida": "m",
+        "quantidade": 106,
+        "valorUnitarioEstimado": 583692.57,
+        "valorTotal": 61871412.42,
+        "codigoItemCatalogo": "BRFB4E5A"
+      }
+    ]
+  },
+  {
+    "numeroControlePNCP": "00489828000136-1-001037/2026",
+    "numeroCompra": "038/2026",
+    "modalidadeId": 1,
+    "situacaoCompraNome": "Divulgada",
+    "objetoCompra": "Contratação de serviços de limpeza e conservação",
+    "informacaoComplementar": "Contratação continuada de mão de obra terceirizada para serviços de limpeza, higienização e conservação nas unidades administrativas, com fornecimento de todos os insumos.",
+    "valorTotalEstimado": 10187619.35,
+    "dataPublicacaoPncp": "2026-03-20T16:00:00+00:00",
+    "dataAberturaProposta": "2026-03-21T16:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-28T23:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/00489828000136-1-001037/2026",
+    "orgaoEntidade": {
+      "cnpj": "00489828000136",
+      "razaoSocial": "Empresa Brasileira de Pesquisa Agropecuária",
+      "nomeFantasia": "EMBRAPA",
+      "esferaId": "federal",
+      "poderId": "executivo"
+    },
+    "unidadeOrgao": {
+      "ufSigla": "DF",
+      "municipioNome": "Brasília",
+      "codigoIbge": null
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "numeroLote": 1,
+        "descricao": "Servente de limpeza (posto mensal)",
+        "unidadeMedida": "m",
+        "quantidade": 689,
+        "valorUnitarioEstimado": 5320.85,
+        "valorTotal": 3666065.65,
+        "codigoItemCatalogo": "BRDFEDB0"
+      },
+      {
+        "numeroItem": 2,
+        "numeroLote": 1,
+        "descricao": "Encarregado de limpeza (posto mensal)",
+        "unidadeMedida": "m",
+        "quantidade": 892,
+        "valorUnitarioEstimado": 7316.26,
+        "valorTotal": 6526103.92,
+        "codigoItemCatalogo": "BR04A9EC"
       }
     ]
   },
@@ -1910,8 +1720,8 @@
     "numeroCompra": "039/2026",
     "modalidadeId": 3,
     "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Consultoria para modernização administrativa",
-    "informacaoComplementar": "Contratação de consultoria especializada para elaboração de diagnóstico organizacional e plano de modernização dos processos administrativos.",
+    "objetoCompra": "Aquisição de materiais de escritório diversos",
+    "informacaoComplementar": "Registro de preços para aquisição parcelada de materiais de expediente e consumíveis de escritório para unidades administrativas.",
     "valorTotalEstimado": 10771636.83,
     "dataPublicacaoPncp": "2026-03-26T15:00:00+00:00",
     "dataAberturaProposta": "2026-03-27T15:00:00+00:00",
@@ -1933,49 +1743,89 @@
       {
         "numeroItem": 1,
         "numeroLote": 1,
-        "descricao": "Serviço de consultoria (hora técnica sênior)",
-        "unidadeMedida": "hora",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 2154.33,
-        "valorTotal": 10771650.0,
-        "codigoItemCatalogo": "BR191639"
+        "descricao": "Papel A4 75g resma 500fl",
+        "unidadeMedida": "resma",
+        "quantidade": 178730,
+        "valorUnitarioEstimado": 27.74,
+        "valorTotal": 4957970.2,
+        "codigoItemCatalogo": "BRD696BA"
+      },
+      {
+        "numeroItem": 2,
+        "numeroLote": 1,
+        "descricao": "Toner laser preto",
+        "unidadeMedida": "unidade",
+        "quantidade": 5469,
+        "valorUnitarioEstimado": 309.06,
+        "valorTotal": 1690249.14,
+        "codigoItemCatalogo": "BREBE832"
+      },
+      {
+        "numeroItem": 3,
+        "numeroLote": 1,
+        "descricao": "Caneta esferográfica azul",
+        "unidadeMedida": "unidade",
+        "quantidade": 2181767,
+        "valorUnitarioEstimado": 1.89,
+        "valorTotal": 4123539.63,
+        "codigoItemCatalogo": "BRD99034"
       }
     ]
   },
   {
-    "numeroControlePNCP": "42498600000171-1-001039/2026",
+    "numeroControlePNCP": "18715615000160-1-001039/2026",
     "numeroCompra": "040/2026",
     "modalidadeId": 1,
     "situacaoCompraNome": "Divulgada",
-    "objetoCompra": "Consultoria para modernização administrativa",
-    "informacaoComplementar": "Contratação de consultoria especializada para elaboração de diagnóstico organizacional e plano de modernização dos processos administrativos.",
-    "valorTotalEstimado": 5306477.49,
-    "dataPublicacaoPncp": "2026-03-22T07:00:00+00:00",
-    "dataAberturaProposta": "2026-03-23T07:00:00+00:00",
-    "dataEncerramentoProposta": "2026-04-14T15:00:00+00:00",
-    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/42498600000171-1-001039/2026",
+    "objetoCompra": "Aquisição de materiais de escritório diversos",
+    "informacaoComplementar": "Registro de preços para aquisição parcelada de materiais de expediente e consumíveis de escritório para unidades administrativas.",
+    "valorTotalEstimado": 10721670.65,
+    "dataPublicacaoPncp": "2026-04-07T00:00:00+00:00",
+    "dataAberturaProposta": "2026-04-08T00:00:00+00:00",
+    "dataEncerramentoProposta": "2026-04-17T04:00:00+00:00",
+    "linkSistemaOrigem": "https://pncp.gov.br/app/editais/18715615000160-1-001039/2026",
     "orgaoEntidade": {
-      "cnpj": "42498600000171",
-      "razaoSocial": "Governo do Estado do Paraná",
-      "nomeFantasia": "GovPR",
+      "cnpj": "18715615000160",
+      "razaoSocial": "Governo do Estado de Minas Gerais",
+      "nomeFantasia": "GovMG",
       "esferaId": "estadual",
       "poderId": "executivo"
     },
     "unidadeOrgao": {
-      "ufSigla": "PR",
-      "municipioNome": "Curitiba",
+      "ufSigla": "MG",
+      "municipioNome": "Belo Horizonte",
       "codigoIbge": null
     },
     "itens": [
       {
         "numeroItem": 1,
         "numeroLote": 1,
-        "descricao": "Serviço de consultoria (hora técnica sênior)",
-        "unidadeMedida": "hora",
-        "quantidade": 5000,
-        "valorUnitarioEstimado": 1061.3,
-        "valorTotal": 5306500.0,
-        "codigoItemCatalogo": "BR191639"
+        "descricao": "Papel A4 75g resma 500fl",
+        "unidadeMedida": "resma",
+        "quantidade": 99947,
+        "valorUnitarioEstimado": 24.48,
+        "valorTotal": 2446702.56,
+        "codigoItemCatalogo": "BRD696BA"
+      },
+      {
+        "numeroItem": 2,
+        "numeroLote": 1,
+        "descricao": "Toner laser preto",
+        "unidadeMedida": "unidade",
+        "quantidade": 9292,
+        "valorUnitarioEstimado": 297.5,
+        "valorTotal": 2764370.0,
+        "codigoItemCatalogo": "BREBE832"
+      },
+      {
+        "numeroItem": 3,
+        "numeroLote": 1,
+        "descricao": "Caneta esferográfica azul",
+        "unidadeMedida": "unidade",
+        "quantidade": 3422738,
+        "valorUnitarioEstimado": 1.61,
+        "valorTotal": 5510608.18,
+        "codigoItemCatalogo": "BRD99034"
       }
     ]
   }

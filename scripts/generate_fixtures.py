@@ -6,12 +6,17 @@ agencies spanning the three spheres (federal / estadual / municipal),
 suppliers with realistic CNAE + location distribution, opportunities across
 multiple modalities and categories, and awarded contracts linking them.
 
+The generator is seeded so output is byte-stable. It is safe to commit the
+generated files and the generator side by side — re-running produces the
+exact same bytes.
+
 Run:
     python scripts/generate_fixtures.py
 """
 
 from __future__ import annotations
 
+import hashlib
 import json
 import random
 from datetime import datetime, timedelta, timezone
@@ -24,6 +29,17 @@ OUT.mkdir(parents=True, exist_ok=True)
 
 SEED = 42
 random.seed(SEED)
+
+
+def stable_catmat(description: str) -> str:
+    """Deterministic CATMAT-ish code derived from the item description.
+
+    We do **not** use ``hash()`` because Python randomizes string hashing
+    per process, which would make every regeneration produce a different
+    bucket for the same description. MD5 is stable across processes.
+    """
+    digest = hashlib.md5(description.encode("utf-8")).hexdigest()
+    return "BR" + digest[:6].upper()
 
 
 # ----------------------------------------------------------------------------
@@ -198,6 +214,71 @@ UNITS_BY_PRODUCT = {
     "hora": "hora", "anual": "unidade", "kit": "kit",
 }
 
+# Realistic reference unit prices (BRL) by item description substring.
+# These anchor the pricing intelligence view — prices cluster around each
+# anchor with moderate dispersion so the dashboard shows believable
+# distributions instead of the random-division artefacts we had before.
+REFERENCE_UNIT_PRICES: tuple[tuple[str, float], ...] = (
+    ("Dipirona", 0.18),
+    ("Losartana", 0.25),
+    ("Metformina", 0.20),
+    ("Amoxicilina", 0.90),
+    ("Respirador", 48_000.0),
+    ("Monitor multi", 12_500.0),
+    ("Bomba de infusão", 3_800.0),
+    ("Sessão de hemodiálise", 220.0),
+    ("Sessão de hemodiálise de urgência", 340.0),
+    ("Arroz", 22.0),
+    ("Feijão", 8.50),
+    ("Leite UHT", 5.20),
+    ("Óleo de soja", 7.80),
+    ("Kit uniforme escolar fundamental", 185.0),
+    ("Kit uniforme escolar médio", 210.0),
+    ("Livro didático ciências", 65.0),
+    ("Livro didático matemática", 68.0),
+    ("Recapeamento CBUQ", 78.0),
+    ("Fresagem", 12.0),
+    ("Pintura de faixa", 9.50),
+    ("Construção UBS", 1_850_000.0),
+    ("Reforma estrutural escola", 680_000.0),
+    ("Colete balístico", 2_400.0),
+    ("Câmera CFTV PTZ", 4_200.0),
+    ("Câmera fixa 4MP", 1_050.0),
+    ("Licença analítico", 780.0),
+    ("Locação veículo passeio", 2_300.0),
+    ("Locação veículo SUV", 3_600.0),
+    ("Gasolina comum", 5.90),
+    ("Óleo diesel", 6.20),
+    ("Servente de limpeza", 4_800.0),
+    ("Encarregado de limpeza", 6_900.0),
+    ("Posto vigilância armada 12x36 diurno", 14_500.0),
+    ("Posto vigilância armada 12x36 noturno", 16_200.0),
+    ("Serviço de consultoria", 420.0),
+    ("Papel A4", 28.0),
+    ("Toner laser preto", 340.0),
+    ("Caneta esferográfica", 1.80),
+    ("Licença ERP módulo financeiro", 85_000.0),
+    ("Licença ERP módulo RH", 75_000.0),
+    ("Suporte técnico", 180_000.0),
+    ("Treinamento de usuários", 4_500.0),
+    ("Instância computacional", 1_250.0),
+    ("Armazenamento em bloco", 0.85),
+    ("Balanceador de carga", 1_950.0),
+    ("Notebook corporativo", 7_800.0),
+)
+
+
+def _anchor_unit_price(description: str) -> float:
+    """Best-match unit price for a description, plus ±18% noise."""
+    lower = description.lower()
+    for key, price in REFERENCE_UNIT_PRICES:
+        if key.lower() in lower:
+            # ±18% spread around the anchor gives a realistic distribution
+            # but still clusters tightly enough to show dispersion flags.
+            return round(price * random.uniform(0.82, 1.18), 2)
+    # Fallback for anything not in the table — leave a neutral mid-value.
+    return round(random.uniform(40, 400), 2)
+
 
 # ----------------------------------------------------------------------------
 # Helpers
@@ -276,17 +357,23 @@ def build_opportunities() -> list[dict]:
         source_id = f"{cnpj}-{sequencial}-{ano}"
         control = f"{cnpj}-1-{sequencial:06d}/{ano}"
 
+        # Build items with realistic anchor prices per description, then
+        # derive a quantity that lands the line total near the remaining
+        # chunk. This keeps CATMAT-level price distributions credible
+        # while still summing to the estimated_value the agency would post.
         items: list[dict] = []
         remaining = estimated_value
         n_items = len(items_stub)
         for idx, desc in enumerate(items_stub):
             last = idx == n_items - 1
-            chunk = round(remaining if last else remaining * random.uniform(0.2, 0.5), 2)
+            chunk = remaining if last else round(
+                remaining * random.uniform(0.2, 0.55), 2
+            )
             remaining = round(remaining - chunk, 2)
-            qty = random.choice([50, 100, 200, 500, 1000, 5000, 12])
-            unit_price = round(chunk / max(qty, 1), 2)
-            # Stable CATMAT per description so pricing intelligence can aggregate.
-            catmat = "BR" + str(abs(hash(desc)) % 900000 + 100000)
+            unit_price = _anchor_unit_price(desc)
+            qty = max(1, int(round(chunk / unit_price))) if unit_price else 1
+            total = round(unit_price * qty, 2)
+            catmat = stable_catmat(desc)
             items.append({
                 "lot_number": 1,
                 "item_number": idx + 1,
@@ -294,7 +381,7 @@ def build_opportunities() -> list[dict]:
                 "unit": guess_unit(desc),
                 "quantity": qty,
                 "unit_reference_price": unit_price,
-                "total_reference_price": round(unit_price * qty, 2),
+                "total_reference_price": total,
                 "catmat_code": catmat,
             })
 

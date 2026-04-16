@@ -1,827 +1,44 @@
 [
   {
     "source": "fixture",
-    "source_id": "33683111000107-1002-2026-CT",
-    "pncp_control_number": "33683111000107-1-001002/2026-CT",
-    "contract_number": "CT-9850/2026",
-    "agency_cnpj": "33683111000107",
-    "supplier_tax_id": "20738832000141",
-    "opportunity_source_id": "33683111000107-1002-2026",
-    "object_description": "Contratação de serviços de hemodiálise — contrato firmado após homologação.",
-    "signed_at": "2026-05-26T07:00:00+00:00",
-    "start_at": "2026-06-05T07:00:00+00:00",
-    "end_at": "2027-05-26T07:00:00+00:00",
-    "total_value": 15522600.43,
-    "currency": "BRL",
-    "status": "executed",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Sessão de hemodiálise",
-        "unit": "sessão",
-        "quantity": 1000,
-        "unit_price": 5519.0,
-        "total_price": 5173661.44,
-        "catmat_code": "BR391649"
-      },
-      {
-        "item_number": 2,
-        "description": "Sessão de hemodiálise de urgência",
-        "unit": "sessão",
-        "quantity": 200,
-        "unit_price": 56182.73,
-        "total_price": 14173070.11,
-        "catmat_code": "BR159786"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "33683111000107-1009-2026-CT",
-    "pncp_control_number": "33683111000107-1-001009/2026-CT",
-    "contract_number": "CT-4559/2026",
-    "agency_cnpj": "33683111000107",
-    "supplier_tax_id": "55667788000166",
-    "opportunity_source_id": "33683111000107-1009-2026",
-    "object_description": "Contratação de monitoramento eletrônico urbano — contrato firmado após homologação.",
-    "signed_at": "2026-05-01T08:00:00+00:00",
-    "start_at": "2026-05-11T08:00:00+00:00",
-    "end_at": "2027-05-01T08:00:00+00:00",
-    "total_value": 8755599.88,
-    "currency": "BRL",
-    "status": "executed",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Câmera CFTV PTZ",
-        "unit": "m",
-        "quantity": 12,
-        "unit_price": 336227.45,
-        "total_price": 4323590.29,
-        "catmat_code": "BR647627"
-      },
-      {
-        "item_number": 2,
-        "description": "Câmera fixa 4MP",
-        "unit": "m",
-        "quantity": 50,
-        "unit_price": 20833.1,
-        "total_price": 1178719.73,
-        "catmat_code": "BR407838"
-      },
-      {
-        "item_number": 3,
-        "description": "Licença analítico de vídeo",
-        "unit": "unidade",
-        "quantity": 12,
-        "unit_price": 220571.74,
-        "total_price": 3158982.83,
-        "catmat_code": "BR447074"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "00489828000136-1028-2026-CT",
-    "pncp_control_number": "00489828000136-1-001028/2026-CT",
-    "contract_number": "CT-6876/2026",
-    "agency_cnpj": "00489828000136",
-    "supplier_tax_id": "23456789000100",
-    "opportunity_source_id": "00489828000136-1028-2026",
-    "object_description": "Contratação de serviços de limpeza e conservação — contrato firmado após homologação.",
-    "signed_at": "2026-05-06T07:00:00+00:00",
-    "start_at": "2026-05-16T07:00:00+00:00",
-    "end_at": "2027-05-06T07:00:00+00:00",
-    "total_value": 1344826.82,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Servente de limpeza (posto mensal)",
-        "unit": "m",
-        "quantity": 12,
-        "unit_price": 38081.4,
-        "total_price": 594984.84,
-        "catmat_code": "BR616884"
-      },
-      {
-        "item_number": 2,
-        "description": "Encarregado de limpeza (posto mensal)",
-        "unit": "m",
-        "quantity": 500,
-        "unit_price": 1310.15,
-        "total_price": 774029.14,
-        "catmat_code": "BR815128"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "42498600000171-1031-2026-CT",
-    "pncp_control_number": "42498600000171-1-001031/2026-CT",
-    "contract_number": "CT-1349/2026",
-    "agency_cnpj": "42498600000171",
-    "supplier_tax_id": "14391099000152",
-    "opportunity_source_id": "42498600000171-1031-2026",
-    "object_description": "Contratação de serviços de limpeza e conservação — contrato firmado após homologação.",
-    "signed_at": "2026-05-29T16:00:00+00:00",
-    "start_at": "2026-06-08T16:00:00+00:00",
-    "end_at": "2027-05-29T16:00:00+00:00",
-    "total_value": 6462970.22,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Servente de limpeza (posto mensal)",
-        "unit": "m",
-        "quantity": 5000,
-        "unit_price": 594.3,
-        "total_price": 4069587.65,
-        "catmat_code": "BR616884"
-      },
-      {
-        "item_number": 2,
-        "description": "Encarregado de limpeza (posto mensal)",
-        "unit": "m",
-        "quantity": 5000,
-        "unit_price": 746.58,
-        "total_price": 4071023.93,
-        "catmat_code": "BR815128"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "13381447000130-1034-2026-CT",
-    "pncp_control_number": "13381447000130-1-001034/2026-CT",
-    "contract_number": "CT-4817/2026",
-    "agency_cnpj": "13381447000130",
-    "supplier_tax_id": "33445566000199",
-    "opportunity_source_id": "13381447000130-1034-2026",
-    "object_description": "Contratação de monitoramento eletrônico urbano — contrato firmado após homologação.",
-    "signed_at": "2026-04-29T18:00:00+00:00",
-    "start_at": "2026-05-09T18:00:00+00:00",
-    "end_at": "2027-04-29T18:00:00+00:00",
-    "total_value": 5842441.94,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Câmera CFTV PTZ",
-        "unit": "m",
-        "quantity": 500,
-        "unit_price": 3239.11,
-        "total_price": 1980536.17,
-        "catmat_code": "BR647627"
-      },
-      {
-        "item_number": 2,
-        "description": "Câmera fixa 4MP",
-        "unit": "m",
-        "quantity": 100,
-        "unit_price": 12399.95,
-        "total_price": 1692032.47,
-        "catmat_code": "BR407838"
-      },
-      {
-        "item_number": 3,
-        "description": "Licença analítico de vídeo",
-        "unit": "unidade",
-        "quantity": 1000,
-        "unit_price": 2668.03,
-        "total_price": 2679483.52,
-        "catmat_code": "BR447074"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "07526557000100-1036-2026-CT",
-    "pncp_control_number": "07526557000100-1-001036/2026-CT",
-    "contract_number": "CT-2801/2026",
-    "agency_cnpj": "07526557000100",
-    "supplier_tax_id": "33445566000199",
-    "opportunity_source_id": "07526557000100-1036-2026",
-    "object_description": "Recapeamento asfáltico de vias urbanas — contrato firmado após homologação.",
-    "signed_at": "2026-05-15T20:00:00+00:00",
-    "start_at": "2026-05-25T20:00:00+00:00",
-    "end_at": "2027-05-15T20:00:00+00:00",
-    "total_value": 69524513.67,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Recapeamento CBUQ 4cm m²",
-        "unit": "m²",
-        "quantity": 5000,
-        "unit_price": 4898.06,
-        "total_price": 21288923.11,
-        "catmat_code": "BR751275"
-      },
-      {
-        "item_number": 2,
-        "description": "Fresagem m²",
-        "unit": "m²",
-        "quantity": 500,
-        "unit_price": 39075.49,
-        "total_price": 19561937.82,
-        "catmat_code": "BR933197"
-      },
-      {
-        "item_number": 3,
-        "description": "Pintura de faixa m",
-        "unit": "m",
-        "quantity": 500,
-        "unit_price": 47615.09,
-        "total_price": 26388831.97,
-        "catmat_code": "BR353365"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "13756663000171-1042-2026-CT",
-    "pncp_control_number": "13756663000171-1-001042/2026-CT",
-    "contract_number": "CT-3076/2026",
-    "agency_cnpj": "13756663000171",
-    "supplier_tax_id": "19381117000121",
-    "opportunity_source_id": "13756663000171-1042-2026",
-    "object_description": "Contratação de vigilância patrimonial armada — contrato firmado após homologação.",
-    "signed_at": "2026-05-09T11:00:00+00:00",
-    "start_at": "2026-05-19T11:00:00+00:00",
-    "end_at": "2027-05-09T11:00:00+00:00",
-    "total_value": 8053973.24,
-    "currency": "BRL",
-    "status": "executed",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Posto vigilância armada 12x36 diurno",
-        "unit": "m",
-        "quantity": 500,
-        "unit_price": 9015.73,
-        "total_price": 4165852.82,
-        "catmat_code": "BR788832"
-      },
-      {
-        "item_number": 2,
-        "description": "Posto vigilância armada 12x36 noturno",
-        "unit": "m",
-        "quantity": 100,
-        "unit_price": 35997.18,
-        "total_price": 4083300.4,
-        "catmat_code": "BR962211"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "13756663000171-1051-2026-CT",
-    "pncp_control_number": "13756663000171-1-001051/2026-CT",
-    "contract_number": "CT-9254/2026",
-    "agency_cnpj": "13756663000171",
-    "supplier_tax_id": "11223344000155",
-    "opportunity_source_id": "13756663000171-1051-2026",
-    "object_description": "Contratação de vigilância patrimonial armada — contrato firmado após homologação.",
-    "signed_at": "2026-04-25T11:00:00+00:00",
-    "start_at": "2026-05-05T11:00:00+00:00",
-    "end_at": "2027-04-25T11:00:00+00:00",
-    "total_value": 3977355.81,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Posto vigilância armada 12x36 diurno",
-        "unit": "m",
-        "quantity": 5000,
-        "unit_price": 336.66,
-        "total_price": 1902381.72,
-        "catmat_code": "BR788832"
-      },
-      {
-        "item_number": 2,
-        "description": "Posto vigilância armada 12x36 noturno",
-        "unit": "m",
-        "quantity": 200,
-        "unit_price": 9873.73,
-        "total_price": 1635872.85,
-        "catmat_code": "BR962211"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "13927801000149-1052-2026-CT",
-    "pncp_control_number": "13927801000149-1-001052/2026-CT",
-    "contract_number": "CT-7580/2026",
-    "agency_cnpj": "13927801000149",
-    "supplier_tax_id": "55667788000166",
-    "opportunity_source_id": "13927801000149-1052-2026",
-    "object_description": "Aquisição de materiais de escritório diversos — contrato firmado após homologação.",
-    "signed_at": "2026-05-06T18:00:00+00:00",
-    "start_at": "2026-05-16T18:00:00+00:00",
-    "end_at": "2027-05-06T18:00:00+00:00",
-    "total_value": 7970588.89,
-    "currency": "BRL",
-    "status": "executed",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Papel A4 75g resma 500fl",
-        "unit": "resma",
-        "quantity": 500,
-        "unit_price": 6835.16,
-        "total_price": 3107177.98,
-        "catmat_code": "BR825984"
-      },
-      {
-        "item_number": 2,
-        "description": "Toner laser preto",
-        "unit": "unidade",
-        "quantity": 50,
-        "unit_price": 27427.07,
-        "total_price": 1589946.81,
-        "catmat_code": "BR499205"
-      },
-      {
-        "item_number": 3,
-        "description": "Caneta esferográfica azul",
-        "unit": "unidade",
-        "quantity": 50,
-        "unit_price": 47692.52,
-        "total_price": 3616157.22,
-        "catmat_code": "BR499634"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "42498700000143-1066-2026-CT",
-    "pncp_control_number": "42498700000143-1-001066/2026-CT",
-    "contract_number": "CT-9984/2026",
+    "source_id": "42498700000143-1022-2026-CT",
+    "pncp_control_number": "42498700000143-1-001022/2026-CT",
+    "contract_number": "CT-3370/2026",
     "agency_cnpj": "42498700000143",
-    "supplier_tax_id": "99887766000177",
-    "opportunity_source_id": "42498700000143-1066-2026",
-    "object_description": "Aquisição de materiais de escritório diversos — contrato firmado após homologação.",
-    "signed_at": "2026-05-13T09:00:00+00:00",
-    "start_at": "2026-05-23T09:00:00+00:00",
-    "end_at": "2027-05-13T09:00:00+00:00",
-    "total_value": 9157976.8,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Papel A4 75g resma 500fl",
-        "unit": "resma",
-        "quantity": 50,
-        "unit_price": 97193.73,
-        "total_price": 3382940.37,
-        "catmat_code": "BR825984"
-      },
-      {
-        "item_number": 2,
-        "description": "Toner laser preto",
-        "unit": "unidade",
-        "quantity": 1000,
-        "unit_price": 1665.87,
-        "total_price": 2122861.28,
-        "catmat_code": "BR499205"
-      },
-      {
-        "item_number": 3,
-        "description": "Caneta esferográfica azul",
-        "unit": "unidade",
-        "quantity": 500,
-        "unit_price": 5014.54,
-        "total_price": 2782380.25,
-        "catmat_code": "BR499634"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "46392130000380-1067-2026-CT",
-    "pncp_control_number": "46392130000380-1-001067/2026-CT",
-    "contract_number": "CT-4522/2026",
-    "agency_cnpj": "46392130000380",
-    "supplier_tax_id": "14391099000152",
-    "opportunity_source_id": "46392130000380-1067-2026",
-    "object_description": "Contratação de serviços de limpeza e conservação — contrato firmado após homologação.",
-    "signed_at": "2026-06-07T10:00:00+00:00",
-    "start_at": "2026-06-17T10:00:00+00:00",
-    "end_at": "2027-06-07T10:00:00+00:00",
-    "total_value": 2222064.18,
-    "currency": "BRL",
-    "status": "executed",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Servente de limpeza (posto mensal)",
-        "unit": "m",
-        "quantity": 200,
-        "unit_price": 3950.01,
-        "total_price": 842206.65,
-        "catmat_code": "BR616884"
-      },
-      {
-        "item_number": 2,
-        "description": "Encarregado de limpeza (posto mensal)",
-        "unit": "m",
-        "quantity": 500,
-        "unit_price": 2326.64,
-        "total_price": 1524429.0,
-        "catmat_code": "BR815128"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "33649282000108-1070-2026-CT",
-    "pncp_control_number": "33649282000108-1-001070/2026-CT",
-    "contract_number": "CT-6120/2026",
-    "agency_cnpj": "33649282000108",
-    "supplier_tax_id": "23456789000100",
-    "opportunity_source_id": "33649282000108-1070-2026",
-    "object_description": "Contratação de serviços de limpeza e conservação — contrato firmado após homologação.",
-    "signed_at": "2026-04-24T16:00:00+00:00",
-    "start_at": "2026-05-04T16:00:00+00:00",
-    "end_at": "2027-04-24T16:00:00+00:00",
-    "total_value": 4290126.21,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Servente de limpeza (posto mensal)",
-        "unit": "m",
-        "quantity": 1000,
-        "unit_price": 2440.17,
-        "total_price": 2048308.24,
-        "catmat_code": "BR616884"
-      },
-      {
-        "item_number": 2,
-        "description": "Encarregado de limpeza (posto mensal)",
-        "unit": "m",
-        "quantity": 200,
-        "unit_price": 12719.33,
-        "total_price": 2131317.94,
-        "catmat_code": "BR815128"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "18715615000160-1072-2026-CT",
-    "pncp_control_number": "18715615000160-1-001072/2026-CT",
-    "contract_number": "CT-2398/2026",
-    "agency_cnpj": "18715615000160",
-    "supplier_tax_id": "27081108000130",
-    "opportunity_source_id": "18715615000160-1072-2026",
-    "object_description": "Reforma de escola municipal — contrato firmado após homologação.",
-    "signed_at": "2026-04-26T08:00:00+00:00",
-    "start_at": "2026-05-06T08:00:00+00:00",
-    "end_at": "2027-04-26T08:00:00+00:00",
-    "total_value": 61503239.12,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Reforma estrutural escola (serviço global)",
-        "unit": "m",
-        "quantity": 500,
-        "unit_price": 114374.77,
-        "total_price": 47730690.7,
-        "catmat_code": "BR244447"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "33683111000107-1083-2026-CT",
-    "pncp_control_number": "33683111000107-1-001083/2026-CT",
-    "contract_number": "CT-7730/2026",
-    "agency_cnpj": "33683111000107",
-    "supplier_tax_id": "14391099000152",
-    "opportunity_source_id": "33683111000107-1083-2026",
-    "object_description": "Contratação de monitoramento eletrônico urbano — contrato firmado após homologação.",
-    "signed_at": "2026-04-24T15:00:00+00:00",
-    "start_at": "2026-05-04T15:00:00+00:00",
-    "end_at": "2027-04-24T15:00:00+00:00",
-    "total_value": 11357100.05,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Câmera CFTV PTZ",
-        "unit": "m",
-        "quantity": 12,
-        "unit_price": 404298.98,
-        "total_price": 4320303.74,
-        "catmat_code": "BR647627"
-      },
-      {
-        "item_number": 2,
-        "description": "Câmera fixa 4MP",
-        "unit": "m",
-        "quantity": 50,
-        "unit_price": 31825.4,
-        "total_price": 2341395.15,
-        "catmat_code": "BR407838"
-      },
-      {
-        "item_number": 3,
-        "description": "Licença analítico de vídeo",
-        "unit": "unidade",
-        "quantity": 12,
-        "unit_price": 288804.66,
-        "total_price": 3621840.29,
-        "catmat_code": "BR447074"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "42498700000143-1029-2026-CT",
-    "pncp_control_number": "42498700000143-1-001029/2026-CT",
-    "contract_number": "CT-8900/2026",
-    "agency_cnpj": "42498700000143",
-    "supplier_tax_id": "22334455000122",
-    "opportunity_source_id": "42498700000143-1029-2026",
-    "object_description": "Recapeamento asfáltico de vias urbanas — contrato firmado após homologação.",
-    "signed_at": "2026-05-12T08:00:00+00:00",
-    "start_at": "2026-05-22T08:00:00+00:00",
-    "end_at": "2027-05-12T08:00:00+00:00",
-    "total_value": 69636610.16,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Recapeamento CBUQ 4cm m²",
-        "unit": "m²",
-        "quantity": 200,
-        "unit_price": 165128.54,
-        "total_price": 36212592.09,
-        "catmat_code": "BR751275"
-      },
-      {
-        "item_number": 2,
-        "description": "Fresagem m²",
-        "unit": "m²",
-        "quantity": 1000,
-        "unit_price": 9999.08,
-        "total_price": 8980698.07,
-        "catmat_code": "BR933197"
-      },
-      {
-        "item_number": 3,
-        "description": "Pintura de faixa m",
-        "unit": "m",
-        "quantity": 500,
-        "unit_price": 45076.8,
-        "total_price": 19137372.07,
-        "catmat_code": "BR353365"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "00394452000103-1060-2026-CT",
-    "pncp_control_number": "00394452000103-1-001060/2026-CT",
-    "contract_number": "CT-8030/2026",
-    "agency_cnpj": "00394452000103",
-    "supplier_tax_id": "22334455000122",
-    "opportunity_source_id": "00394452000103-1060-2026",
-    "object_description": "Aquisição de livros didáticos complementares — contrato firmado após homologação.",
-    "signed_at": "2026-05-20T21:00:00+00:00",
-    "start_at": "2026-05-30T21:00:00+00:00",
-    "end_at": "2027-05-20T21:00:00+00:00",
-    "total_value": 367675.21,
-    "currency": "BRL",
-    "status": "suspended",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Livro didático ciências 5º ano",
-        "unit": "unidade",
-        "quantity": 200,
-        "unit_price": 574.37,
-        "total_price": 93733.43,
-        "catmat_code": "BR183451"
-      },
-      {
-        "item_number": 2,
-        "description": "Livro didático matemática 5º ano",
-        "unit": "m",
-        "quantity": 5000,
-        "unit_price": 50.61,
-        "total_price": 246785.3,
-        "catmat_code": "BR855811"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "00394452000103-1003-2026-CT",
-    "pncp_control_number": "00394452000103-1-001003/2026-CT",
-    "contract_number": "CT-5381/2026",
-    "agency_cnpj": "00394452000103",
     "supplier_tax_id": "33445566000199",
-    "opportunity_source_id": "00394452000103-1003-2026",
-    "object_description": "Locação de veículos leves sem motorista — contrato firmado após homologação.",
-    "signed_at": "2026-05-27T21:00:00+00:00",
-    "start_at": "2026-06-06T21:00:00+00:00",
-    "end_at": "2027-05-27T21:00:00+00:00",
-    "total_value": 9597916.04,
+    "opportunity_source_id": "42498700000143-1022-2026",
+    "object_description": "Aquisição de coletes balísticos nível IIIA — contrato firmado após homologação.",
+    "signed_at": "2026-04-23T05:00:00+00:00",
+    "start_at": "2026-05-03T05:00:00+00:00",
+    "end_at": "2027-04-23T05:00:00+00:00",
+    "total_value": 3555940.31,
     "currency": "BRL",
     "status": "active",
     "items": [
       {
         "item_number": 1,
-        "description": "Locação veículo passeio 1.0 (mês)",
-        "unit": "m",
-        "quantity": 500,
-        "unit_price": 6170.33,
-        "total_price": 2319777.07,
-        "catmat_code": "BR527118"
-      },
-      {
-        "item_number": 2,
-        "description": "Locação veículo SUV 1.5 (mês)",
-        "unit": "m",
-        "quantity": 5000,
-        "unit_price": 1503.15,
-        "total_price": 7245548.95,
-        "catmat_code": "BR962274"
+        "description": "Colete balístico nível IIIA",
+        "unit": "unidade",
+        "quantity": 1428,
+        "unit_price": 2354.33,
+        "total_price": 2922499.04,
+        "catmat_code": "BR43F314"
       }
     ]
   },
   {
     "source": "fixture",
-    "source_id": "46395000000139-1079-2026-CT",
-    "pncp_control_number": "46395000000139-1-001079/2026-CT",
-    "contract_number": "CT-1502/2026",
-    "agency_cnpj": "46395000000139",
-    "supplier_tax_id": "19381117000121",
-    "opportunity_source_id": "46395000000139-1079-2026",
-    "object_description": "Aquisição de medicamentos da farmácia básica — contrato firmado após homologação.",
-    "signed_at": "2026-05-22T07:00:00+00:00",
-    "start_at": "2026-06-01T07:00:00+00:00",
-    "end_at": "2027-05-22T07:00:00+00:00",
-    "total_value": 12557281.65,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Dipirona 500mg comprimido",
-        "unit": "comprimido",
-        "quantity": 1000,
-        "unit_price": 3044.6,
-        "total_price": 3088248.19,
-        "catmat_code": "BR338239"
-      },
-      {
-        "item_number": 2,
-        "description": "Losartana 50mg comprimido",
-        "unit": "comprimido",
-        "quantity": 12,
-        "unit_price": 254614.65,
-        "total_price": 4483298.2,
-        "catmat_code": "BR760549"
-      },
-      {
-        "item_number": 3,
-        "description": "Metformina 850mg comprimido",
-        "unit": "comprimido",
-        "quantity": 50,
-        "unit_price": 39655.44,
-        "total_price": 1846491.37,
-        "catmat_code": "BR426983"
-      },
-      {
-        "item_number": 4,
-        "description": "Amoxicilina 500mg cápsula",
-        "unit": "cápsula",
-        "quantity": 1000,
-        "unit_price": 2224.33,
-        "total_price": 2775143.26,
-        "catmat_code": "BR110711"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "27080571000170-1071-2026-CT",
-    "pncp_control_number": "27080571000170-1-001071/2026-CT",
-    "contract_number": "CT-2391/2026",
-    "agency_cnpj": "27080571000170",
-    "supplier_tax_id": "66778899000188",
-    "opportunity_source_id": "27080571000170-1071-2026",
-    "object_description": "Contratação de serviços de computação em nuvem (IaaS/PaaS) — contrato firmado após homologação.",
-    "signed_at": "2026-05-23T03:00:00+00:00",
-    "start_at": "2026-06-02T03:00:00+00:00",
-    "end_at": "2027-05-23T03:00:00+00:00",
-    "total_value": 3997173.0,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Instância computacional padrão (mês)",
-        "unit": "m",
-        "quantity": 500,
-        "unit_price": 3725.56,
-        "total_price": 1797771.82,
-        "catmat_code": "BR696122"
-      },
-      {
-        "item_number": 2,
-        "description": "Armazenamento em bloco SSD (GB/mês)",
-        "unit": "m",
-        "quantity": 200,
-        "unit_price": 4083.28,
-        "total_price": 946433.79,
-        "catmat_code": "BR824021"
-      },
-      {
-        "item_number": 3,
-        "description": "Balanceador de carga (mês)",
-        "unit": "m",
-        "quantity": 12,
-        "unit_price": 158789.71,
-        "total_price": 1753237.16,
-        "catmat_code": "BR859610"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "18715383000140-1041-2026-CT",
-    "pncp_control_number": "18715383000140-1-001041/2026-CT",
-    "contract_number": "CT-4531/2026",
+    "source_id": "18715383000140-1026-2026-CT",
+    "pncp_control_number": "18715383000140-1-001026/2026-CT",
+    "contract_number": "CT-1258/2026",
     "agency_cnpj": "18715383000140",
-    "supplier_tax_id": "19381117000121",
-    "opportunity_source_id": "18715383000140-1041-2026",
-    "object_description": "Recapeamento asfáltico de vias urbanas — contrato firmado após homologação.",
-    "signed_at": "2026-05-22T11:00:00+00:00",
-    "start_at": "2026-06-01T11:00:00+00:00",
-    "end_at": "2027-05-22T11:00:00+00:00",
-    "total_value": 70168123.75,
-    "currency": "BRL",
-    "status": "suspended",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Recapeamento CBUQ 4cm m²",
-        "unit": "m²",
-        "quantity": 5000,
-        "unit_price": 3906.85,
-        "total_price": 19862795.19,
-        "catmat_code": "BR751275"
-      },
-      {
-        "item_number": 2,
-        "description": "Fresagem m²",
-        "unit": "m²",
-        "quantity": 12,
-        "unit_price": 673996.88,
-        "total_price": 8020369.21,
-        "catmat_code": "BR933197"
-      },
-      {
-        "item_number": 3,
-        "description": "Pintura de faixa m",
-        "unit": "m",
-        "quantity": 1000,
-        "unit_price": 33439.41,
-        "total_price": 30805793.33,
-        "catmat_code": "BR353365"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "00394452000103-1078-2026-CT",
-    "pncp_control_number": "00394452000103-1-001078/2026-CT",
-    "contract_number": "CT-1897/2026",
-    "agency_cnpj": "00394452000103",
-    "supplier_tax_id": "20738832000141",
-    "opportunity_source_id": "00394452000103-1078-2026",
+    "supplier_tax_id": "11223344000155",
+    "opportunity_source_id": "18715383000140-1026-2026",
     "object_description": "Aquisição de materiais de escritório diversos — contrato firmado após homologação.",
-    "signed_at": "2026-05-30T07:00:00+00:00",
-    "start_at": "2026-06-09T07:00:00+00:00",
-    "end_at": "2027-05-30T07:00:00+00:00",
-    "total_value": 2618946.33,
+    "signed_at": "2026-05-19T18:00:00+00:00",
+    "start_at": "2026-05-29T18:00:00+00:00",
+    "end_at": "2027-05-19T18:00:00+00:00",
+    "total_value": 10164960.64,
     "currency": "BRL",
     "status": "active",
     "items": [
@@ -829,433 +46,883 @@
         "item_number": 1,
         "description": "Papel A4 75g resma 500fl",
         "unit": "resma",
-        "quantity": 100,
-        "unit_price": 11131.74,
-        "total_price": 1320185.22,
-        "catmat_code": "BR825984"
+        "quantity": 212075,
+        "unit_price": 18.6,
+        "total_price": 5474418.15,
+        "catmat_code": "BRD696BA"
       },
       {
         "item_number": 2,
         "description": "Toner laser preto",
         "unit": "unidade",
-        "quantity": 12,
-        "unit_price": 61197.2,
-        "total_price": 791286.87,
-        "catmat_code": "BR499205"
+        "quantity": 4947,
+        "unit_price": 218.56,
+        "total_price": 1205248.3,
+        "catmat_code": "BREBE832"
       },
       {
         "item_number": 3,
         "description": "Caneta esferográfica azul",
         "unit": "unidade",
-        "quantity": 500,
-        "unit_price": 1191.35,
-        "total_price": 706082.67,
-        "catmat_code": "BR499634"
+        "quantity": 1805617,
+        "unit_price": 1.98,
+        "total_price": 3302569.08,
+        "catmat_code": "BRD99034"
       }
     ]
   },
   {
     "source": "fixture",
-    "source_id": "00489828000136-1028-2026-CT",
-    "pncp_control_number": "00489828000136-1-001028/2026-CT",
-    "contract_number": "CT-9149/2026",
-    "agency_cnpj": "00489828000136",
-    "supplier_tax_id": "30102117000134",
-    "opportunity_source_id": "00489828000136-1028-2026",
+    "source_id": "18715615000160-1027-2026-CT",
+    "pncp_control_number": "18715615000160-1-001027/2026-CT",
+    "contract_number": "CT-6931/2026",
+    "agency_cnpj": "18715615000160",
+    "supplier_tax_id": "18713919000198",
+    "opportunity_source_id": "18715615000160-1027-2026",
     "object_description": "Contratação de serviços de limpeza e conservação — contrato firmado após homologação.",
-    "signed_at": "2026-05-08T07:00:00+00:00",
-    "start_at": "2026-05-18T07:00:00+00:00",
-    "end_at": "2027-05-08T07:00:00+00:00",
-    "total_value": 1384620.74,
+    "signed_at": "2026-04-11T15:00:00+00:00",
+    "start_at": "2026-04-21T15:00:00+00:00",
+    "end_at": "2027-04-11T15:00:00+00:00",
+    "total_value": 3062265.6,
     "currency": "BRL",
-    "status": "executed",
+    "status": "suspended",
     "items": [
       {
         "item_number": 1,
         "description": "Servente de limpeza (posto mensal)",
         "unit": "m",
-        "quantity": 12,
-        "unit_price": 51184.0,
-        "total_price": 613457.45,
-        "catmat_code": "BR616884"
+        "quantity": 397,
+        "unit_price": 4576.96,
+        "total_price": 1570306.92,
+        "catmat_code": "BRDFEDB0"
       },
       {
         "item_number": 2,
         "description": "Encarregado de limpeza (posto mensal)",
         "unit": "m",
-        "quantity": 500,
-        "unit_price": 1170.15,
-        "total_price": 538561.22,
-        "catmat_code": "BR815128"
+        "quantity": 244,
+        "unit_price": 5651.53,
+        "total_price": 1657361.47,
+        "catmat_code": "BR04A9EC"
       }
     ]
   },
   {
     "source": "fixture",
-    "source_id": "46395000000139-1008-2026-CT",
-    "pncp_control_number": "46395000000139-1-001008/2026-CT",
-    "contract_number": "CT-2180/2026",
-    "agency_cnpj": "46395000000139",
-    "supplier_tax_id": "19381117000121",
-    "opportunity_source_id": "46395000000139-1008-2026",
-    "object_description": "Contratação de serviços de hemodiálise — contrato firmado após homologação.",
-    "signed_at": "2026-05-14T04:00:00+00:00",
-    "start_at": "2026-05-24T04:00:00+00:00",
-    "end_at": "2027-05-14T04:00:00+00:00",
-    "total_value": 12205840.96,
-    "currency": "BRL",
-    "status": "executed",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Sessão de hemodiálise",
-        "unit": "sessão",
-        "quantity": 1000,
-        "unit_price": 5649.46,
-        "total_price": 5198066.49,
-        "catmat_code": "BR391649"
-      },
-      {
-        "item_number": 2,
-        "description": "Sessão de hemodiálise de urgência",
-        "unit": "sessão",
-        "quantity": 12,
-        "unit_price": 728355.21,
-        "total_price": 8651555.02,
-        "catmat_code": "BR159786"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "14390500000116-1059-2026-CT",
-    "pncp_control_number": "14390500000116-1-001059/2026-CT",
-    "contract_number": "CT-7626/2026",
-    "agency_cnpj": "14390500000116",
-    "supplier_tax_id": "22334455000122",
-    "opportunity_source_id": "14390500000116-1059-2026",
+    "source_id": "13756663000171-1041-2026-CT",
+    "pncp_control_number": "13756663000171-1-001041/2026-CT",
+    "contract_number": "CT-9543/2026",
+    "agency_cnpj": "13756663000171",
+    "supplier_tax_id": "55667788000166",
+    "opportunity_source_id": "13756663000171-1041-2026",
     "object_description": "Contratação de vigilância patrimonial armada — contrato firmado após homologação.",
-    "signed_at": "2026-05-17T14:00:00+00:00",
-    "start_at": "2026-05-27T14:00:00+00:00",
-    "end_at": "2027-05-17T14:00:00+00:00",
-    "total_value": 2221870.69,
+    "signed_at": "2026-05-12T11:00:00+00:00",
+    "start_at": "2026-05-22T11:00:00+00:00",
+    "end_at": "2027-05-12T11:00:00+00:00",
+    "total_value": 8351275.55,
     "currency": "BRL",
-    "status": "executed",
+    "status": "active",
     "items": [
       {
         "item_number": 1,
         "description": "Posto vigilância armada 12x36 diurno",
         "unit": "m",
-        "quantity": 100,
-        "unit_price": 8956.01,
-        "total_price": 747015.46,
-        "catmat_code": "BR788832"
+        "quantity": 342,
+        "unit_price": 11322.56,
+        "total_price": 4610799.42,
+        "catmat_code": "BRB9D3D2"
       },
       {
         "item_number": 2,
         "description": "Posto vigilância armada 12x36 noturno",
         "unit": "m",
-        "quantity": 100,
-        "unit_price": 12676.43,
-        "total_price": 1336004.8,
-        "catmat_code": "BR962211"
+        "quantity": 314,
+        "unit_price": 14523.98,
+        "total_price": 4882704.2,
+        "catmat_code": "BR58B0C5"
       }
     ]
   },
   {
     "source": "fixture",
-    "source_id": "42498700000143-1038-2026-CT",
-    "pncp_control_number": "42498700000143-1-001038/2026-CT",
-    "contract_number": "CT-8538/2026",
-    "agency_cnpj": "42498700000143",
-    "supplier_tax_id": "18713919000198",
-    "opportunity_source_id": "42498700000143-1038-2026",
-    "object_description": "Consultoria para modernização administrativa — contrato firmado após homologação.",
-    "signed_at": "2026-05-11T21:00:00+00:00",
-    "start_at": "2026-05-21T21:00:00+00:00",
-    "end_at": "2027-05-11T21:00:00+00:00",
-    "total_value": 9195322.62,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Serviço de consultoria (hora técnica sênior)",
-        "unit": "hora",
-        "quantity": 5000,
-        "unit_price": 2299.01,
-        "total_price": 8243670.94,
-        "catmat_code": "BR191639"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "13927801000149-1052-2026-CT",
-    "pncp_control_number": "13927801000149-1-001052/2026-CT",
-    "contract_number": "CT-6456/2026",
-    "agency_cnpj": "13927801000149",
-    "supplier_tax_id": "20738832000141",
-    "opportunity_source_id": "13927801000149-1052-2026",
-    "object_description": "Aquisição de materiais de escritório diversos — contrato firmado após homologação.",
-    "signed_at": "2026-05-18T18:00:00+00:00",
-    "start_at": "2026-05-28T18:00:00+00:00",
-    "end_at": "2027-05-18T18:00:00+00:00",
-    "total_value": 8291820.6,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Papel A4 75g resma 500fl",
-        "unit": "resma",
-        "quantity": 500,
-        "unit_price": 5181.73,
-        "total_price": 3020172.58,
-        "catmat_code": "BR825984"
-      },
-      {
-        "item_number": 2,
-        "description": "Toner laser preto",
-        "unit": "unidade",
-        "quantity": 50,
-        "unit_price": 30271.61,
-        "total_price": 1431573.03,
-        "catmat_code": "BR499205"
-      },
-      {
-        "item_number": 3,
-        "description": "Caneta esferográfica azul",
-        "unit": "unidade",
-        "quantity": 50,
-        "unit_price": 54798.93,
-        "total_price": 2777166.83,
-        "catmat_code": "BR499634"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "14390500000116-1014-2026-CT",
-    "pncp_control_number": "14390500000116-1-001014/2026-CT",
-    "contract_number": "CT-3419/2026",
-    "agency_cnpj": "14390500000116",
-    "supplier_tax_id": "20738832000141",
-    "opportunity_source_id": "14390500000116-1014-2026",
-    "object_description": "Aquisição de materiais de escritório diversos — contrato firmado após homologação.",
-    "signed_at": "2026-05-09T14:00:00+00:00",
-    "start_at": "2026-05-19T14:00:00+00:00",
-    "end_at": "2027-05-09T14:00:00+00:00",
-    "total_value": 9589365.21,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Papel A4 75g resma 500fl",
-        "unit": "resma",
-        "quantity": 100,
-        "unit_price": 20592.86,
-        "total_price": 1767061.18,
-        "catmat_code": "BR825984"
-      },
-      {
-        "item_number": 2,
-        "description": "Toner laser preto",
-        "unit": "unidade",
-        "quantity": 500,
-        "unit_price": 4535.69,
-        "total_price": 1899621.92,
-        "catmat_code": "BR499205"
-      },
-      {
-        "item_number": 3,
-        "description": "Caneta esferográfica azul",
-        "unit": "unidade",
-        "quantity": 100,
-        "unit_price": 61286.89,
-        "total_price": 5444150.07,
-        "catmat_code": "BR499634"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "00394452000103-1017-2026-CT",
-    "pncp_control_number": "00394452000103-1-001017/2026-CT",
-    "contract_number": "CT-2234/2026",
-    "agency_cnpj": "00394452000103",
-    "supplier_tax_id": "20738832000141",
-    "opportunity_source_id": "00394452000103-1017-2026",
-    "object_description": "Consultoria para modernização administrativa — contrato firmado após homologação.",
-    "signed_at": "2026-04-21T21:00:00+00:00",
-    "start_at": "2026-05-01T21:00:00+00:00",
-    "end_at": "2027-04-21T21:00:00+00:00",
-    "total_value": 182096.81,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Serviço de consultoria (hora técnica sênior)",
-        "unit": "hora",
-        "quantity": 50,
-        "unit_price": 3467.46,
-        "total_price": 171598.72,
-        "catmat_code": "BR191639"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "14390766000140-1005-2026-CT",
-    "pncp_control_number": "14390766000140-1-001005/2026-CT",
-    "contract_number": "CT-6295/2026",
-    "agency_cnpj": "14390766000140",
-    "supplier_tax_id": "33445566000199",
-    "opportunity_source_id": "14390766000140-1005-2026",
-    "object_description": "Aquisição de materiais de escritório diversos — contrato firmado após homologação.",
-    "signed_at": "2026-05-04T13:00:00+00:00",
-    "start_at": "2026-05-14T13:00:00+00:00",
-    "end_at": "2027-05-04T13:00:00+00:00",
-    "total_value": 742611.53,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Papel A4 75g resma 500fl",
-        "unit": "resma",
-        "quantity": 1000,
-        "unit_price": 393.25,
-        "total_price": 394077.52,
-        "catmat_code": "BR825984"
-      },
-      {
-        "item_number": 2,
-        "description": "Toner laser preto",
-        "unit": "unidade",
-        "quantity": 200,
-        "unit_price": 891.43,
-        "total_price": 215268.77,
-        "catmat_code": "BR499205"
-      },
-      {
-        "item_number": 3,
-        "description": "Caneta esferográfica azul",
-        "unit": "unidade",
-        "quantity": 100,
-        "unit_price": 2172.9,
-        "total_price": 223683.58,
-        "catmat_code": "BR499634"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "10832074000155-1004-2026-CT",
-    "pncp_control_number": "10832074000155-1-001004/2026-CT",
-    "contract_number": "CT-9312/2026",
-    "agency_cnpj": "10832074000155",
-    "supplier_tax_id": "19381117000121",
-    "opportunity_source_id": "10832074000155-1004-2026",
-    "object_description": "Locação de veículos leves sem motorista — contrato firmado após homologação.",
-    "signed_at": "2026-05-16T09:00:00+00:00",
-    "start_at": "2026-05-26T09:00:00+00:00",
-    "end_at": "2027-05-16T09:00:00+00:00",
-    "total_value": 6506877.96,
-    "currency": "BRL",
-    "status": "active",
-    "items": [
-      {
-        "item_number": 1,
-        "description": "Locação veículo passeio 1.0 (mês)",
-        "unit": "m",
-        "quantity": 500,
-        "unit_price": 3788.44,
-        "total_price": 1778637.38,
-        "catmat_code": "BR527118"
-      },
-      {
-        "item_number": 2,
-        "description": "Locação veículo SUV 1.5 (mês)",
-        "unit": "m",
-        "quantity": 200,
-        "unit_price": 26467.51,
-        "total_price": 4747087.55,
-        "catmat_code": "BR962274"
-      }
-    ]
-  },
-  {
-    "source": "fixture",
-    "source_id": "07526557000100-1074-2026-CT",
-    "pncp_control_number": "07526557000100-1-001074/2026-CT",
-    "contract_number": "CT-2479/2026",
-    "agency_cnpj": "07526557000100",
-    "supplier_tax_id": "18713919000198",
-    "opportunity_source_id": "07526557000100-1074-2026",
+    "source_id": "33683111000107-1046-2026-CT",
+    "pncp_control_number": "33683111000107-1-001046/2026-CT",
+    "contract_number": "CT-9032/2026",
+    "agency_cnpj": "33683111000107",
+    "supplier_tax_id": "23456789000100",
+    "opportunity_source_id": "33683111000107-1046-2026",
     "object_description": "Fornecimento de uniformes escolares — contrato firmado após homologação.",
-    "signed_at": "2026-05-24T04:00:00+00:00",
-    "start_at": "2026-06-03T04:00:00+00:00",
-    "end_at": "2027-05-24T04:00:00+00:00",
-    "total_value": 877621.32,
+    "signed_at": "2026-05-17T20:00:00+00:00",
+    "start_at": "2026-05-27T20:00:00+00:00",
+    "end_at": "2027-05-17T20:00:00+00:00",
+    "total_value": 994691.17,
     "currency": "BRL",
-    "status": "suspended",
+    "status": "executed",
     "items": [
       {
         "item_number": 1,
         "description": "Kit uniforme escolar fundamental",
         "unit": "m",
-        "quantity": 5000,
-        "unit_price": 43.51,
-        "total_price": 306337.48,
-        "catmat_code": "BR290123"
+        "quantity": 2188,
+        "unit_price": 139.9,
+        "total_price": 373367.06,
+        "catmat_code": "BR576C13"
       },
       {
         "item_number": 2,
         "description": "Kit uniforme escolar médio",
         "unit": "m",
-        "quantity": 12,
-        "unit_price": 43037.44,
-        "total_price": 728407.84,
-        "catmat_code": "BR888120"
+        "quantity": 2973,
+        "unit_price": 153.39,
+        "total_price": 513832.5,
+        "catmat_code": "BR93FF1D"
       }
     ]
   },
   {
     "source": "fixture",
-    "source_id": "33649282000108-1063-2026-CT",
-    "pncp_control_number": "33649282000108-1-001063/2026-CT",
-    "contract_number": "CT-4084/2026",
-    "agency_cnpj": "33649282000108",
-    "supplier_tax_id": "55667788000166",
-    "opportunity_source_id": "33649282000108-1063-2026",
+    "source_id": "33683111000107-1048-2026-CT",
+    "pncp_control_number": "33683111000107-1-001048/2026-CT",
+    "contract_number": "CT-6327/2026",
+    "agency_cnpj": "33683111000107",
+    "supplier_tax_id": "20738832000141",
+    "opportunity_source_id": "33683111000107-1048-2026",
     "object_description": "Contratação de vigilância patrimonial armada — contrato firmado após homologação.",
-    "signed_at": "2026-05-09T17:00:00+00:00",
-    "start_at": "2026-05-19T17:00:00+00:00",
-    "end_at": "2027-05-09T17:00:00+00:00",
-    "total_value": 5863477.81,
+    "signed_at": "2026-05-14T05:00:00+00:00",
+    "start_at": "2026-05-24T05:00:00+00:00",
+    "end_at": "2027-05-14T05:00:00+00:00",
+    "total_value": 9574641.87,
     "currency": "BRL",
-    "status": "active",
+    "status": "executed",
     "items": [
       {
         "item_number": 1,
         "description": "Posto vigilância armada 12x36 diurno",
         "unit": "m",
-        "quantity": 12,
-        "unit_price": 257715.86,
-        "total_price": 3569930.74,
-        "catmat_code": "BR788832"
+        "quantity": 212,
+        "unit_price": 12184.16,
+        "total_price": 2554307.89,
+        "catmat_code": "BRB9D3D2"
       },
       {
         "item_number": 2,
         "description": "Posto vigilância armada 12x36 noturno",
         "unit": "m",
-        "quantity": 5000,
-        "unit_price": 699.12,
-        "total_price": 2550393.66,
-        "catmat_code": "BR962211"
+        "quantity": 498,
+        "unit_price": 15391.95,
+        "total_price": 7544131.43,
+        "catmat_code": "BR58B0C5"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "00394452000103-1056-2026-CT",
+    "pncp_control_number": "00394452000103-1-001056/2026-CT",
+    "contract_number": "CT-2874/2026",
+    "agency_cnpj": "00394452000103",
+    "supplier_tax_id": "55667788000166",
+    "opportunity_source_id": "00394452000103-1056-2026",
+    "object_description": "Consultoria para modernização administrativa — contrato firmado após homologação.",
+    "signed_at": "2026-05-03T23:00:00+00:00",
+    "start_at": "2026-05-13T23:00:00+00:00",
+    "end_at": "2027-05-03T23:00:00+00:00",
+    "total_value": 9310908.82,
+    "currency": "BRL",
+    "status": "suspended",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Serviço de consultoria (hora técnica sênior)",
+        "unit": "hora",
+        "quantity": 31885,
+        "unit_price": 318.73,
+        "total_price": 9836605.84,
+        "catmat_code": "BRCBB3ED"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "27080571000170-1072-2026-CT",
+    "pncp_control_number": "27080571000170-1-001072/2026-CT",
+    "contract_number": "CT-8430/2026",
+    "agency_cnpj": "27080571000170",
+    "supplier_tax_id": "66778899000188",
+    "opportunity_source_id": "27080571000170-1072-2026",
+    "object_description": "Reforma de escola municipal — contrato firmado após homologação.",
+    "signed_at": "2026-04-29T21:00:00+00:00",
+    "start_at": "2026-05-09T21:00:00+00:00",
+    "end_at": "2027-04-29T21:00:00+00:00",
+    "total_value": 7162948.89,
+    "currency": "BRL",
+    "status": "executed",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Reforma estrutural escola (serviço global)",
+        "unit": "m",
+        "quantity": 14,
+        "unit_price": 620748.12,
+        "total_price": 7180803.63,
+        "catmat_code": "BRFB4E5A"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "10832074000155-1077-2026-CT",
+    "pncp_control_number": "10832074000155-1-001077/2026-CT",
+    "contract_number": "CT-3500/2026",
+    "agency_cnpj": "10832074000155",
+    "supplier_tax_id": "14391099000152",
+    "opportunity_source_id": "10832074000155-1077-2026",
+    "object_description": "Reforma de escola municipal — contrato firmado após homologação.",
+    "signed_at": "2026-05-03T22:00:00+00:00",
+    "start_at": "2026-05-13T22:00:00+00:00",
+    "end_at": "2027-05-03T22:00:00+00:00",
+    "total_value": 55245490.64,
+    "currency": "BRL",
+    "status": "executed",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Reforma estrutural escola (serviço global)",
+        "unit": "m",
+        "quantity": 94,
+        "unit_price": 582461.14,
+        "total_price": 53286813.6,
+        "catmat_code": "BRFB4E5A"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "13381447000130-1011-2026-CT",
+    "pncp_control_number": "13381447000130-1-001011/2026-CT",
+    "contract_number": "CT-7105/2026",
+    "agency_cnpj": "13381447000130",
+    "supplier_tax_id": "20738832000141",
+    "opportunity_source_id": "13381447000130-1011-2026",
+    "object_description": "Consultoria para modernização administrativa — contrato firmado após homologação.",
+    "signed_at": "2026-04-12T17:00:00+00:00",
+    "start_at": "2026-04-22T17:00:00+00:00",
+    "end_at": "2027-04-12T17:00:00+00:00",
+    "total_value": 6320648.31,
+    "currency": "BRL",
+    "status": "active",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Serviço de consultoria (hora técnica sênior)",
+        "unit": "hora",
+        "quantity": 14573,
+        "unit_price": 320.73,
+        "total_price": 4682118.34,
+        "catmat_code": "BRCBB3ED"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "18715615000160-1027-2026-CT",
+    "pncp_control_number": "18715615000160-1-001027/2026-CT",
+    "contract_number": "CT-7929/2026",
+    "agency_cnpj": "18715615000160",
+    "supplier_tax_id": "11223344000155",
+    "opportunity_source_id": "18715615000160-1027-2026",
+    "object_description": "Contratação de serviços de limpeza e conservação — contrato firmado após homologação.",
+    "signed_at": "2026-04-11T15:00:00+00:00",
+    "start_at": "2026-04-21T15:00:00+00:00",
+    "end_at": "2027-04-11T15:00:00+00:00",
+    "total_value": 3672054.09,
+    "currency": "BRL",
+    "status": "active",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Servente de limpeza (posto mensal)",
+        "unit": "m",
+        "quantity": 397,
+        "unit_price": 4861.37,
+        "total_price": 1743734.13,
+        "catmat_code": "BRDFEDB0"
+      },
+      {
+        "item_number": 2,
+        "description": "Encarregado de limpeza (posto mensal)",
+        "unit": "m",
+        "quantity": 244,
+        "unit_price": 5825.53,
+        "total_price": 1588851.35,
+        "catmat_code": "BR04A9EC"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "07526557000100-1082-2026-CT",
+    "pncp_control_number": "07526557000100-1-001082/2026-CT",
+    "contract_number": "CT-2773/2026",
+    "agency_cnpj": "07526557000100",
+    "supplier_tax_id": "18713919000198",
+    "opportunity_source_id": "07526557000100-1082-2026",
+    "object_description": "Contratação de serviços de limpeza e conservação — contrato firmado após homologação.",
+    "signed_at": "2026-06-02T20:00:00+00:00",
+    "start_at": "2026-06-12T20:00:00+00:00",
+    "end_at": "2027-06-02T20:00:00+00:00",
+    "total_value": 5328540.28,
+    "currency": "BRL",
+    "status": "active",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Servente de limpeza (posto mensal)",
+        "unit": "m",
+        "quantity": 475,
+        "unit_price": 3384.17,
+        "total_price": 1941097.26,
+        "catmat_code": "BRDFEDB0"
+      },
+      {
+        "item_number": 2,
+        "description": "Encarregado de limpeza (posto mensal)",
+        "unit": "m",
+        "quantity": 536,
+        "unit_price": 6082.72,
+        "total_price": 3794996.37,
+        "catmat_code": "BR04A9EC"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "18715615000160-1081-2026-CT",
+    "pncp_control_number": "18715615000160-1-001081/2026-CT",
+    "contract_number": "CT-1430/2026",
+    "agency_cnpj": "18715615000160",
+    "supplier_tax_id": "22334455000122",
+    "opportunity_source_id": "18715615000160-1081-2026",
+    "object_description": "Locação de veículos leves sem motorista — contrato firmado após homologação.",
+    "signed_at": "2026-06-06T22:00:00+00:00",
+    "start_at": "2026-06-16T22:00:00+00:00",
+    "end_at": "2027-06-06T22:00:00+00:00",
+    "total_value": 6553223.07,
+    "currency": "BRL",
+    "status": "suspended",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Locação veículo passeio 1.0 (mês)",
+        "unit": "m",
+        "quantity": 1449,
+        "unit_price": 2247.23,
+        "total_price": 3020578.31,
+        "catmat_code": "BR408539"
+      },
+      {
+        "item_number": 2,
+        "description": "Locação veículo SUV 1.5 (mês)",
+        "unit": "m",
+        "quantity": 1165,
+        "unit_price": 3886.64,
+        "total_price": 4592763.52,
+        "catmat_code": "BR6D538D"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "13756663000171-1076-2026-CT",
+    "pncp_control_number": "13756663000171-1-001076/2026-CT",
+    "contract_number": "CT-7566/2026",
+    "agency_cnpj": "13756663000171",
+    "supplier_tax_id": "77889900000133",
+    "opportunity_source_id": "13756663000171-1076-2026",
+    "object_description": "Contratação de monitoramento eletrônico urbano — contrato firmado após homologação.",
+    "signed_at": "2026-05-02T21:00:00+00:00",
+    "start_at": "2026-05-12T21:00:00+00:00",
+    "end_at": "2027-05-02T21:00:00+00:00",
+    "total_value": 6821936.05,
+    "currency": "BRL",
+    "status": "active",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Câmera CFTV PTZ",
+        "unit": "m",
+        "quantity": 1049,
+        "unit_price": 3875.21,
+        "total_price": 5005062.79,
+        "catmat_code": "BR5A75F4"
+      },
+      {
+        "item_number": 2,
+        "description": "Câmera fixa 4MP",
+        "unit": "m",
+        "quantity": 1683,
+        "unit_price": 1234.82,
+        "total_price": 1649183.48,
+        "catmat_code": "BRDD71BA"
+      },
+      {
+        "item_number": 3,
+        "description": "Licença analítico de vídeo",
+        "unit": "unidade",
+        "quantity": 2592,
+        "unit_price": 686.77,
+        "total_price": 1746532.58,
+        "catmat_code": "BR986F0E"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "10832074000155-1002-2026-CT",
+    "pncp_control_number": "10832074000155-1-001002/2026-CT",
+    "contract_number": "CT-3578/2026",
+    "agency_cnpj": "10832074000155",
+    "supplier_tax_id": "19381117000121",
+    "opportunity_source_id": "10832074000155-1002-2026",
+    "object_description": "Contratação de serviços de hemodiálise — contrato firmado após homologação.",
+    "signed_at": "2026-04-29T13:00:00+00:00",
+    "start_at": "2026-05-09T13:00:00+00:00",
+    "end_at": "2027-04-29T13:00:00+00:00",
+    "total_value": 11527440.26,
+    "currency": "BRL",
+    "status": "active",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Sessão de hemodiálise",
+        "unit": "sessão",
+        "quantity": 23675,
+        "unit_price": 168.57,
+        "total_price": 4896326.68,
+        "catmat_code": "BRA97BF6"
+      },
+      {
+        "item_number": 2,
+        "description": "Sessão de hemodiálise de urgência",
+        "unit": "sessão",
+        "quantity": 22706,
+        "unit_price": 209.6,
+        "total_price": 4925354.41,
+        "catmat_code": "BR270AB0"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "42498600000171-1006-2026-CT",
+    "pncp_control_number": "42498600000171-1-001006/2026-CT",
+    "contract_number": "CT-1861/2026",
+    "agency_cnpj": "42498600000171",
+    "supplier_tax_id": "18713919000198",
+    "opportunity_source_id": "42498600000171-1006-2026",
+    "object_description": "Consultoria para modernização administrativa — contrato firmado após homologação.",
+    "signed_at": "2026-06-06T15:00:00+00:00",
+    "start_at": "2026-06-16T15:00:00+00:00",
+    "end_at": "2027-06-06T15:00:00+00:00",
+    "total_value": 10524122.53,
+    "currency": "BRL",
+    "status": "active",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Serviço de consultoria (hora técnica sênior)",
+        "unit": "hora",
+        "quantity": 26629,
+        "unit_price": 370.66,
+        "total_price": 7893397.71,
+        "catmat_code": "BRCBB3ED"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "46395000000139-1042-2026-CT",
+    "pncp_control_number": "46395000000139-1-001042/2026-CT",
+    "contract_number": "CT-7947/2026",
+    "agency_cnpj": "46395000000139",
+    "supplier_tax_id": "19381117000121",
+    "opportunity_source_id": "46395000000139-1042-2026",
+    "object_description": "Consultoria para modernização administrativa — contrato firmado após homologação.",
+    "signed_at": "2026-05-29T19:00:00+00:00",
+    "start_at": "2026-06-08T19:00:00+00:00",
+    "end_at": "2027-05-29T19:00:00+00:00",
+    "total_value": 8667408.28,
+    "currency": "BRL",
+    "status": "executed",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Serviço de consultoria (hora técnica sênior)",
+        "unit": "hora",
+        "quantity": 27683,
+        "unit_price": 310.79,
+        "total_price": 10220610.29,
+        "catmat_code": "BRCBB3ED"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "46395000000139-1031-2026-CT",
+    "pncp_control_number": "46395000000139-1-001031/2026-CT",
+    "contract_number": "CT-9633/2026",
+    "agency_cnpj": "46395000000139",
+    "supplier_tax_id": "55667788000166",
+    "opportunity_source_id": "46395000000139-1031-2026",
+    "object_description": "Aquisição de materiais de escritório diversos — contrato firmado após homologação.",
+    "signed_at": "2026-04-24T00:00:00+00:00",
+    "start_at": "2026-05-04T00:00:00+00:00",
+    "end_at": "2027-04-24T00:00:00+00:00",
+    "total_value": 5365432.07,
+    "currency": "BRL",
+    "status": "active",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Papel A4 75g resma 500fl",
+        "unit": "resma",
+        "quantity": 101089,
+        "unit_price": 23.36,
+        "total_price": 2702451.15,
+        "catmat_code": "BRD696BA"
+      },
+      {
+        "item_number": 2,
+        "description": "Toner laser preto",
+        "unit": "unidade",
+        "quantity": 4649,
+        "unit_price": 306.71,
+        "total_price": 1273158.33,
+        "catmat_code": "BREBE832"
+      },
+      {
+        "item_number": 3,
+        "description": "Caneta esferográfica azul",
+        "unit": "unidade",
+        "quantity": 954328,
+        "unit_price": 1.53,
+        "total_price": 1413002.49,
+        "catmat_code": "BRD99034"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "42498700000143-1016-2026-CT",
+    "pncp_control_number": "42498700000143-1-001016/2026-CT",
+    "contract_number": "CT-6375/2026",
+    "agency_cnpj": "42498700000143",
+    "supplier_tax_id": "07919473000174",
+    "opportunity_source_id": "42498700000143-1016-2026",
+    "object_description": "Recapeamento asfáltico de vias urbanas — contrato firmado após homologação.",
+    "signed_at": "2026-04-13T21:00:00+00:00",
+    "start_at": "2026-04-23T21:00:00+00:00",
+    "end_at": "2027-04-13T21:00:00+00:00",
+    "total_value": 6576465.5,
+    "currency": "BRL",
+    "status": "active",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Recapeamento CBUQ 4cm m²",
+        "unit": "m²",
+        "quantity": 50796,
+        "unit_price": 65.5,
+        "total_price": 2520813.94,
+        "catmat_code": "BRBF0AEB"
+      },
+      {
+        "item_number": 2,
+        "description": "Fresagem m²",
+        "unit": "m²",
+        "quantity": 119064,
+        "unit_price": 9.71,
+        "total_price": 1107391.1,
+        "catmat_code": "BR45A0E9"
+      },
+      {
+        "item_number": 3,
+        "description": "Pintura de faixa m",
+        "unit": "m",
+        "quantity": 253732,
+        "unit_price": 8.09,
+        "total_price": 2174178.04,
+        "catmat_code": "BR6360E2"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "27080571000170-1072-2026-CT",
+    "pncp_control_number": "27080571000170-1-001072/2026-CT",
+    "contract_number": "CT-4770/2026",
+    "agency_cnpj": "27080571000170",
+    "supplier_tax_id": "07919473000174",
+    "opportunity_source_id": "27080571000170-1072-2026",
+    "object_description": "Reforma de escola municipal — contrato firmado após homologação.",
+    "signed_at": "2026-05-08T21:00:00+00:00",
+    "start_at": "2026-05-18T21:00:00+00:00",
+    "end_at": "2027-05-08T21:00:00+00:00",
+    "total_value": 8032149.58,
+    "currency": "BRL",
+    "status": "suspended",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Reforma estrutural escola (serviço global)",
+        "unit": "m",
+        "quantity": 14,
+        "unit_price": 458774.93,
+        "total_price": 7073832.14,
+        "catmat_code": "BRFB4E5A"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "18715383000140-1026-2026-CT",
+    "pncp_control_number": "18715383000140-1-001026/2026-CT",
+    "contract_number": "CT-7626/2026",
+    "agency_cnpj": "18715383000140",
+    "supplier_tax_id": "11223344000155",
+    "opportunity_source_id": "18715383000140-1026-2026",
+    "object_description": "Aquisição de materiais de escritório diversos — contrato firmado após homologação.",
+    "signed_at": "2026-05-22T18:00:00+00:00",
+    "start_at": "2026-06-01T18:00:00+00:00",
+    "end_at": "2027-05-22T18:00:00+00:00",
+    "total_value": 7687311.51,
+    "currency": "BRL",
+    "status": "executed",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Papel A4 75g resma 500fl",
+        "unit": "resma",
+        "quantity": 212075,
+        "unit_price": 25.77,
+        "total_price": 3808688.32,
+        "catmat_code": "BRD696BA"
+      },
+      {
+        "item_number": 2,
+        "description": "Toner laser preto",
+        "unit": "unidade",
+        "quantity": 4947,
+        "unit_price": 206.04,
+        "total_price": 1513589.85,
+        "catmat_code": "BREBE832"
+      },
+      {
+        "item_number": 3,
+        "description": "Caneta esferográfica azul",
+        "unit": "unidade",
+        "quantity": 1805617,
+        "unit_price": 2.03,
+        "total_price": 3284780.6,
+        "catmat_code": "BRD99034"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "33683111000107-1008-2026-CT",
+    "pncp_control_number": "33683111000107-1-001008/2026-CT",
+    "contract_number": "CT-8538/2026",
+    "agency_cnpj": "33683111000107",
+    "supplier_tax_id": "18713919000198",
+    "opportunity_source_id": "33683111000107-1008-2026",
+    "object_description": "Aquisição de notebooks para servidores públicos — contrato firmado após homologação.",
+    "signed_at": "2026-04-25T02:00:00+00:00",
+    "start_at": "2026-05-05T02:00:00+00:00",
+    "end_at": "2027-04-25T02:00:00+00:00",
+    "total_value": 12217469.58,
+    "currency": "BRL",
+    "status": "active",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Notebook corporativo i7 16GB 512GB",
+        "unit": "unidade",
+        "quantity": 1616,
+        "unit_price": 9450.09,
+        "total_price": 10951861.78,
+        "catmat_code": "BRDCC626"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "33683111000107-1070-2026-CT",
+    "pncp_control_number": "33683111000107-1-001070/2026-CT",
+    "contract_number": "CT-6456/2026",
+    "agency_cnpj": "33683111000107",
+    "supplier_tax_id": "20738832000141",
+    "opportunity_source_id": "33683111000107-1070-2026",
+    "object_description": "Aquisição de materiais de escritório diversos — contrato firmado após homologação.",
+    "signed_at": "2026-04-18T08:00:00+00:00",
+    "start_at": "2026-04-28T08:00:00+00:00",
+    "end_at": "2027-04-18T08:00:00+00:00",
+    "total_value": 1770317.03,
+    "currency": "BRL",
+    "status": "active",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Papel A4 75g resma 500fl",
+        "unit": "resma",
+        "quantity": 27333,
+        "unit_price": 25.95,
+        "total_price": 826666.51,
+        "catmat_code": "BRD696BA"
+      },
+      {
+        "item_number": 2,
+        "description": "Toner laser preto",
+        "unit": "unidade",
+        "quantity": 530,
+        "unit_price": 336.68,
+        "total_price": 168771.9,
+        "catmat_code": "BREBE832"
+      },
+      {
+        "item_number": 3,
+        "description": "Caneta esferográfica azul",
+        "unit": "unidade",
+        "quantity": 411654,
+        "unit_price": 1.35,
+        "total_price": 563091.14,
+        "catmat_code": "BRD99034"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "00394411000109-1073-2026-CT",
+    "pncp_control_number": "00394411000109-1-001073/2026-CT",
+    "contract_number": "CT-6724/2026",
+    "agency_cnpj": "00394411000109",
+    "supplier_tax_id": "20738832000141",
+    "opportunity_source_id": "00394411000109-1073-2026",
+    "object_description": "Aquisição de coletes balísticos nível IIIA — contrato firmado após homologação.",
+    "signed_at": "2026-05-20T18:00:00+00:00",
+    "start_at": "2026-05-30T18:00:00+00:00",
+    "end_at": "2027-05-20T18:00:00+00:00",
+    "total_value": 5942990.03,
+    "currency": "BRL",
+    "status": "active",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Colete balístico nível IIIA",
+        "unit": "unidade",
+        "quantity": 2604,
+        "unit_price": 2215.27,
+        "total_price": 4949967.52,
+        "catmat_code": "BR43F314"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "14390500000116-1083-2026-CT",
+    "pncp_control_number": "14390500000116-1-001083/2026-CT",
+    "contract_number": "CT-3902/2026",
+    "agency_cnpj": "14390500000116",
+    "supplier_tax_id": "66778899000188",
+    "opportunity_source_id": "14390500000116-1083-2026",
+    "object_description": "Aquisição de materiais de escritório diversos — contrato firmado após homologação.",
+    "signed_at": "2026-05-01T21:00:00+00:00",
+    "start_at": "2026-05-11T21:00:00+00:00",
+    "end_at": "2027-05-01T21:00:00+00:00",
+    "total_value": 7325286.58,
+    "currency": "BRL",
+    "status": "executed",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Papel A4 75g resma 500fl",
+        "unit": "resma",
+        "quantity": 151896,
+        "unit_price": 20.36,
+        "total_price": 2959029.19,
+        "catmat_code": "BRD696BA"
+      },
+      {
+        "item_number": 2,
+        "description": "Toner laser preto",
+        "unit": "unidade",
+        "quantity": 5048,
+        "unit_price": 236.67,
+        "total_price": 1432018.24,
+        "catmat_code": "BREBE832"
+      },
+      {
+        "item_number": 3,
+        "description": "Caneta esferográfica azul",
+        "unit": "unidade",
+        "quantity": 1107657,
+        "unit_price": 1.74,
+        "total_price": 1850235.16,
+        "catmat_code": "BRD99034"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "18715615000160-1029-2026-CT",
+    "pncp_control_number": "18715615000160-1-001029/2026-CT",
+    "contract_number": "CT-6295/2026",
+    "agency_cnpj": "18715615000160",
+    "supplier_tax_id": "23456789000100",
+    "opportunity_source_id": "18715615000160-1029-2026",
+    "object_description": "Aquisição de coletes balísticos nível IIIA — contrato firmado após homologação.",
+    "signed_at": "2026-05-25T23:00:00+00:00",
+    "start_at": "2026-06-04T23:00:00+00:00",
+    "end_at": "2027-05-25T23:00:00+00:00",
+    "total_value": 11265008.06,
+    "currency": "BRL",
+    "status": "active",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Colete balístico nível IIIA",
+        "unit": "unidade",
+        "quantity": 5253,
+        "unit_price": 1923.26,
+        "total_price": 12198630.89,
+        "catmat_code": "BR43F314"
+      }
+    ]
+  },
+  {
+    "source": "fixture",
+    "source_id": "10832074000155-1077-2026-CT",
+    "pncp_control_number": "10832074000155-1-001077/2026-CT",
+    "contract_number": "CT-5500/2026",
+    "agency_cnpj": "10832074000155",
+    "supplier_tax_id": "19381117000121",
+    "opportunity_source_id": "10832074000155-1077-2026",
+    "object_description": "Reforma de escola municipal — contrato firmado após homologação.",
+    "signed_at": "2026-05-14T22:00:00+00:00",
+    "start_at": "2026-05-24T22:00:00+00:00",
+    "end_at": "2027-05-14T22:00:00+00:00",
+    "total_value": 49835548.31,
+    "currency": "BRL",
+    "status": "suspended",
+    "items": [
+      {
+        "item_number": 1,
+        "description": "Reforma estrutural escola (serviço global)",
+        "unit": "m",
+        "quantity": 94,
+        "unit_price": 617518.77,
+        "total_price": 54504780.71,
+        "catmat_code": "BRFB4E5A"
       }
     ]
   }
