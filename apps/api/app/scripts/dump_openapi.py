@@ -33,7 +33,8 @@ def main() -> int:
     target.write_text(json.dumps(schema, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     logger.info(
         "Wrote OpenAPI schema to %s (%d paths)",
-        target, len(schema.get("paths", {})),
+        target,
+        len(schema.get("paths", {})),
     )
     return 0
 

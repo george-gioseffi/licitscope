@@ -7,6 +7,27 @@ follows [Semantic Versioning](https://semver.org/).
 ## [Unreleased]
 
 ### Added
+- Uniform error envelope: every HTTP error (4xx, 5xx, validation) now
+  returns `{ error, type, request_id, details? }` with a stable
+  `type` code and the request id for correlation.
+- Request-id middleware: honors a client-supplied `X-Request-ID` or
+  generates one, echoes it back, logs every non-liveness request with
+  method / path / status / duration.
+- OpenAPI snapshot committed at `docs/openapi.json` (23 paths).
+  Regenerate via `python -m app.scripts.dump_openapi`.
+- Playwright-based screenshot script (`scripts/take_screenshots.mjs`)
+  that follows `docs/SCREENSHOTS.md` and emits 9 numbered PNGs.
+- Watchlist validation: name must be 2..256 chars after trimming;
+  filters must set at least one discriminating field so a watchlist
+  doesn't silently match every notice.
+- `test_openapi_contract.py`: guards expected endpoints, router tags,
+  OpportunityDetail enrichment envelope, and PricingIntelligence
+  columns against silent removal.
+- `test_middleware.py`: request-id auto-generation, client-supplied
+  id echo, 404/422 envelope shape.
+- `docs/README.md`: documentation index organized by "what / how / run".
+- `CODE_OF_CONDUCT.md` (Contributor Covenant v2.1 by reference) and
+  `.github/FUNDING.yml` placeholder.
 - Inline price distribution widget on the pricing page (min–max track
   with IQR fill and median tick).
 - Per-rule scoring rationale persisted on `enrichments.entities.score_rationale`
@@ -51,6 +72,13 @@ follows [Semantic Versioning](https://semver.org/).
 - Fixture CATMAT bucketing uses MD5 for byte-stable regeneration.
 
 ### Fixed
+- OpenAPI description and web `<meta>` no longer claim "AI-powered
+  procurement intelligence" or list unintegrated sources.
+- Agency detail page no longer crashes when `sphere` is null.
+- Agency / supplier detail pages now render a proper "not found" state
+  instead of throwing on a non-null assertion.
+- Watchlist `/run` lifts enrichment signals (risk, complexity) onto
+  result summaries — they were silently None before.
 - Validation errors in `_filters_dep` now return 422 with JSON-serializable
   detail, not 500.
 - `min_value > max_value` is rejected with a clear 422 instead of an
