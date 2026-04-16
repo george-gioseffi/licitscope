@@ -17,8 +17,12 @@
   <img alt="FastAPI" src="https://img.shields.io/badge/API-FastAPI-009688?logo=fastapi&logoColor=white" />
   <img alt="Next.js" src="https://img.shields.io/badge/Web-Next.js%2014-000000?logo=nextdotjs&logoColor=white" />
   <img alt="Postgres" src="https://img.shields.io/badge/DB-PostgreSQL-336791?logo=postgresql&logoColor=white" />
-  <img alt="Tests"   src="https://img.shields.io/badge/tests-71%20passing-3c3" />
+  <img alt="Tests"   src="https://img.shields.io/badge/tests-84%20passing-3c3" />
   <img alt="License" src="https://img.shields.io/badge/license-MIT-green" />
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/01-dashboard.png" alt="LicitScope dashboard" width="720" />
 </p>
 
 ---
@@ -49,10 +53,50 @@ LLM-backed summarizer, swap it in via a single `Provider` implementation.
 
 ---
 
-## Screens
+## Screenshots
 
-The UI is laid out as an intelligence workstation. See
-[`docs/SCREENSHOTS.md`](docs/SCREENSHOTS.md) for the walkthrough order.
+The UI is laid out as an intelligence workstation. All screenshots below
+are captured from a locally-running demo and regenerated deterministically
+by [`scripts/take_screenshots.mjs`](scripts/take_screenshots.mjs).
+
+### Opportunities feed — faceted filtering + risk signals
+
+<p align="center">
+  <img src="docs/screenshots/02-opportunities.png" alt="Opportunities feed with faceted filters" width="860" />
+</p>
+
+### Opportunity detail — extractive summary, rationale, similar notices
+
+<p align="center">
+  <img src="docs/screenshots/09-opportunity-detail.png" alt="Opportunity detail page with scoring rationale" width="860" />
+</p>
+
+### Semantic search — TF-IDF cosine with shared keywords
+
+<p align="center">
+  <img src="docs/screenshots/03-search.png" alt="Semantic search results" width="860" />
+</p>
+
+### Pricing intelligence — IQR distribution bars + anomaly flags
+
+<p align="center">
+  <img src="docs/screenshots/04-contracts-pricing.png" alt="Pricing intelligence table" width="860" />
+</p>
+
+<details>
+<summary>More screens (agencies, watchlists, source health, about)</summary>
+
+| Directory | Watchlists |
+| --- | --- |
+| <img src="docs/screenshots/05-agencies.png" alt="Agencies directory" /> | <img src="docs/screenshots/06-watchlists.png" alt="Watchlists page" /> |
+
+| Source health | About |
+| --- | --- |
+| <img src="docs/screenshots/07-health.png" alt="Source health" /> | <img src="docs/screenshots/08-about.png" alt="About page" /> |
+
+</details>
+
+### Route map
 
 ```
  /                       Dashboard   — KPIs, 30-day publications, modality/state/
@@ -69,6 +113,10 @@ The UI is laid out as an intelligence workstation. See
  /health                 Ops         — ingestion-run log per source
  /about                  Meta        — sources, design principles, limits
 ```
+
+See [`docs/SCREENSHOTS.md`](docs/SCREENSHOTS.md) for the full walkthrough
+order and [`docs/screenshots/README.md`](docs/screenshots/README.md) for
+the regeneration command.
 
 ---
 
