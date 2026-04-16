@@ -20,7 +20,12 @@ def main() -> int:
         run = svc.ingest_pncp_window(days_back=3)
         logger.info(
             "ingestion run %s finished status=%s fetched=%d created=%d updated=%d failed=%d",
-            run.id, run.status, run.fetched, run.created, run.updated, run.failed,
+            run.id,
+            run.status,
+            run.fetched,
+            run.created,
+            run.updated,
+            run.failed,
         )
     return 0
 

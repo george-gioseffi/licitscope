@@ -6,10 +6,12 @@ from app.models.opportunity import Opportunity
 
 def make(**kwargs) -> Opportunity:
     base = dict(
-        source="fixture", source_id="x",
+        source="fixture",
+        source_id="x",
         title="Aquisição de medicamentos",
         object_description="Contratação de fornecedores de medicamentos diversos conforme RENAME.",
-        modality="pregao_eletronico", status="published",
+        modality="pregao_eletronico",
+        status="published",
         estimated_value=500_000.0,
     )
     base.update(kwargs)
@@ -31,12 +33,8 @@ def test_dispensa_bumps_risk():
 
 def test_short_deadline_bumps_risk():
     now = datetime.now(UTC)
-    short = score_notice(
-        make(published_at=now, proposals_close_at=now + timedelta(days=3))
-    )
-    long = score_notice(
-        make(published_at=now, proposals_close_at=now + timedelta(days=60))
-    )
+    short = score_notice(make(published_at=now, proposals_close_at=now + timedelta(days=3)))
+    long = score_notice(make(published_at=now, proposals_close_at=now + timedelta(days=60)))
     assert short.risk > long.risk
 
 

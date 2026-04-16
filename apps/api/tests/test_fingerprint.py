@@ -12,10 +12,7 @@ import sys
 
 def test_stable_bucket_identical_across_python_processes():
     """stable_bucket(t) must produce the same int regardless of PYTHONHASHSEED."""
-    code = (
-        "from app.utils.text import stable_bucket; "
-        "print(stable_bucket('medicamentos'))"
-    )
+    code = "from app.utils.text import stable_bucket; print(stable_bucket('medicamentos'))"
     out1 = subprocess.check_output(
         [sys.executable, "-c", code], env={"PYTHONHASHSEED": "0"}
     ).strip()

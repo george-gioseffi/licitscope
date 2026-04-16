@@ -12,7 +12,9 @@ from app.services.search import SearchService
 router = APIRouter(prefix="/search", tags=["search"])
 
 
-@router.get("", response_model=list[SimilarOpportunity], summary="Semantic search via TF-IDF similarity")
+@router.get(
+    "", response_model=list[SimilarOpportunity], summary="Semantic search via TF-IDF similarity"
+)
 def search(
     q: str = Query(..., min_length=2),
     k: int = Query(20, ge=1, le=50),

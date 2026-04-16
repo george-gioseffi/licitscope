@@ -49,9 +49,7 @@ class PricingService:
                 ).all()
             )
             prices = sorted(
-                float(i.unit_price)
-                for i in items
-                if i.unit_price is not None and i.unit_price > 0
+                float(i.unit_price) for i in items if i.unit_price is not None and i.unit_price > 0
             )
             if len(prices) < MIN_OBSERVATIONS:
                 continue

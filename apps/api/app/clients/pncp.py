@@ -108,9 +108,7 @@ class PNCPClient:
                 return
             yield from records
 
-            total_pages = int(
-                data.get("totalPaginas") or data.get("totalPages") or 1
-            )
+            total_pages = int(data.get("totalPaginas") or data.get("totalPages") or 1)
             if page >= total_pages:
                 return
             page += 1
@@ -140,9 +138,7 @@ class PNCPClient:
             if not records:
                 return
             yield from records
-            total_pages = int(
-                data.get("totalPaginas") or data.get("totalPages") or 1
-            )
+            total_pages = int(data.get("totalPaginas") or data.get("totalPages") or 1)
             if page >= total_pages:
                 return
             page += 1

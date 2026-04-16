@@ -52,9 +52,7 @@ class EnrichmentPipeline:
         scores = score_notice(opportunity)
 
         unit_prices = [
-            i.unit_reference_price
-            for i in (opportunity.items or [])
-            if i.unit_reference_price
+            i.unit_reference_price for i in (opportunity.items or []) if i.unit_reference_price
         ]
         anomaly = price_anomaly_score(unit_prices) if unit_prices else None
 

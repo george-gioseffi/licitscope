@@ -2,9 +2,8 @@
 
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
-from app.models.opportunity import Opportunity
 from app.repositories.agencies import AgencyRepository
 from app.repositories.opportunities import OpportunityRepository
 from app.schemas.opportunity import OpportunityFilters
@@ -22,8 +21,8 @@ def _minimal_opp(source_id: str, **overrides) -> dict:
         estimated_value=100_000.0,
         state="SP",
         city="São Paulo",
-        published_at=datetime(2026, 4, 10, tzinfo=timezone.utc),
-        proposals_close_at=datetime(2026, 4, 30, tzinfo=timezone.utc),
+        published_at=datetime(2026, 4, 10, tzinfo=UTC),
+        proposals_close_at=datetime(2026, 4, 30, tzinfo=UTC),
     )
     base.update(overrides)
     return base
@@ -108,7 +107,5 @@ def test_opportunity_search_applies_value_bounds(session):
     repo.upsert(_minimal_opp("v-mid", estimated_value=50_000.0))
     repo.upsert(_minimal_opp("v-high", estimated_value=500_000.0))
     session.commit()
-    items, _ = repo.search(
-        OpportunityFilters(min_value=10_000, max_value=100_000), limit=10
-    )
+    items, _ = repo.search(OpportunityFilters(min_value=10_000, max_value=100_000), limit=10)
     assert {o.source_id for o in items} == {"v-mid"}
