@@ -6,8 +6,10 @@ from datetime import UTC, datetime, timedelta
 from typing import Any
 
 from sqlalchemy import func
+from sqlalchemy.orm import selectinload
 from sqlmodel import Session, select
 
+from app.models.agency import Agency
 from app.models.contract import Contract
 from app.models.enrichment import Enrichment
 from app.models.enums import MODALITY_LABELS
@@ -89,10 +91,11 @@ class AnalyticsService:
 
         recent_stmt = (
             select(Opportunity)
+            .options(selectinload(Opportunity.agency), selectinload(Opportunity.enrichment))
             .order_by(Opportunity.published_at.desc().nullslast())  # type: ignore[attr-defined]
             .limit(8)
         )
-        recent = [OpportunitySummary.model_validate(o) for o in self.session.exec(recent_stmt).all()]
+        recent = [OpportunitySummary.from_model(o) for o in self.session.exec(recent_stmt).all()]
 
         per_day_rows = self.session.exec(
             select(
@@ -158,32 +161,30 @@ class AnalyticsService:
             for r in by_mod_rows
         ]
 
+        # Top agencies in a single joined query (no N+1 agency fetches).
         top_agencies_rows = self.session.exec(
             select(
-                Opportunity.agency_id,
+                Agency.id,
+                Agency.name,
+                Agency.state,
                 func.count(Opportunity.id),
                 func.coalesce(func.sum(Opportunity.estimated_value), 0.0),
             )
-            .where(Opportunity.agency_id.isnot(None))  # type: ignore[attr-defined]
-            .group_by(Opportunity.agency_id)
+            .join(Opportunity, Opportunity.agency_id == Agency.id)
+            .group_by(Agency.id, Agency.name, Agency.state)
             .order_by(func.count(Opportunity.id).desc())
             .limit(10)
         ).all()
-        top_agencies: list[dict[str, Any]] = []
-        from app.repositories.agencies import AgencyRepository
-
-        repo = AgencyRepository(self.session)
-        for agency_id, count, total in top_agencies_rows:
-            agency = repo.get(agency_id) if agency_id else None
-            top_agencies.append(
-                {
-                    "agency_id": agency_id,
-                    "name": agency.name if agency else "—",
-                    "state": agency.state if agency else None,
-                    "count": int(count),
-                    "total_value": float(total or 0.0),
-                }
-            )
+        top_agencies: list[dict[str, Any]] = [
+            {
+                "agency_id": row[0],
+                "name": row[1] or "—",
+                "state": row[2],
+                "count": int(row[3]),
+                "total_value": float(row[4] or 0.0),
+            }
+            for row in top_agencies_rows
+        ]
 
         source_health_rows = self.session.exec(
             select(IngestionRun)
@@ -276,9 +277,10 @@ class AnalyticsService:
             or 0.0
         )
         agency_rows = self.session.exec(
-            select(Contract.agency_id, func.count(Contract.id))
+            select(Agency.id, Agency.name, Agency.state, func.count(Contract.id))
+            .join(Contract, Contract.agency_id == Agency.id)
             .where(Contract.supplier_id == supplier_id)
-            .group_by(Contract.agency_id)
+            .group_by(Agency.id, Agency.name, Agency.state)
             .order_by(func.count(Contract.id).desc())
             .limit(5)
         ).all()
@@ -286,7 +288,14 @@ class AnalyticsService:
             "contract_count": count,
             "total_contracted_value": total,
             "top_agencies": [
-                {"agency_id": r[0], "count": int(r[1])} for r in agency_rows if r[0]
+                {
+                    "agency_id": row[0],
+                    "name": row[1] or "—",
+                    "state": row[2],
+                    "count": int(row[3]),
+                }
+                for row in agency_rows
+                if row[0]
             ],
             "top_categories": [],
         }
