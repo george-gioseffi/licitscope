@@ -49,9 +49,11 @@ class AnalyticsService:
         )
         total_value = float(
             self.session.exec(
-                select(func.coalesce(func.sum(Opportunity.estimated_value), 0.0))
-                .where(Opportunity.published_at >= week_ago)
-            ).one() or 0.0
+                select(func.coalesce(func.sum(Opportunity.estimated_value), 0.0)).where(
+                    Opportunity.published_at >= week_ago
+                )
+            ).one()
+            or 0.0
         )
         open_now = int(
             self.session.exec(
@@ -124,7 +126,11 @@ class AnalyticsService:
             .limit(12)
         ).all()
         by_category = [
-            CategoryBreakdown(category=(r[0] or "Não classificado"), count=int(r[1]), total_value=float(r[2] or 0.0))
+            CategoryBreakdown(
+                category=(r[0] or "Não classificado"),
+                count=int(r[1]),
+                total_value=float(r[2] or 0.0),
+            )
             for r in by_cat_rows
         ]
 

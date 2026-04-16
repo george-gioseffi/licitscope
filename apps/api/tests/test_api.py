@@ -15,8 +15,14 @@ from app.repositories.suppliers import SupplierRepository
 from app.utils.dates import parse_date
 
 DATE_FIELDS = {
-    "published_at", "proposals_open_at", "proposals_close_at",
-    "session_at", "awarded_at", "signed_at", "start_at", "end_at",
+    "published_at",
+    "proposals_open_at",
+    "proposals_close_at",
+    "session_at",
+    "awarded_at",
+    "signed_at",
+    "start_at",
+    "end_at",
 }
 
 

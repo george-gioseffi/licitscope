@@ -25,7 +25,9 @@ class SimilarityIndex:
         if fingerprint:
             self._by_id[opportunity_id] = fingerprint
 
-    def top_k(self, query: dict[str, float], *, k: int = 5, exclude: int | None = None) -> list[SimilarityHit]:
+    def top_k(
+        self, query: dict[str, float], *, k: int = 5, exclude: int | None = None
+    ) -> list[SimilarityHit]:
         results: list[SimilarityHit] = []
         for oid, vec in self._by_id.items():
             if exclude is not None and oid == exclude:

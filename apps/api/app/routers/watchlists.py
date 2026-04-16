@@ -58,7 +58,9 @@ def list_watchlists(session: Session = Depends(get_session)) -> list[WatchlistOu
 
 
 @router.post("", response_model=WatchlistOut, status_code=201)
-def create_watchlist(payload: WatchlistCreate, session: Session = Depends(get_session)) -> WatchlistOut:
+def create_watchlist(
+    payload: WatchlistCreate, session: Session = Depends(get_session)
+) -> WatchlistOut:
     entity = Watchlist(
         name=payload.name,
         description=payload.description,
@@ -93,7 +95,9 @@ def delete_watchlist(watchlist_id: int, session: Session = Depends(get_session))
 
 
 @router.post("/{watchlist_id}/run", response_model=list[OpportunitySummary])
-def run_watchlist(watchlist_id: int, session: Session = Depends(get_session)) -> list[OpportunitySummary]:
+def run_watchlist(
+    watchlist_id: int, session: Session = Depends(get_session)
+) -> list[OpportunitySummary]:
     watchlist = session.get(Watchlist, watchlist_id)
     if not watchlist:
         raise HTTPException(404, "Watchlist not found")

@@ -20,13 +20,30 @@ from app.models.opportunity import Opportunity
 # ---------------------------------------------------------------------------
 
 TECH_TERMS: tuple[str, ...] = (
-    "engenharia", "projeto", "arquitetura", "especificação", "especificacao",
-    "catmat", "catser", "bim", "integração", "interoperabilidade",
-    "homologação", "homologacao", "ndr", "sla", "arquitetura tecnológica",
-    "alta disponibilidade", "auditoria",
+    "engenharia",
+    "projeto",
+    "arquitetura",
+    "especificação",
+    "especificacao",
+    "catmat",
+    "catser",
+    "bim",
+    "integração",
+    "interoperabilidade",
+    "homologação",
+    "homologacao",
+    "ndr",
+    "sla",
+    "arquitetura tecnológica",
+    "alta disponibilidade",
+    "auditoria",
 )
 URGENCY_TERMS: tuple[str, ...] = (
-    "urgente", "emergencial", "emergência", "emergencia", "calamidade",
+    "urgente",
+    "emergencial",
+    "emergência",
+    "emergencia",
+    "calamidade",
 )
 HIGH_RISK_MODALITIES = frozenset({"dispensa", "inexigibilidade"})
 
@@ -34,6 +51,7 @@ HIGH_RISK_MODALITIES = frozenset({"dispensa", "inexigibilidade"})
 # ---------------------------------------------------------------------------
 # Public types
 # ---------------------------------------------------------------------------
+
 
 @dataclass
 class NoticeScores:
@@ -54,6 +72,7 @@ def _contains_any(text: str, terms) -> list[str]:
 # ---------------------------------------------------------------------------
 # Scoring
 # ---------------------------------------------------------------------------
+
 
 def score_notice(opportunity: Opportunity) -> NoticeScores:
     title = opportunity.title or ""
@@ -79,9 +98,7 @@ def score_notice(opportunity: Opportunity) -> NoticeScores:
         reasons["complexity"].append(f"objeto longo (+{bonus:.2f})")
     if opportunity.items and len(opportunity.items) >= 5:
         complexity += 0.10
-        reasons["complexity"].append(
-            f"{len(opportunity.items)} itens na licitação (+0.10)"
-        )
+        reasons["complexity"].append(f"{len(opportunity.items)} itens na licitação (+0.10)")
 
     # -- effort ------------------------------------------------------------
     # "how expensive / how many things does the fornecedor have to handle?"
@@ -123,9 +140,7 @@ def score_notice(opportunity: Opportunity) -> NoticeScores:
         reasons["risk"].append(f"linguagem de urgência: {urgency_hits[0]} (+0.15)")
 
     # Under-specified notices are risky: items but no reference prices
-    if item_count and all(
-        (i.unit_reference_price or 0) == 0 for i in (opportunity.items or [])
-    ):
+    if item_count and all((i.unit_reference_price or 0) == 0 for i in (opportunity.items or [])):
         risk += 0.10
         reasons["risk"].append("itens sem preço de referência (+0.10)")
 
@@ -140,6 +155,7 @@ def score_notice(opportunity: Opportunity) -> NoticeScores:
 # ---------------------------------------------------------------------------
 # Pricing anomaly — robust to outliers
 # ---------------------------------------------------------------------------
+
 
 def price_anomaly_score(unit_prices: list[float]) -> float:
     """Return a 0..1 anomaly heuristic for a basket of unit prices.

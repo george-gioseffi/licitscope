@@ -41,11 +41,7 @@ class OfflineProvider:
         cleaned_body = " ".join((body or "").split())
         # Extract the two most informative sentences (first two meaningful ones
         # — procurement notices front-load the core object).
-        sentences = [
-            s.strip()
-            for s in _SENTENCE_SPLIT.split(cleaned_body)
-            if len(s.strip()) > 20
-        ]
+        sentences = [s.strip() for s in _SENTENCE_SPLIT.split(cleaned_body) if len(s.strip()) > 20]
         lede = sentences[0] if sentences else title
         support = sentences[1] if len(sentences) > 1 else ""
         summary = " ".join(p for p in (lede, support) if p).strip()
@@ -65,7 +61,9 @@ class OfflineProvider:
             bullets.append("Processo estruturado como credenciamento — múltiplos fornecedores.")
         if "dispensa" in text_lower:
             bullets.append("Dispensa de licitação — atenção aos critérios legais.")
-        if any(term in text_lower for term in ("urgente", "emergencial", "emergência", "emergencia")):
+        if any(
+            term in text_lower for term in ("urgente", "emergencial", "emergência", "emergencia")
+        ):
             bullets.append("Linguagem de urgência detectada — prazos potencialmente curtos.")
         if "lote" in text_lower:
             bullets.append("Processo estruturado em lotes.")

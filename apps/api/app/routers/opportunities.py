@@ -95,7 +95,11 @@ def list_opportunities(
     )
 
 
-@router.get("/facets", response_model=OpportunityFacets, summary="Facet counts for the current filter context")
+@router.get(
+    "/facets",
+    response_model=OpportunityFacets,
+    summary="Facet counts for the current filter context",
+)
 def opportunity_facets(
     filters: OpportunityFilters = Depends(_filters_dep),
     session: Session = Depends(get_session),
@@ -104,10 +108,7 @@ def opportunity_facets(
     raw = repo.facets(filters)
 
     def _facets(pairs: list[tuple[str, int]], labels: dict[str, str] | None = None) -> list[Facet]:
-        rows = [
-            Facet(value=v, label=(labels or {}).get(v, v), count=c)
-            for v, c in pairs
-        ]
+        rows = [Facet(value=v, label=(labels or {}).get(v, v), count=c) for v, c in pairs]
         rows.sort(key=lambda f: (-f.count, f.label))
         return rows
 
@@ -121,7 +122,9 @@ def opportunity_facets(
 
 
 @router.get("/{opportunity_id}", response_model=OpportunityDetail, summary="Opportunity detail")
-def get_opportunity(opportunity_id: int, session: Session = Depends(get_session)) -> OpportunityDetail:
+def get_opportunity(
+    opportunity_id: int, session: Session = Depends(get_session)
+) -> OpportunityDetail:
     repo = OpportunityRepository(session)
     opp = repo.get(opportunity_id)
     if opp is None:

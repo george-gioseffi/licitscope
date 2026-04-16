@@ -30,9 +30,9 @@ def test_ingest_from_fixtures(session, repo_root: Path, monkeypatch):
 def test_ingest_from_live_api_with_mock(session, monkeypatch):
     """Hit a mocked PNCP endpoint; confirm parsing + upsert works."""
     sample = json.loads(
-        (Path(__file__).resolve().parents[3] / "data-demo" / "pncp" / "opportunities.json").read_text(
-            encoding="utf-8"
-        )
+        (
+            Path(__file__).resolve().parents[3] / "data-demo" / "pncp" / "opportunities.json"
+        ).read_text(encoding="utf-8")
     )[:3]
 
     respx.get("https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao").mock(

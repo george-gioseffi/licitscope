@@ -68,9 +68,8 @@ def parse_agency(payload: dict) -> dict:
     state = _clean_str(_get(unidade, "ufSigla", "uf", default=payload.get("ufSigla")))
     return {
         "cnpj": cnpj,
-        "name": _clean_str(
-            _get(orgao, "razaoSocial", "nome", default=payload.get("nomeOrgao"))
-        ) or "Órgão desconhecido",
+        "name": _clean_str(_get(orgao, "razaoSocial", "nome", default=payload.get("nomeOrgao")))
+        or "Órgão desconhecido",
         "short_name": _clean_str(orgao.get("nomeFantasia")),
         "sphere": _clean_str(orgao.get("esferaId") or orgao.get("poderId")),
         "branch": _clean_str(orgao.get("poderId")),
@@ -91,14 +90,17 @@ def parse_opportunity(payload: dict) -> dict:
     except (TypeError, ValueError):
         modality = ModalityCode.OUTROS.value
 
-    raw_status = str(payload.get("situacaoCompraNome") or payload.get("situacao") or "").lower().strip()
+    raw_status = (
+        str(payload.get("situacaoCompraNome") or payload.get("situacao") or "").lower().strip()
+    )
     status = STATUS_MAP.get(raw_status, OpportunityStatus.PUBLISHED.value)
 
-    source_id = _clean_str(
-        payload.get("numeroControlePNCP")
-        or payload.get("numeroCompra")
-        or payload.get("id")
-    ) or ""
+    source_id = (
+        _clean_str(
+            payload.get("numeroControlePNCP") or payload.get("numeroCompra") or payload.get("id")
+        )
+        or ""
+    )
 
     unidade = payload.get("unidadeOrgao") or {}
     state = _clean_str(_get(unidade, "ufSigla") or payload.get("ufSigla"))
@@ -109,17 +111,15 @@ def parse_opportunity(payload: dict) -> dict:
         "source_url": _clean_str(payload.get("linkSistemaOrigem")),
         "pncp_control_number": _clean_str(payload.get("numeroControlePNCP")),
         "notice_number": _clean_str(payload.get("numeroCompra") or payload.get("numeroAno")),
-        "title": (
-            _clean_str(_get(payload, "objetoCompra", "descricao"))
-            or "Licitação sem título"
-        ),
+        "title": (_clean_str(_get(payload, "objetoCompra", "descricao")) or "Licitação sem título"),
         "object_description": _get(
             payload,
             "informacaoComplementar",
             "objetoCompra",
             "descricaoCompleta",
             default="",
-        ) or "",
+        )
+        or "",
         "modality": modality,
         "status": status,
         "category": None,
@@ -132,9 +132,7 @@ def parse_opportunity(payload: dict) -> dict:
         ),
         "proposals_open_at": parse_date(payload.get("dataAberturaProposta")),
         "proposals_close_at": parse_date(payload.get("dataEncerramentoProposta")),
-        "session_at": parse_date(
-            payload.get("dataInicioVigencia") or payload.get("dataSessao")
-        ),
+        "session_at": parse_date(payload.get("dataInicioVigencia") or payload.get("dataSessao")),
         "state": state.upper()[:2] if state else None,
         "city": _clean_str(_get(unidade, "municipioNome") or payload.get("nomeMunicipio")),
         "raw_metadata": payload,

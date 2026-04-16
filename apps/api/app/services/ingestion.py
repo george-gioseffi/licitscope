@@ -129,7 +129,10 @@ class IngestionService:
                     collected.append(rec)
                 logger.info(
                     "PNCP modality=%s window=%s..%s returned %d records",
-                    code, d_i, d_f, len(collected) - before,
+                    code,
+                    d_i,
+                    d_f,
+                    len(collected) - before,
                 )
         logger.info("PNCP fetch returned %d total records", len(collected))
         return collected

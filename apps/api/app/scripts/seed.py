@@ -33,8 +33,14 @@ from app.utils.dates import parse_date
 logger = logging.getLogger("seed")
 
 _DATE_FIELDS = {
-    "published_at", "proposals_open_at", "proposals_close_at",
-    "session_at", "awarded_at", "signed_at", "start_at", "end_at",
+    "published_at",
+    "proposals_open_at",
+    "proposals_close_at",
+    "session_at",
+    "awarded_at",
+    "signed_at",
+    "start_at",
+    "end_at",
 }
 
 
@@ -106,7 +112,9 @@ def _seed(if_empty: bool) -> None:
                 payload["agency_id"] = a.id
             if supplier_tax and (s := supplier_repo.get_by_tax_id(supplier_tax)):
                 payload["supplier_id"] = s.id
-            if opp_source_id and (o := opp_repo.get_by_source(payload.get("source", "fixture"), opp_source_id)):
+            if opp_source_id and (
+                o := opp_repo.get_by_source(payload.get("source", "fixture"), opp_source_id)
+            ):
                 payload["opportunity_id"] = o.id
             _coerce_dates(payload)
             contract_repo.upsert(payload, items=items)
