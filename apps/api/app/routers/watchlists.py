@@ -4,8 +4,8 @@ from __future__ import annotations
 
 from datetime import UTC, datetime
 
-from fastapi import APIRouter, Depends, HTTPException
-from pydantic import BaseModel
+from fastapi import APIRouter, Depends, HTTPException, Query
+from pydantic import BaseModel, Field, field_validator
 from sqlmodel import Session, select
 
 from app.db.session import get_session
@@ -15,13 +15,46 @@ from app.schemas.opportunity import OpportunityFilters, OpportunitySummary
 
 router = APIRouter(prefix="/watchlists", tags=["watchlists"])
 
+# filter fields that actually narrow results. A watchlist that doesn't
+# set at least one of these is effectively "match every new notice" and
+# we refuse to create it because the alerts fire on every ingestion run.
+_DISCRIMINATING_FIELDS = (
+    "q",
+    "state",
+    "city",
+    "agency_id",
+    "modality",
+    "status",
+    "category",
+    "source",
+    "min_value",
+    "max_value",
+)
+
 
 class WatchlistCreate(BaseModel):
-    name: str
-    description: str | None = None
+    name: str = Field(min_length=2, max_length=256)
+    description: str | None = Field(default=None, max_length=1024)
     filters: OpportunityFilters
-    notify_email: str | None = None
-    notify_webhook_url: str | None = None
+    notify_email: str | None = Field(default=None, max_length=256)
+    notify_webhook_url: str | None = Field(default=None, max_length=1024)
+
+    @field_validator("name", "description", mode="before")
+    @classmethod
+    def _trim(cls, v: object) -> object:
+        if isinstance(v, str):
+            stripped = v.strip()
+            return stripped or None
+        return v
+
+    @field_validator("filters")
+    @classmethod
+    def _filters_must_be_discriminating(cls, v: OpportunityFilters) -> OpportunityFilters:
+        if not any(getattr(v, f) for f in _DISCRIMINATING_FIELDS):
+            raise ValueError(
+                "filters must set at least one of: " + ", ".join(_DISCRIMINATING_FIELDS)
+            )
+        return v
 
 
 class WatchlistOut(BaseModel):
@@ -89,21 +122,23 @@ def create_watchlist(
 def delete_watchlist(watchlist_id: int, session: Session = Depends(get_session)) -> None:
     entity = session.get(Watchlist, watchlist_id)
     if not entity:
-        raise HTTPException(404, "Watchlist not found")
+        raise HTTPException(status_code=404, detail="Watchlist not found")
     session.delete(entity)
     session.commit()
 
 
 @router.post("/{watchlist_id}/run", response_model=list[OpportunitySummary])
 def run_watchlist(
-    watchlist_id: int, session: Session = Depends(get_session)
+    watchlist_id: int,
+    limit: int = Query(50, ge=1, le=200),
+    session: Session = Depends(get_session),
 ) -> list[OpportunitySummary]:
     watchlist = session.get(Watchlist, watchlist_id)
     if not watchlist:
-        raise HTTPException(404, "Watchlist not found")
+        raise HTTPException(status_code=404, detail="Watchlist not found")
     filters = OpportunityFilters.model_validate(watchlist.filters)
     repo = OpportunityRepository(session)
-    items, _ = repo.search(filters, limit=50, offset=0)
+    items, _ = repo.search(filters, limit=limit, offset=0)
 
     # Record alerts for any notices not previously seen by this watchlist.
     known = {a.opportunity_id for a in watchlist.alerts}
@@ -122,14 +157,14 @@ def run_watchlist(
     session.add(watchlist)
     session.commit()
 
-    return [OpportunitySummary.model_validate(o) for o in items]
+    return [OpportunitySummary.from_model(o) for o in items]
 
 
 @router.get("/{watchlist_id}/alerts")
 def list_alerts(watchlist_id: int, session: Session = Depends(get_session)) -> list[dict]:
     watchlist = session.get(Watchlist, watchlist_id)
     if not watchlist:
-        raise HTTPException(404, "Watchlist not found")
+        raise HTTPException(status_code=404, detail="Watchlist not found")
     return [
         {
             "id": a.id,
