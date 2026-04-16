@@ -1,0 +1,16 @@
+# Normalize line endings so Windows/Linux contributors don't fight.
+* text=auto eol=lf
+
+# Binaries should not be touched.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.gz binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
