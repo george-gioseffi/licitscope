@@ -8,10 +8,13 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from starlette.middleware.base import BaseHTTPMiddleware
 
 from app import __version__
 from app.core.config import get_settings
+from app.core.errors import install_exception_handlers
 from app.core.logging import configure_logging
+from app.core.middleware import request_context_middleware
 from app.db.session import init_db
 from app.routers import (
     agencies,
@@ -60,7 +63,11 @@ def create_app() -> FastAPI:
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
+        expose_headers=["x-request-id"],
     )
+    app.add_middleware(BaseHTTPMiddleware, dispatch=request_context_middleware)
+
+    install_exception_handlers(app)
 
     # routers
     app.include_router(health.router)
