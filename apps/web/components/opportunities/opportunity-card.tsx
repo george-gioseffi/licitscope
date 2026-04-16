@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Building2, CalendarClock, MapPin } from "lucide-react";
+import { AlertTriangle, Building2, CalendarClock, MapPin } from "lucide-react";
 import type { OpportunitySummary } from "@/lib/types";
 import { ModalityBadge, StatusBadge } from "./modality-badge";
 import { Badge } from "@/components/ui/badge";
@@ -7,10 +7,12 @@ import { formatCompactBRL, formatDate, daysUntil } from "@/lib/utils";
 
 export function OpportunityCard({ opp }: { opp: OpportunitySummary }) {
   const closesIn = daysUntil(opp.proposals_close_at);
+  const highRisk = (opp.risk_score ?? 0) >= 0.7;
+
   return (
     <Link
       href={`/opportunities/${opp.id}`}
-      className="group flex flex-col gap-3 rounded-xl border border-ink-800 bg-ink-900/60 p-5 transition hover:border-brand-500/50 hover:bg-ink-900"
+      className="group flex h-full flex-col gap-3 rounded-xl border border-ink-800 bg-ink-900/60 p-5 transition hover:border-brand-500/50 hover:bg-ink-900"
     >
       <div className="flex items-start justify-between gap-3">
         <div className="flex min-w-0 flex-1 flex-col gap-2">
@@ -18,6 +20,11 @@ export function OpportunityCard({ opp }: { opp: OpportunitySummary }) {
             <ModalityBadge value={opp.modality} />
             <StatusBadge value={opp.status} />
             {opp.category && <Badge tone="outline">{opp.category}</Badge>}
+            {highRisk && (
+              <Badge tone="rose" title={`Risco heurístico ${Math.round((opp.risk_score ?? 0) * 100)}%`}>
+                <AlertTriangle size={10} /> risco alto
+              </Badge>
+            )}
           </div>
           <h3 className="line-clamp-2 text-[14px] font-medium leading-snug text-ink-50 group-hover:text-white">
             {opp.title}
@@ -31,7 +38,7 @@ export function OpportunityCard({ opp }: { opp: OpportunitySummary }) {
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[12px] text-ink-400">
+      <div className="mt-auto flex flex-wrap items-center gap-x-4 gap-y-1 text-[12px] text-ink-400">
         {opp.agency?.name && (
           <span className="inline-flex items-center gap-1">
             <Building2 size={12} />
@@ -48,12 +55,14 @@ export function OpportunityCard({ opp }: { opp: OpportunitySummary }) {
         </span>
         {closesIn !== null && opp.status !== "closed" && opp.status !== "cancelled" && (
           <span
-            className={`inline-flex items-center gap-1 ${
-              closesIn <= 5
-                ? "text-rose-300"
-                : closesIn <= 15
-                  ? "text-amber-300"
-                  : "text-ink-300"
+            className={`inline-flex items-center gap-1 font-medium ${
+              closesIn < 0
+                ? "text-ink-500"
+                : closesIn <= 5
+                  ? "text-rose-300"
+                  : closesIn <= 15
+                    ? "text-amber-300"
+                    : "text-emerald-300"
             }`}
           >
             {closesIn >= 0 ? `Fecha em ${closesIn}d` : `Fechou há ${-closesIn}d`}

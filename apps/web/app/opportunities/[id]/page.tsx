@@ -219,15 +219,29 @@ export default function OpportunityDetailPage() {
               <CardTitle className="flex items-center gap-2">
                 <Gauge size={14} /> Sinais heurísticos
               </CardTitle>
+              <p className="text-[11px] text-ink-400">
+                Cada score é gerado por regras explícitas — role o mouse para ver o motivo.
+              </p>
             </CardHeader>
             <CardContent className="flex flex-col gap-3 text-[12px]">
               <SignalRow
                 label="Complexidade"
                 value={d.enrichment?.complexity_score}
                 tone="brand"
+                reasons={rationaleFor(d, "complexity")}
               />
-              <SignalRow label="Esforço" value={d.enrichment?.effort_score} tone="mint" />
-              <SignalRow label="Risco" value={d.enrichment?.risk_score} tone="amber" />
+              <SignalRow
+                label="Esforço"
+                value={d.enrichment?.effort_score}
+                tone="mint"
+                reasons={rationaleFor(d, "effort")}
+              />
+              <SignalRow
+                label="Risco"
+                value={d.enrichment?.risk_score}
+                tone="amber"
+                reasons={rationaleFor(d, "risk")}
+              />
               {d.enrichment?.price_anomaly_score != null && (
                 <SignalRow
                   label="Dispersão de preços"
@@ -239,7 +253,8 @@ export default function OpportunityDetailPage() {
                 <div className="mt-2 flex items-start gap-2 rounded-md border border-amber-500/30 bg-amber-500/10 p-2 text-[11px] text-amber-200">
                   <AlertTriangle size={14} className="mt-0.5 shrink-0" />
                   <span>
-                    Sinal de risco elevado — revise prazos curtos, modalidade de urgência ou termos emergenciais.
+                    Sinal de risco elevado — revise prazos curtos, modalidade de urgência
+                    ou termos emergenciais.
                   </span>
                 </div>
               )}
@@ -345,18 +360,42 @@ function SignalRow({
   label,
   value,
   tone,
+  reasons,
 }: {
   label: string;
   value: number | null | undefined;
   tone: "brand" | "amber" | "rose" | "mint";
+  reasons?: string[];
 }) {
   const v = value ?? 0;
   return (
-    <div className="flex items-center gap-3">
-      <span className="w-40 text-ink-300">{label}</span>
-      <Progress value={v} tone={tone} label={(v * 100).toFixed(0) + "%"} />
+    <div className="flex flex-col gap-1">
+      <div className="flex items-center gap-3">
+        <span className="w-32 text-ink-300">{label}</span>
+        <Progress value={v} tone={tone} label={(v * 100).toFixed(0) + "%"} />
+      </div>
+      {reasons && reasons.length > 0 && (
+        <ul className="ml-[136px] flex flex-col gap-0.5 text-[11px] text-ink-400">
+          {reasons.map((r, i) => (
+            <li key={i} className="before:mr-1 before:content-['·']">
+              {r}
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
+}
+
+function rationaleFor(
+  d: { enrichment?: { entities?: Record<string, unknown> | null } | null },
+  kind: "complexity" | "effort" | "risk",
+): string[] {
+  const entities = d.enrichment?.entities;
+  if (!entities) return [];
+  const rationale = (entities as { score_rationale?: Record<string, string[]> })
+    .score_rationale;
+  return rationale?.[kind] ?? [];
 }
 
 function DateRow({
