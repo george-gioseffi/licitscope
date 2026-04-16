@@ -4,9 +4,10 @@ from __future__ import annotations
 
 from functools import lru_cache
 from pathlib import Path
+from typing import Annotated
 
 from pydantic import Field, field_validator
-from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
 
 REPO_ROOT = Path(__file__).resolve().parents[4]
 
@@ -29,7 +30,11 @@ class Settings(BaseSettings):
     # --- api ---------------------------------------------------------------
     api_host: str = "0.0.0.0"
     api_port: int = 8000
-    api_cors_origins: list[str] = Field(default_factory=lambda: ["http://localhost:3000"])
+    # NoDecode prevents pydantic-settings from trying to JSON-parse the
+    # env var — we want simple comma-separated values, not JSON arrays.
+    api_cors_origins: Annotated[list[str], NoDecode] = Field(
+        default_factory=lambda: ["http://localhost:3000"]
+    )
 
     # --- database ----------------------------------------------------------
     database_url: str = "sqlite:///./licitscope.db"

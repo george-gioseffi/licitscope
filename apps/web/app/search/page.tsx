@@ -111,18 +111,24 @@ function SearchPageInner() {
             {res.isLoading &&
               Array.from({ length: 6 }).map((_, i) => <OpportunityCardSkeleton key={i} />)}
             {res.data?.map(({ opportunity, score, shared_keywords }) => (
-              <div key={opportunity.id} className="relative">
-                <OpportunityCard opp={opportunity} />
-                <div className="pointer-events-none absolute right-6 top-6 flex gap-1">
+              <div key={opportunity.id} className="flex flex-col gap-1">
+                <div className="flex items-center justify-between gap-3 px-1">
+                  <span className="text-[11px] uppercase tracking-widest text-ink-400">
+                    Similaridade TF-IDF
+                  </span>
                   <Badge tone="brand" className="font-mono">
                     sim {score.toFixed(2)}
                   </Badge>
                 </div>
+                <OpportunityCard opp={opportunity} />
                 {shared_keywords.length > 0 && (
-                  <div className="mt-1 flex flex-wrap gap-1 px-1 text-[11px] text-ink-400">
-                    Palavras em comum:
+                  <div className="mt-1 flex flex-wrap items-center gap-1 px-1 text-[11px] text-ink-400">
+                    <span>Palavras em comum:</span>
                     {shared_keywords.slice(0, 6).map((k) => (
-                      <span key={k} className="text-ink-200">
+                      <span
+                        key={k}
+                        className="rounded bg-ink-800/70 px-1.5 py-0.5 text-ink-200"
+                      >
                         {k}
                       </span>
                     ))}
