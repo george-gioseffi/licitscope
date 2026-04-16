@@ -66,26 +66,26 @@ class AnalyticsService:
 
         kpis = [
             AnalyticsKPI(
-                label="Notices (7d)",
+                label="Publicações (7d)",
                 value=float(total_now),
                 trend=float(total_now - total_prev),
-                description="Opportunities published in the last 7 days",
+                description="Licitações publicadas na última semana",
             ),
             AnalyticsKPI(
-                label="Est. total (7d)",
+                label="Valor estimado (7d)",
                 value=float(total_value),
                 suffix="BRL",
-                description="Sum of estimated value, last 7 days",
+                description="Soma dos valores estimados na última semana",
             ),
             AnalyticsKPI(
-                label="Open for proposals",
+                label="Abertas para propostas",
                 value=float(open_now),
-                description="Notices currently accepting proposals",
+                description="Licitações aceitando propostas agora",
             ),
             AnalyticsKPI(
-                label="Avg. risk score",
+                label="Risco médio",
                 value=round(float(avg_risk or 0.0), 3),
-                description="Mean heuristic risk score across enriched notices",
+                description="Score médio de risco heurístico",
             ),
         ]
 
