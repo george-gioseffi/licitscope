@@ -5,6 +5,7 @@ from __future__ import annotations
 from datetime import datetime
 
 from fastapi import APIRouter, Depends, HTTPException, Query
+from pydantic import ValidationError
 from sqlmodel import Session
 
 from app.db.session import get_session
@@ -41,23 +42,33 @@ def _filters_dep(
     closes_to: datetime | None = None,
     sort: str = Query("published_at_desc"),
 ) -> OpportunityFilters:
-    return OpportunityFilters(
-        q=q,
-        state=state,
-        city=city,
-        agency_id=agency_id,
-        modality=modality,
-        status=status,
-        category=category,
-        source=source,
-        min_value=min_value,
-        max_value=max_value,
-        published_from=published_from,
-        published_to=published_to,
-        closes_from=closes_from,
-        closes_to=closes_to,
-        sort=sort,
-    )
+    try:
+        return OpportunityFilters(
+            q=q,
+            state=state,
+            city=city,
+            agency_id=agency_id,
+            modality=modality,
+            status=status,
+            category=category,
+            source=source,
+            min_value=min_value,
+            max_value=max_value,
+            published_from=published_from,
+            published_to=published_to,
+            closes_from=closes_from,
+            closes_to=closes_to,
+            sort=sort,
+        )
+    except ValidationError as exc:
+        # Surface schema-level validation as a proper 422 rather than a 500.
+        # pydantic.errors() may embed un-serializable Exception objects in
+        # `ctx`; keep just the fields FastAPI can encode.
+        detail = [
+            {"loc": list(err["loc"]), "msg": err["msg"], "type": err["type"]}
+            for err in exc.errors()
+        ]
+        raise HTTPException(status_code=422, detail=detail) from exc
 
 
 @router.get("", response_model=Page[OpportunitySummary], summary="Feed of opportunities")
