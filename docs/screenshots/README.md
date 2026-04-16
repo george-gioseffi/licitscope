@@ -1,8 +1,9 @@
 # Screenshots
 
-This directory is the landing spot for the portfolio screenshot gallery.
-It ships empty in the repo — contributors regenerate the images locally
-and commit them when preparing a release.
+The PNG files in this directory are committed artefacts rendered in the
+top-level [`README.md`](../../README.md) gallery. They are regenerated
+deterministically by a Playwright script — refresh them whenever the UI
+changes meaningfully so the README never drifts away from the app.
 
 ## Regenerate
 
@@ -11,24 +12,24 @@ and commit them when preparing a release.
 make up                                   # docker compose, or
 make api & make web                       # local SQLite mode
 
-# 2. Install Playwright (one-off):
+# 2. One-off: install Playwright + Chromium inside apps/web:
 cd apps/web
 npm i -D @playwright/test
 npx playwright install chromium
 
-# 3. Take the shots:
-cd ../..
+# 3. Take the shots (run from apps/web so Node resolves @playwright/test):
 node scripts/take_screenshots.mjs \
-    --base=http://localhost:3000 \
-    --out=docs/screenshots
+    --base=http://127.0.0.1:3000 \
+    --out=../../docs/screenshots
 ```
 
-The script follows the walkthrough in [`../SCREENSHOTS.md`](../SCREENSHOTS.md)
-and produces 9 PNGs:
+Re-commit the updated PNGs in the same change that updates the UI.
+
+## What ships here
 
 | File                          | Page                                               |
 | ----------------------------- | -------------------------------------------------- |
-| `01-dashboard.png`            | `/` — executive overview                           |
+| `01-dashboard.png`            | `/` — executive overview (hero image in README)    |
 | `02-opportunities.png`        | `/opportunities?state=SP&sort=value_desc` — feed   |
 | `03-search.png`               | `/search?q=medicamentos` — semantic search         |
 | `04-contracts-pricing.png`    | `/contracts` — pricing dispersion + contracts      |
@@ -38,16 +39,11 @@ and produces 9 PNGs:
 | `08-about.png`                | `/about` — project, sources, IA                    |
 | `09-opportunity-detail.png`   | `/opportunities/{first-id}` — detail page          |
 
-Keep the file names stable — they are referenced from the top-level
-README gallery block.
+Keep file names stable — they are referenced verbatim from the README
+gallery section.
 
-## Why we don't commit the PNGs
+## Capture settings
 
-- Binary assets bloat the repo and churn on every UI change.
-- Every reviewer wants fresh screenshots that reflect today's UI, not
-  whatever version the last committer captured.
-- GitHub's social-preview image is uploaded separately through repo
-  settings, not through the tree.
-
-If you are preparing a tagged release, commit the generated PNGs under
-this folder as part of the release PR.
+Headless Chromium at **1440 × 900 @ 2× dpr**, `colorScheme: "dark"`,
+`locale: "pt-BR"`, `waitUntil: "networkidle"` plus an extra 800 ms settle
+so charts and lazy-loaded queries have time to render.
