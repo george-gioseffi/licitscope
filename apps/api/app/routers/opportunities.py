@@ -67,20 +67,19 @@ def list_opportunities(
     page_size: int = Query(20, ge=1, le=100),
     session: Session = Depends(get_session),
 ) -> Page[OpportunitySummary]:
+    if (
+        filters.min_value is not None
+        and filters.max_value is not None
+        and filters.min_value > filters.max_value
+    ):
+        raise HTTPException(status_code=422, detail="min_value must be <= max_value")
+
     repo = OpportunityRepository(session)
     offset = (page - 1) * page_size
     items, total = repo.search(filters, limit=page_size, offset=offset)
 
-    payload: list[OpportunitySummary] = []
-    for opp in items:
-        summary = OpportunitySummary.model_validate(opp)
-        if opp.enrichment:
-            summary.complexity_score = opp.enrichment.complexity_score
-            summary.risk_score = opp.enrichment.risk_score
-        payload.append(summary)
-
     return Page[OpportunitySummary](
-        items=payload,
+        items=[OpportunitySummary.from_model(o) for o in items],
         meta=PageMeta.build(page=page, page_size=page_size, total=total),
     )
 
@@ -117,7 +116,7 @@ def get_opportunity(opportunity_id: int, session: Session = Depends(get_session)
     if opp is None:
         raise HTTPException(status_code=404, detail="Opportunity not found")
     detail = OpportunityDetail.model_validate(opp)
-    if opp.enrichment:
+    if opp.enrichment is not None:
         detail.complexity_score = opp.enrichment.complexity_score
         detail.risk_score = opp.enrichment.risk_score
     return detail

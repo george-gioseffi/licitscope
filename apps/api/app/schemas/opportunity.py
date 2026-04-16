@@ -3,9 +3,12 @@
 from __future__ import annotations
 
 from datetime import datetime
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, field_validator
+
+if TYPE_CHECKING:
+    from app.models.opportunity import Opportunity as OpportunityModel
 
 
 class AgencyRef(BaseModel):
@@ -76,6 +79,21 @@ class OpportunitySummary(BaseModel):
 
     model_config = ConfigDict(from_attributes=True)
 
+    @classmethod
+    def from_model(cls, opp: OpportunityModel) -> OpportunitySummary:
+        """Build from an ORM row, lifting enrichment signals onto the summary.
+
+        Analytics, feed, and similarity routes all share this single factory
+        so the surface stays consistent and signals never silently drop to
+        None just because a caller forgot to patch them.
+        """
+        summary = cls.model_validate(opp)
+        enrichment = getattr(opp, "enrichment", None)
+        if enrichment is not None:
+            summary.complexity_score = enrichment.complexity_score
+            summary.risk_score = enrichment.risk_score
+        return summary
+
 
 class OpportunityOut(OpportunitySummary):
     object_description: str
@@ -93,6 +111,16 @@ class OpportunityDetail(OpportunityOut):
     raw_metadata: dict | None = None
 
 
+SORT_OPTIONS: tuple[str, ...] = (
+    "published_at_desc",
+    "published_at_asc",
+    "value_desc",
+    "value_asc",
+    "closes_at_asc",
+    "closes_at_desc",
+)
+
+
 class OpportunityFilters(BaseModel):
     q: str | None = None
     state: str | None = None
@@ -102,13 +130,36 @@ class OpportunityFilters(BaseModel):
     status: str | None = None
     category: str | None = None
     source: str | None = None
-    min_value: float | None = None
-    max_value: float | None = None
+    min_value: float | None = Field(default=None, ge=0)
+    max_value: float | None = Field(default=None, ge=0)
     published_from: datetime | None = None
     published_to: datetime | None = None
     closes_from: datetime | None = None
     closes_to: datetime | None = None
     sort: str = "published_at_desc"
+
+    @field_validator("state", mode="before")
+    @classmethod
+    def _uppercase_state(cls, v: object) -> object:
+        if isinstance(v, str):
+            return v.strip().upper() or None
+        return v
+
+    @field_validator("q", "city", "category", "source", "modality", "status", mode="before")
+    @classmethod
+    def _trim_strings(cls, v: object) -> object:
+        if isinstance(v, str):
+            return v.strip() or None
+        return v
+
+    @field_validator("sort", mode="before")
+    @classmethod
+    def _validate_sort(cls, v: object) -> object:
+        if v in (None, ""):
+            return "published_at_desc"
+        if isinstance(v, str) and v in SORT_OPTIONS:
+            return v
+        raise ValueError(f"sort must be one of {SORT_OPTIONS}")
 
 
 class SimilarOpportunity(BaseModel):
