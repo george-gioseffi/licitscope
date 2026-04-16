@@ -1,11 +1,16 @@
 """Ingestion orchestrator.
 
 Given a source (default: PNCP) and a date range, this service:
-  * starts an ``IngestionRun`` record
-  * streams payloads from the source client (or fixtures)
-  * saves raw payloads idempotently
-  * upserts Agencies + Opportunities via their repositories
-  * marks the run with success / partial / failed status
+
+  * starts an ``IngestionRun`` record;
+  * streams payloads from the source client (or bundled fixtures);
+  * persists the raw payload first, keyed by content hash (replayable);
+  * upserts Agencies + Opportunities via their repositories;
+  * finalizes the run with ``success`` / ``partial`` / ``failed``.
+
+The run is the single source of truth for observability — counters on the
+row (``fetched`` / ``created`` / ``updated`` / ``skipped`` / ``failed``)
+make each execution inspectable after the fact.
 """
 
 from __future__ import annotations
@@ -30,6 +35,10 @@ from app.repositories.opportunities import OpportunityRepository
 
 logger = logging.getLogger(__name__)
 
+# Default PNCP modality sweep — pregão eletrônico + dispensa cover most
+# practical volume for a daily demo ingestion.
+_DEFAULT_MODALITIES: tuple[int, ...] = (1, 9)
+
 
 class IngestionService:
     def __init__(self, session: Session) -> None:
@@ -38,7 +47,7 @@ class IngestionService:
         self.opportunities = OpportunityRepository(session)
         self.runs = IngestionRepository(session)
 
-    # ---- public entrypoints -------------------------------------------------
+    # ---- public entrypoint --------------------------------------------------
     def ingest_pncp_window(
         self,
         *,
@@ -50,35 +59,46 @@ class IngestionService:
         if use_fixtures is None:
             use_fixtures = settings.ingestion_use_fixtures
 
-        params = {
+        params: dict[str, Any] = {
             "days_back": days_back,
-            "modalities": modalities,
+            "modalities": list(modalities or _DEFAULT_MODALITIES),
             "use_fixtures": use_fixtures,
         }
-        run = self.runs.start_run(source=SourceName.PNCP.value, scope="opportunities", params=params)
+        run = self.runs.start_run(
+            source=SourceName.PNCP.value, scope="opportunities", params=params
+        )
         try:
-            if use_fixtures:
-                payloads = self._load_fixtures()
-            else:
-                payloads = list(self._fetch_from_pncp(days_back=days_back, modalities=modalities))
+            payloads = (
+                self._load_fixtures()
+                if use_fixtures
+                else list(self._fetch_from_pncp(days_back=days_back, modalities=modalities))
+            )
             self._process_payloads(run, payloads)
             self.runs.finish_run(run, status=IngestionStatus.SUCCESS.value)
         except httpx.HTTPError as exc:
-            logger.exception("PNCP ingestion HTTP failure, falling back to fixtures")
+            # Live source failed. Fall back to fixtures so the demo stays up;
+            # mark the run partial and record the reason for audit.
+            logger.warning("PNCP ingestion HTTP failure (%s); falling back to fixtures", exc)
             try:
-                fallback = self._load_fixtures()
-                self._process_payloads(run, fallback)
+                self._process_payloads(run, self._load_fixtures())
                 self.runs.finish_run(
                     run,
                     status=IngestionStatus.PARTIAL.value,
-                    notes=f"fallback to fixtures: {exc}",
+                    notes=f"fallback to fixtures after HTTP failure: {exc}",
                 )
-            except Exception as inner:  # pragma: no cover
-                self.runs.finish_run(run, status=IngestionStatus.FAILED.value, notes=str(inner))
+            except Exception as inner:  # pragma: no cover - defensive
+                logger.exception("Fixture fallback also failed")
+                self.runs.finish_run(
+                    run,
+                    status=IngestionStatus.FAILED.value,
+                    notes=f"fixture fallback failed: {inner}",
+                )
                 raise
         except Exception as exc:
+            logger.exception("Ingestion failed (unexpected)")
             self.runs.finish_run(run, status=IngestionStatus.FAILED.value, notes=str(exc))
             raise
+
         self.session.commit()
         return run
 
@@ -94,10 +114,11 @@ class IngestionService:
         d_i, d_f = start.strftime("%Y%m%d"), end.strftime("%Y%m%d")
         settings = get_settings()
 
+        mod_codes = list(modalities or _DEFAULT_MODALITIES)
         collected: list[dict] = []
-        modalities = modalities or [1, 9]  # pregão eletrônico + dispensa by default
         with PNCPClient() as client:
-            for code in modalities:
+            for code in mod_codes:
+                before = len(collected)
                 for rec in client.list_published_notices(
                     data_inicial=d_i,
                     data_final=d_f,
@@ -106,14 +127,17 @@ class IngestionService:
                     max_pages=settings.ingestion_max_pages,
                 ):
                     collected.append(rec)
-        logger.info("PNCP fetch returned %d records", len(collected))
+                logger.info(
+                    "PNCP modality=%s window=%s..%s returned %d records",
+                    code, d_i, d_f, len(collected) - before,
+                )
+        logger.info("PNCP fetch returned %d total records", len(collected))
         return collected
 
     def _load_fixtures(self) -> list[dict]:
         settings = get_settings()
-        fixtures_dir = settings.data_demo_dir
         candidates = [
-            fixtures_dir / "pncp" / "opportunities.json",
+            settings.data_demo_dir / "pncp" / "opportunities.json",
             Path(__file__).resolve().parents[3] / "data-demo" / "pncp" / "opportunities.json",
         ]
         for path in candidates:
@@ -122,44 +146,69 @@ class IngestionService:
                 with path.open("r", encoding="utf-8") as f:
                     data = json.load(f)
                 return data if isinstance(data, list) else data.get("records", [])
-        logger.warning("No PNCP fixtures found in %s", candidates)
+        logger.warning("No PNCP fixtures found; searched %s", [str(p) for p in candidates])
         return []
 
     # ---- processing ---------------------------------------------------------
     def _process_payloads(self, run: IngestionRun, payloads: list[dict]) -> None:
+        """Persist a batch of payloads. Each record is independent — a single
+        malformed payload does not abort the run; it bumps ``failed`` and is
+        recorded in the raw payload log for later inspection."""
         for raw in payloads:
             run.fetched += 1
             try:
                 agency_p, opp_p, items_p = parse_full(raw)
+            except Exception as exc:
+                logger.exception("Parser failure on payload: %s", exc)
+                run.failed += 1
+                continue
 
-                # Ensure we have an agency first.
-                agency = self.agencies.upsert(agency_p) if agency_p.get("cnpj") != "UNKNOWN" else None
-                if agency:
-                    opp_p["agency_id"] = agency.id
-
-                existing = self.opportunities.get_by_source(opp_p["source"], opp_p["source_id"])
-                self.opportunities.upsert(opp_p, items=items_p)
-                if existing:
-                    run.updated += 1
-                else:
-                    run.created += 1
-
-                # Save raw payload
+            source_id = (opp_p.get("source_id") or "").strip()
+            if not source_id:
+                logger.warning("Payload without source_id skipped")
+                run.skipped += 1
+                # Still save the raw payload so operators can inspect why.
                 self.runs.save_payload(
                     source=SourceName.PNCP.value,
-                    kind="opportunity",
-                    source_id=opp_p["source_id"],
+                    kind="opportunity-unparsed",
+                    source_id="unknown",
                     payload=raw,
                     run=run,
                 )
-            except Exception as exc:  # pragma: no cover
-                logger.exception("Failed to process payload: %s", exc)
+                continue
+
+            # Persist raw payload first — traceability even if upsert fails.
+            self.runs.save_payload(
+                source=SourceName.PNCP.value,
+                kind="opportunity",
+                source_id=source_id,
+                payload=raw,
+                run=run,
+            )
+
+            try:
+                agency = (
+                    self.agencies.upsert(agency_p)
+                    if agency_p.get("cnpj") and agency_p["cnpj"] != "UNKNOWN"
+                    else None
+                )
+                if agency is not None:
+                    opp_p["agency_id"] = agency.id
+
+                existed = self.opportunities.get_by_source(opp_p["source"], source_id) is not None
+                self.opportunities.upsert(opp_p, items=items_p)
+                if existed:
+                    run.updated += 1
+                else:
+                    run.created += 1
+            except Exception as exc:
+                logger.exception("Upsert failure for %s: %s", source_id, exc)
                 run.failed += 1
 
         self.session.add(run)
         self.session.flush()
 
-    # ---- helpers ------------------------------------------------------------
+    # ---- read helpers -------------------------------------------------------
     def recent_runs(self, limit: int = 25) -> list[dict[str, Any]]:
         runs = self.runs.list_runs(limit=limit)
         return [
@@ -173,6 +222,7 @@ class IngestionService:
                 "fetched": r.fetched,
                 "created": r.created,
                 "updated": r.updated,
+                "skipped": r.skipped,
                 "failed": r.failed,
                 "notes": r.notes,
             }

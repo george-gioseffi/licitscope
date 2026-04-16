@@ -53,19 +53,32 @@ def _get(d: dict, *keys: str, default: Any = None) -> Any:
     return default
 
 
+def _clean_str(value: Any) -> str | None:
+    if value is None:
+        return None
+    text = str(value).strip()
+    return text or None
+
+
 def parse_agency(payload: dict) -> dict:
     """Extract the órgão (agency) portion of a PNCP notice payload."""
     orgao = payload.get("orgaoEntidade") or payload.get("orgao") or {}
     unidade = payload.get("unidadeOrgao") or {}
+    cnpj = _clean_str(orgao.get("cnpj") or payload.get("cnpjOrgao")) or "UNKNOWN"
+    state = _clean_str(_get(unidade, "ufSigla", "uf", default=payload.get("ufSigla")))
     return {
-        "cnpj": str(orgao.get("cnpj") or payload.get("cnpjOrgao") or "").strip() or "UNKNOWN",
-        "name": _get(orgao, "razaoSocial", "nome", default=payload.get("nomeOrgao") or "Órgão desconhecido"),
-        "short_name": orgao.get("nomeFantasia") or None,
-        "sphere": (orgao.get("esferaId") or orgao.get("poderId") or "").lower() or None,
-        "branch": (orgao.get("poderId") or "").lower() or None,
-        "state": _get(unidade, "ufSigla", "uf", default=payload.get("ufSigla")),
-        "city": _get(unidade, "municipioNome", "nomeMunicipio", default=payload.get("nomeMunicipio")),
-        "ibge_code": str(unidade.get("codigoIbge") or "") or None,
+        "cnpj": cnpj,
+        "name": _clean_str(
+            _get(orgao, "razaoSocial", "nome", default=payload.get("nomeOrgao"))
+        ) or "Órgão desconhecido",
+        "short_name": _clean_str(orgao.get("nomeFantasia")),
+        "sphere": _clean_str(orgao.get("esferaId") or orgao.get("poderId")),
+        "branch": _clean_str(orgao.get("poderId")),
+        "state": state.upper()[:2] if state else None,
+        "city": _clean_str(
+            _get(unidade, "municipioNome", "nomeMunicipio", default=payload.get("nomeMunicipio"))
+        ),
+        "ibge_code": _clean_str(unidade.get("codigoIbge")),
         "source": SourceName.PNCP.value,
     }
 
@@ -81,29 +94,32 @@ def parse_opportunity(payload: dict) -> dict:
     raw_status = str(payload.get("situacaoCompraNome") or payload.get("situacao") or "").lower().strip()
     status = STATUS_MAP.get(raw_status, OpportunityStatus.PUBLISHED.value)
 
-    source_id = str(
+    source_id = _clean_str(
         payload.get("numeroControlePNCP")
         or payload.get("numeroCompra")
         or payload.get("id")
-        or ""
-    )
+    ) or ""
 
     unidade = payload.get("unidadeOrgao") or {}
+    state = _clean_str(_get(unidade, "ufSigla") or payload.get("ufSigla"))
 
     return {
         "source": SourceName.PNCP.value,
         "source_id": source_id,
-        "source_url": payload.get("linkSistemaOrigem"),
-        "pncp_control_number": payload.get("numeroControlePNCP"),
-        "notice_number": payload.get("numeroCompra") or payload.get("numeroAno"),
-        "title": _get(payload, "objetoCompra", "descricao", default="Licitação sem título"),
+        "source_url": _clean_str(payload.get("linkSistemaOrigem")),
+        "pncp_control_number": _clean_str(payload.get("numeroControlePNCP")),
+        "notice_number": _clean_str(payload.get("numeroCompra") or payload.get("numeroAno")),
+        "title": (
+            _clean_str(_get(payload, "objetoCompra", "descricao"))
+            or "Licitação sem título"
+        ),
         "object_description": _get(
             payload,
             "informacaoComplementar",
             "objetoCompra",
             "descricaoCompleta",
             default="",
-        ),
+        ) or "",
         "modality": modality,
         "status": status,
         "category": None,
@@ -111,12 +127,16 @@ def parse_opportunity(payload: dict) -> dict:
             _get(payload, "valorTotalEstimado", "valorTotal", "valorEstimadoTotal")
         ),
         "currency": "BRL",
-        "published_at": parse_date(_get(payload, "dataPublicacaoPncp", "dataDivulgacaoPncp", "dataPublicacao")),
+        "published_at": parse_date(
+            _get(payload, "dataPublicacaoPncp", "dataDivulgacaoPncp", "dataPublicacao")
+        ),
         "proposals_open_at": parse_date(payload.get("dataAberturaProposta")),
         "proposals_close_at": parse_date(payload.get("dataEncerramentoProposta")),
-        "session_at": parse_date(payload.get("dataInicioVigencia") or payload.get("dataSessao")),
-        "state": _get(unidade, "ufSigla") or payload.get("ufSigla"),
-        "city": _get(unidade, "municipioNome") or payload.get("nomeMunicipio"),
+        "session_at": parse_date(
+            payload.get("dataInicioVigencia") or payload.get("dataSessao")
+        ),
+        "state": state.upper()[:2] if state else None,
+        "city": _clean_str(_get(unidade, "municipioNome") or payload.get("nomeMunicipio")),
         "raw_metadata": payload,
     }
 
