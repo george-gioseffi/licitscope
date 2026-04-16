@@ -34,15 +34,28 @@ class EnrichmentPipeline:
         self.repo = EnrichmentRepository(session)
 
     # ---- public API ---------------------------------------------------------
-    def enrich_one(self, opportunity: Opportunity, *, df: dict[str, int] | None = None, n_docs: int = 1) -> None:
+    def enrich_one(
+        self,
+        opportunity: Opportunity,
+        *,
+        df: dict[str, int] | None = None,
+        n_docs: int = 1,
+    ) -> None:
         text = f"{opportunity.title}\n{opportunity.object_description or ''}"
         keywords = top_keywords(text, k=10)
         categories = classify(text, top_k=3)
         dates = extract_dates(text)
-        summary, bullets = self.provider.summarize(title=opportunity.title, body=opportunity.object_description or "")
+        summary, bullets = self.provider.summarize(
+            title=opportunity.title,
+            body=opportunity.object_description or "",
+        )
         scores = score_notice(opportunity)
 
-        unit_prices = [i.unit_reference_price for i in (opportunity.items or []) if i.unit_reference_price]
+        unit_prices = [
+            i.unit_reference_price
+            for i in (opportunity.items or [])
+            if i.unit_reference_price
+        ]
         anomaly = price_anomaly_score(unit_prices) if unit_prices else None
 
         fingerprint = tfidf_fingerprint(text, corpus_df=df, n_docs=n_docs)
@@ -54,7 +67,10 @@ class EnrichmentPipeline:
                 "bullet_points": bullets,
                 "keywords": keywords,
                 "categories": categories,
-                "entities": {"dates": dates},
+                "entities": {
+                    "dates": dates,
+                    "score_rationale": scores.rationale,
+                },
                 "important_dates": {"mentioned": dates},
                 "complexity_score": scores.complexity,
                 "effort_score": scores.effort,

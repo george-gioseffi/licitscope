@@ -1,80 +1,168 @@
-"""Heuristic scoring — complexity, effort, risk, price anomaly.
+"""Heuristic scoring for procurement notices.
 
-Each score is a float in [0, 1] with 0.5 being the neutral baseline. The
-heuristics below encode explainable rules that a procurement analyst can
-critique and improve — we deliberately avoid opaque numeric black boxes.
+Scores are floats in ``[0, 1]`` produced by hand-written, explainable rules.
+Every rule that fires adds both a weight to the score and a short
+human-readable reason — both are surfaced to the API so users can see
+*why* a notice scored the way it did. We deliberately avoid opaque black
+boxes here because risk signals in public procurement must be auditable.
 """
 
 from __future__ import annotations
 
 import math
 import statistics
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 from app.models.opportunity import Opportunity
 
+# ---------------------------------------------------------------------------
+# Rule lexicons (editable — this file is the source of truth)
+# ---------------------------------------------------------------------------
+
+TECH_TERMS: tuple[str, ...] = (
+    "engenharia", "projeto", "arquitetura", "especificação", "especificacao",
+    "catmat", "catser", "bim", "integração", "interoperabilidade",
+    "homologação", "homologacao", "ndr", "sla", "arquitetura tecnológica",
+    "alta disponibilidade", "auditoria",
+)
+URGENCY_TERMS: tuple[str, ...] = (
+    "urgente", "emergencial", "emergência", "emergencia", "calamidade",
+)
+HIGH_RISK_MODALITIES = frozenset({"dispensa", "inexigibilidade"})
+
+
+# ---------------------------------------------------------------------------
+# Public types
+# ---------------------------------------------------------------------------
 
 @dataclass
 class NoticeScores:
     complexity: float
     effort: float
     risk: float
+    rationale: dict[str, list[str]] = field(default_factory=dict)
 
 
 def _clip01(x: float) -> float:
     return max(0.0, min(1.0, x))
 
 
+def _contains_any(text: str, terms) -> list[str]:
+    return [t for t in terms if t in text]
+
+
+# ---------------------------------------------------------------------------
+# Scoring
+# ---------------------------------------------------------------------------
+
 def score_notice(opportunity: Opportunity) -> NoticeScores:
     title = opportunity.title or ""
     body = opportunity.object_description or ""
     text = f"{title} {body}".lower()
     length = len(body)
+    reasons: dict[str, list[str]] = {"complexity": [], "effort": [], "risk": []}
 
-    # Complexity: long notices with many technical terms get higher.
-    tech_terms = ("engenharia", "projeto", "arquitetura", "especificação", "catmat", "catser", "bim")
-    tech_hits = sum(1 for t in tech_terms if t in text)
-    complexity = 0.30 + 0.10 * min(4, tech_hits) + 0.08 * min(4, length // 1500)
+    # -- complexity --------------------------------------------------------
+    # "how much reading and how much technical depth does this notice carry?"
+    complexity = 0.30
+    tech_hits = _contains_any(text, TECH_TERMS)
+    if tech_hits:
+        bonus = 0.10 * min(4, len(tech_hits))
+        complexity += bonus
+        reasons["complexity"].append(
+            f"{len(tech_hits)} termo(s) técnico(s) detectado(s) (+{bonus:.2f})"
+        )
+    length_buckets = min(4, length // 1500)
+    if length_buckets:
+        bonus = 0.08 * length_buckets
+        complexity += bonus
+        reasons["complexity"].append(f"objeto longo (+{bonus:.2f})")
+    if opportunity.items and len(opportunity.items) >= 5:
+        complexity += 0.10
+        reasons["complexity"].append(
+            f"{len(opportunity.items)} itens na licitação (+0.10)"
+        )
 
-    # Effort: number of items + estimated value + number of references.
+    # -- effort ------------------------------------------------------------
+    # "how expensive / how many things does the fornecedor have to handle?"
     item_count = len(opportunity.items or [])
     value = opportunity.estimated_value or 0.0
-    value_pressure = math.log10(value + 1) / 9.0  # ~R$ 1B -> 1.0
-    effort = 0.25 + 0.05 * min(8, item_count) + 0.5 * _clip01(value_pressure)
+    effort = 0.25
+    if item_count:
+        bonus = 0.05 * min(8, item_count)
+        effort += bonus
+        reasons["effort"].append(f"{item_count} item(ns) (+{bonus:.2f})")
+    if value > 0:
+        value_pressure = math.log10(value + 1) / 9.0  # ~R$ 1B saturates at 1.0
+        bonus = 0.5 * _clip01(value_pressure)
+        effort += bonus
+        reasons["effort"].append(f"valor estimado alto (+{bonus:.2f})")
 
-    # Risk: short deadlines or dispensa/inexigibilidade modes are riskier.
+    # -- risk --------------------------------------------------------------
+    # "how likely is this notice to be badly specified, rushed, or irregular?"
     risk = 0.30
-    if opportunity.modality in {"dispensa", "inexigibilidade"}:
+    if opportunity.modality in HIGH_RISK_MODALITIES:
         risk += 0.25
+        reasons["risk"].append(f"modalidade {opportunity.modality} (+0.25)")
+
     if opportunity.proposals_close_at and opportunity.published_at:
-        delta = (opportunity.proposals_close_at - opportunity.published_at).days
-        if delta <= 8:
-            risk += 0.25
-        elif delta <= 15:
+        delta_days = (opportunity.proposals_close_at - opportunity.published_at).days
+        if delta_days <= 5:
+            risk += 0.30
+            reasons["risk"].append(f"prazo muito curto ({delta_days}d) (+0.30)")
+        elif delta_days <= 8:
+            risk += 0.20
+            reasons["risk"].append(f"prazo curto ({delta_days}d) (+0.20)")
+        elif delta_days <= 15:
             risk += 0.10
-    if "urgente" in text or "emergencial" in text:
+            reasons["risk"].append(f"prazo apertado ({delta_days}d) (+0.10)")
+
+    urgency_hits = _contains_any(text, URGENCY_TERMS)
+    if urgency_hits:
         risk += 0.15
+        reasons["risk"].append(f"linguagem de urgência: {urgency_hits[0]} (+0.15)")
+
+    # Under-specified notices are risky: items but no reference prices
+    if item_count and all(
+        (i.unit_reference_price or 0) == 0 for i in (opportunity.items or [])
+    ):
+        risk += 0.10
+        reasons["risk"].append("itens sem preço de referência (+0.10)")
 
     return NoticeScores(
         complexity=_clip01(complexity),
         effort=_clip01(effort),
         risk=_clip01(risk),
+        rationale={k: v for k, v in reasons.items() if v},
     )
 
+
+# ---------------------------------------------------------------------------
+# Pricing anomaly — robust to outliers
+# ---------------------------------------------------------------------------
 
 def price_anomaly_score(unit_prices: list[float]) -> float:
     """Return a 0..1 anomaly heuristic for a basket of unit prices.
 
-    We compute how dispersed prices are around the median: near-zero dispersion
-    is 0.0 (healthy), unusually wide dispersion saturates at 1.0.
+    Uses an IQR-based coefficient of dispersion (robust to outliers) instead
+    of standard deviation, because procurement data routinely contains a
+    handful of extreme values that would dominate ``stdev``.
     """
-    clean = [p for p in unit_prices if p is not None and p > 0]
+    clean = sorted(p for p in unit_prices if p is not None and p > 0)
     if len(clean) < 3:
         return 0.0
     median = statistics.median(clean)
     if median <= 0:
         return 0.0
-    stdev = statistics.pstdev(clean)
-    cv = stdev / median  # coefficient of variation
-    # Map cv=0.2 (healthy) to 0.2, cv=1.5 (wild) to ~0.95
-    return _clip01(0.1 + 0.6 * math.log1p(cv))
+
+    # IQR / median is a robust dispersion measure.
+    if len(clean) >= 4:
+        q1 = statistics.quantiles(clean, n=4)[0]
+        q3 = statistics.quantiles(clean, n=4)[2]
+        iqr = q3 - q1
+        dispersion = iqr / median
+    else:
+        dispersion = statistics.pstdev(clean) / median
+
+    # dispersion ~0.1 (healthy) -> low; ~1.5+ (wild) -> saturates near 0.95
+    return _clip01(0.1 + 0.6 * math.log1p(dispersion))
