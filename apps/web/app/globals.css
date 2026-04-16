@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+html,
+body {
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11", "cv02";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle graph-paper texture for the main app background */
+.bg-graph-paper {
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Focus ring — unified */
+*:focus-visible {
+  outline: 2px solid #2b65f5;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(71,85,113,.5); border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(71,85,113,.8); }
+
+/* Skeleton shimmer */
+@keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+.skeleton {
+  background: linear-gradient(90deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.04) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+  border-radius: 8px;
+}
+
+.card-surface {
+  background: linear-gradient(180deg, rgba(22,29,47,0.85) 0%, rgba(11,16,32,0.75) 100%);
+  border: 1px solid rgba(148,163,184,0.12);
+  backdrop-filter: blur(6px);
+}

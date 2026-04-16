@@ -1,0 +1,40 @@
+{
+  "name": "licitscope-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "LicitScope web frontend — AI procurement intelligence for Brazil",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.56.2",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "lucide-react": "^0.452.0",
+    "next": "14.2.13",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "recharts": "^2.13.0",
+    "tailwind-merge": "^2.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.13",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.2"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
