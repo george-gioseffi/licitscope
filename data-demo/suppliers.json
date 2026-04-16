@@ -1,0 +1,167 @@
+[
+  {
+    "tax_id": "07919473000174",
+    "tax_id_type": "CNPJ",
+    "name": "Tech Solutions Brasil S.A.",
+    "trade_name": "TechSol",
+    "state": "SP",
+    "city": "São Paulo",
+    "size": "grande porte",
+    "main_cnae": "6203100",
+    "source": "fixture"
+  },
+  {
+    "tax_id": "20738832000141",
+    "tax_id_type": "CNPJ",
+    "name": "MedPharma Distribuidora Ltda",
+    "trade_name": "MedPharma",
+    "state": "SP",
+    "city": "Guarulhos",
+    "size": "grande porte",
+    "main_cnae": "4644301",
+    "source": "fixture"
+  },
+  {
+    "tax_id": "19381117000121",
+    "tax_id_type": "CNPJ",
+    "name": "Construtora Horizonte Ltda",
+    "trade_name": "Horizonte",
+    "state": "MG",
+    "city": "Belo Horizonte",
+    "size": "grande porte",
+    "main_cnae": "4120400",
+    "source": "fixture"
+  },
+  {
+    "tax_id": "30102117000134",
+    "tax_id_type": "CNPJ",
+    "name": "Segurança Patrimonial Nacional S/A",
+    "trade_name": "SegPat",
+    "state": "RJ",
+    "city": "Rio de Janeiro",
+    "size": "grande porte",
+    "main_cnae": "8011101",
+    "source": "fixture"
+  },
+  {
+    "tax_id": "18713919000198",
+    "tax_id_type": "CNPJ",
+    "name": "Papelaria Integrada Ltda",
+    "trade_name": "PapInt",
+    "state": "PR",
+    "city": "Curitiba",
+    "size": "EPP",
+    "main_cnae": "4761003",
+    "source": "fixture"
+  },
+  {
+    "tax_id": "27081108000130",
+    "tax_id_type": "CNPJ",
+    "name": "Transporte & Logística Sul Ltda",
+    "trade_name": "TranSul",
+    "state": "RS",
+    "city": "Porto Alegre",
+    "size": "EPP",
+    "main_cnae": "4930203",
+    "source": "fixture"
+  },
+  {
+    "tax_id": "14391099000152",
+    "tax_id_type": "CNPJ",
+    "name": "Alimentos Nordeste Ltda",
+    "trade_name": "AliNor",
+    "state": "BA",
+    "city": "Salvador",
+    "size": "ME",
+    "main_cnae": "4637102",
+    "source": "fixture"
+  },
+  {
+    "tax_id": "23456789000100",
+    "tax_id_type": "CNPJ",
+    "name": "CloudBR Serviços de TI S/A",
+    "trade_name": "CloudBR",
+    "state": "SP",
+    "city": "Campinas",
+    "size": "grande porte",
+    "main_cnae": "6311900",
+    "source": "fixture"
+  },
+  {
+    "tax_id": "11223344000155",
+    "tax_id_type": "CNPJ",
+    "name": "EngCivil Consultoria Ltda",
+    "trade_name": "EngCivil",
+    "state": "DF",
+    "city": "Brasília",
+    "size": "EPP",
+    "main_cnae": "7112000",
+    "source": "fixture"
+  },
+  {
+    "tax_id": "55667788000166",
+    "tax_id_type": "CNPJ",
+    "name": "Frota Nacional Veículos S/A",
+    "trade_name": "FrotaN",
+    "state": "MG",
+    "city": "Contagem",
+    "size": "grande porte",
+    "main_cnae": "4511101",
+    "source": "fixture"
+  },
+  {
+    "tax_id": "99887766000177",
+    "tax_id_type": "CNPJ",
+    "name": "LimpaBem Serviços Gerais Ltda",
+    "trade_name": "LimpaBem",
+    "state": "RJ",
+    "city": "Rio de Janeiro",
+    "size": "EPP",
+    "main_cnae": "8121400",
+    "source": "fixture"
+  },
+  {
+    "tax_id": "66778899000188",
+    "tax_id_type": "CNPJ",
+    "name": "Educacional Didático Ltda",
+    "trade_name": "EduDid",
+    "state": "SP",
+    "city": "São Paulo",
+    "size": "grande porte",
+    "main_cnae": "4647801",
+    "source": "fixture"
+  },
+  {
+    "tax_id": "33445566000199",
+    "tax_id_type": "CNPJ",
+    "name": "Verdeja Engenharia Ambiental S.A.",
+    "trade_name": "Verdeja",
+    "state": "PR",
+    "city": "Curitiba",
+    "size": "EPP",
+    "main_cnae": "3900500",
+    "source": "fixture"
+  },
+  {
+    "tax_id": "22334455000122",
+    "tax_id_type": "CNPJ",
+    "name": "Medical Equipamentos Ltda",
+    "trade_name": "MedEq",
+    "state": "SP",
+    "city": "São Bernardo do Campo",
+    "size": "grande porte",
+    "main_cnae": "4645101",
+    "source": "fixture"
+  },
+  {
+    "tax_id": "77889900000133",
+    "tax_id_type": "CNPJ",
+    "name": "InfraRede Telecom Ltda",
+    "trade_name": "InfraRede",
+    "state": "RS",
+    "city": "Caxias do Sul",
+    "size": "grande porte",
+    "main_cnae": "6110801",
+    "source": "fixture"
+  }
+]

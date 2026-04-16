@@ -1,0 +1,202 @@
+[
+  {
+    "cnpj": "13756663000171",
+    "name": "Ministério da Gestão e da Inovação em Serviços Públicos",
+    "short_name": "MGI",
+    "sphere": "federal",
+    "branch": "executivo",
+    "state": "DF",
+    "city": "Brasília",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "00394411000109",
+    "name": "Ministério da Saúde",
+    "short_name": "MS",
+    "sphere": "federal",
+    "branch": "executivo",
+    "state": "DF",
+    "city": "Brasília",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "00394452000103",
+    "name": "Ministério da Educação",
+    "short_name": "MEC",
+    "sphere": "federal",
+    "branch": "executivo",
+    "state": "DF",
+    "city": "Brasília",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "33683111000107",
+    "name": "Instituto Federal de São Paulo",
+    "short_name": "IFSP",
+    "sphere": "federal",
+    "branch": "executivo",
+    "state": "SP",
+    "city": "São Paulo",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "07526557000100",
+    "name": "Universidade Federal de Minas Gerais",
+    "short_name": "UFMG",
+    "sphere": "federal",
+    "branch": "executivo",
+    "state": "MG",
+    "city": "Belo Horizonte",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "00489828000136",
+    "name": "Empresa Brasileira de Pesquisa Agropecuária",
+    "short_name": "EMBRAPA",
+    "sphere": "federal",
+    "branch": "executivo",
+    "state": "DF",
+    "city": "Brasília",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "46392130000380",
+    "name": "Secretaria de Estado da Saúde de São Paulo",
+    "short_name": "SES-SP",
+    "sphere": "estadual",
+    "branch": "executivo",
+    "state": "SP",
+    "city": "São Paulo",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "18715615000160",
+    "name": "Governo do Estado de Minas Gerais",
+    "short_name": "GovMG",
+    "sphere": "estadual",
+    "branch": "executivo",
+    "state": "MG",
+    "city": "Belo Horizonte",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "42498600000171",
+    "name": "Governo do Estado do Paraná",
+    "short_name": "GovPR",
+    "sphere": "estadual",
+    "branch": "executivo",
+    "state": "PR",
+    "city": "Curitiba",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "27080571000170",
+    "name": "Secretaria de Estado da Saúde do Rio Grande do Sul",
+    "short_name": "SES-RS",
+    "sphere": "estadual",
+    "branch": "executivo",
+    "state": "RS",
+    "city": "Porto Alegre",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "14390766000140",
+    "name": "Secretaria de Educação do Estado da Bahia",
+    "short_name": "SEC-BA",
+    "sphere": "estadual",
+    "branch": "executivo",
+    "state": "BA",
+    "city": "Salvador",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "10832074000155",
+    "name": "Secretaria de Segurança Pública do Ceará",
+    "short_name": "SSP-CE",
+    "sphere": "estadual",
+    "branch": "executivo",
+    "state": "CE",
+    "city": "Fortaleza",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "46395000000139",
+    "name": "Prefeitura Municipal de São Paulo",
+    "short_name": "PMSP",
+    "sphere": "municipal",
+    "branch": "executivo",
+    "state": "SP",
+    "city": "São Paulo",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "18715383000140",
+    "name": "Prefeitura Municipal de Belo Horizonte",
+    "short_name": "PBH",
+    "sphere": "municipal",
+    "branch": "executivo",
+    "state": "MG",
+    "city": "Belo Horizonte",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "42498700000143",
+    "name": "Prefeitura Municipal de Curitiba",
+    "short_name": "PMC",
+    "sphere": "municipal",
+    "branch": "executivo",
+    "state": "PR",
+    "city": "Curitiba",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "27080619000160",
+    "name": "Prefeitura Municipal de Porto Alegre",
+    "short_name": "PMPA",
+    "sphere": "municipal",
+    "branch": "executivo",
+    "state": "RS",
+    "city": "Porto Alegre",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "13927801000149",
+    "name": "Prefeitura Municipal de Campinas",
+    "short_name": "PMC-SP",
+    "sphere": "municipal",
+    "branch": "executivo",
+    "state": "SP",
+    "city": "Campinas",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "13381447000130",
+    "name": "Prefeitura Municipal de Fortaleza",
+    "short_name": "PMF",
+    "sphere": "municipal",
+    "branch": "executivo",
+    "state": "CE",
+    "city": "Fortaleza",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "14390500000116",
+    "name": "Prefeitura Municipal de Salvador",
+    "short_name": "PMS",
+    "sphere": "municipal",
+    "branch": "executivo",
+    "state": "BA",
+    "city": "Salvador",
+    "source": "fixture"
+  },
+  {
+    "cnpj": "33649282000108",
+    "name": "Prefeitura Municipal do Rio de Janeiro",
+    "short_name": "PMR",
+    "sphere": "municipal",
+    "branch": "executivo",
+    "state": "RJ",
+    "city": "Rio de Janeiro",
+    "source": "fixture"
+  }
+]

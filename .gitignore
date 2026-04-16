@@ -1,0 +1,76 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+coverage.xml
+.tox/
+.hypothesis/
+.venv/
+venv/
+env/
+.python-version
+
+# ---- Node / Next ----
+node_modules/
+.pnp
+.pnp.js
+.yarn/
+.next/
+out/
+dist/
+build/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+
+# ---- Envs ----
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# ---- Databases / data ----
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+data/
+pgdata/
+dumps/
+*.dump
+
+# ---- IDE / OS ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---- Agent / tooling state ----
+.claude/
+.cursor/
+.aider*
+
+# ---- Logs ----
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- Local artifacts ----
+.artifacts/
+storybook-static/
+playwright-report/
+test-results/

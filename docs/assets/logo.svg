@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2B65F5"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="24" fill="#0B1020"/>
+  <rect x="1" y="1" width="118" height="118" rx="23" stroke="url(#brand)" stroke-opacity="0.4"/>
+  <!-- telescope body -->
+  <path d="M32 78 L72 38 L86 52 L46 92 Z" fill="url(#brand)" fill-opacity="0.18" stroke="url(#brand)" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- eyepiece -->
+  <circle cx="40" cy="86" r="8" fill="#0B1020" stroke="url(#brand)" stroke-width="2.5"/>
+  <!-- lens star -->
+  <path d="M79 41 L83 45 L79 49 L75 45 Z" fill="#84B1FF"/>
+  <!-- tripod leg -->
+  <path d="M40 86 L28 102" stroke="url(#brand)" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- data tick marks -->
+  <g stroke="#84B1FF" stroke-width="2" stroke-linecap="round">
+    <path d="M92 30 l6 0"/>
+    <path d="M96 38 l6 0"/>
+    <path d="M92 46 l6 0"/>
+  </g>
+</svg>

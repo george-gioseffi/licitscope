@@ -1,0 +1,66 @@
+version: "3.9"
+
+# ---------------------------------------------------------------------------
+# LicitScope – local stack
+# ---------------------------------------------------------------------------
+# Bring up with:  make up
+# Seed demo:      docker compose exec api python -m app.scripts.seed
+# ---------------------------------------------------------------------------
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: licitscope-db
+    environment:
+      POSTGRES_USER: licitscope
+      POSTGRES_PASSWORD: licitscope
+      POSTGRES_DB: licitscope
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U licitscope"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: ../apps/api
+    container_name: licitscope-api
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      APP_ENV: development
+      DATABASE_URL: postgresql+psycopg://licitscope:licitscope@db:5432/licitscope
+      API_CORS_ORIGINS: http://localhost:3000
+      INGESTION_USE_FIXTURES: "true"
+    ports:
+      - "8000:8000"
+    command: >
+      sh -c "python -m app.scripts.seed --if-empty &&
+             uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+    volumes:
+      - ../apps/api:/app
+      - ../data-demo:/data-demo
+
+  web:
+    build:
+      context: ../apps/web
+    container_name: licitscope-web
+    depends_on:
+      - api
+    environment:
+      NEXT_PUBLIC_API_BASE_URL: http://localhost:8000
+    ports:
+      - "3000:3000"
+    command: npm run dev
+    volumes:
+      - ../apps/web:/app
+      - /app/node_modules
+      - /app/.next
+
+volumes:
+  pgdata:
