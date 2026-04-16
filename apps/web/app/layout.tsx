@@ -7,7 +7,7 @@ import { Topbar } from "@/components/layout/topbar";
 export const metadata: Metadata = {
   title: "LicitScope — Procurement Intelligence for Brazil",
   description:
-    "AI-powered procurement intelligence for Brazilian public procurement data (PNCP, Portal da Transparência, Compras.gov.br).",
+    "Explainable procurement intelligence for Brazilian public procurement data. Live PNCP ingestion, rule-based enrichment, TF-IDF semantic search, and pricing anomaly signals.",
   applicationName: "LicitScope",
   robots: { index: false, follow: false },
 };

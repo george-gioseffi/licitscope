@@ -41,9 +41,11 @@ def create_app() -> FastAPI:
     app = FastAPI(
         title="LicitScope API",
         description=(
-            "AI-powered procurement intelligence for Brazilian public "
-            "procurement data. This API serves normalized data from PNCP "
-            "and related sources, plus AI-enriched insights."
+            "Explainable procurement intelligence for Brazilian public "
+            "procurement data. This API serves normalized PNCP notices "
+            "and contracts enriched with rule-based signals (summary, "
+            "keywords, complexity / effort / risk, price anomaly) plus "
+            "a hashed TF-IDF semantic search surface."
         ),
         version=__version__,
         lifespan=lifespan,
