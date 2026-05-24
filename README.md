@@ -17,7 +17,7 @@
   <img alt="FastAPI" src="https://img.shields.io/badge/API-FastAPI-009688?logo=fastapi&logoColor=white" />
   <img alt="Next.js" src="https://img.shields.io/badge/Web-Next.js%2014-000000?logo=nextdotjs&logoColor=white" />
   <img alt="Postgres" src="https://img.shields.io/badge/DB-PostgreSQL-336791?logo=postgresql&logoColor=white" />
-  <img alt="Tests"   src="https://img.shields.io/badge/tests-84%20passing-3c3" />
+  <img alt="Tests"   src="https://img.shields.io/badge/tests-74%20passing-3c3" />
   <img alt="License" src="https://img.shields.io/badge/license-MIT-green" />
 </p>
 
@@ -29,12 +29,12 @@
 
 ## What it is
 
-LicitScope is a portfolio-grade **govtech intelligence platform** for the
-Brazilian public procurement ecosystem. It ingests data from the **Portal
+LicitScope is a personal project that treats the Brazilian public
+procurement ecosystem as a data problem. It ingests data from the **Portal
 Nacional de Contratações Públicas (PNCP)**, normalizes it into a typed
 domain model, enriches every notice with **explainable, rule-based signals**
-(summary, keywords, complexity/effort/risk, price anomaly), and ships a
-polished Next.js dashboard on top.
+(summary, keywords, complexity/effort/risk, price anomaly), and exposes it
+through a Next.js dashboard.
 
 Every score, every tag, every similarity ranking comes from code you can
 read. There is **no black box and no mandatory LLM call** — the whole
@@ -55,9 +55,9 @@ LLM-backed summarizer, swap it in via a single `Provider` implementation.
 
 ## Screenshots
 
-The UI is laid out as an intelligence workstation. All screenshots below
-are captured from a locally-running demo and regenerated deterministically
-by [`scripts/take_screenshots.mjs`](scripts/take_screenshots.mjs).
+All screenshots below are captured from a locally-running demo and
+regenerated deterministically by
+[`scripts/take_screenshots.mjs`](scripts/take_screenshots.mjs).
 
 ### Opportunities feed — faceted filtering + risk signals
 
@@ -223,7 +223,7 @@ See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the full breakdown.
 | Enrichment | Hand-written rules · hashed TF-IDF similarity · pluggable LLM provider                    |
 | Frontend   | Next.js 14 (app router) · TypeScript · Tailwind · TanStack Query · Recharts · lucide      |
 | DevOps     | Docker Compose · GitHub Actions · ruff · pytest · ESLint · CodeQL · Dependabot            |
-| Tests      | 71 backend tests across parsing, scoring, pricing, filters, ingestion, repos, similarity  |
+| Tests      | 74 backend tests across parsing, scoring, pricing, filters, ingestion, repos, similarity  |
 
 ---
 
@@ -293,7 +293,7 @@ reason recorded — the UI always has something to render.
 - [x] Server-side watchlists with manual alert runs
 - [x] Source-health dashboard with ingestion-run history
 - [x] Docker Compose local stack (Postgres + API + web)
-- [x] CI: ruff lint + format check, pytest (71), fixture drift guard,
+- [x] CI: ruff lint + format check, pytest (74), fixture drift guard,
       ESLint, tsc, Next.js build, weekly CodeQL
 - [x] Pre-commit hooks + EditorConfig + Dependabot
 
